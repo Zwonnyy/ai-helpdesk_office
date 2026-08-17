@@ -1,0 +1,64 @@
+
+FINAL RETRIEVER ANALYSIS
+======================================================================
+
+Samples:
+2858
+
+Tie Threshold:
+0.0001
+
+
+WIN / LOSE / TIE
+----------------------------------------------------------------------
+
+V2 Wins:
+255
+Rate:
+0.0892
+
+Pretrained Wins:
+188
+Rate:
+0.0658
+
+Tie:
+2415
+Rate:
+0.8450
+
+Total:
+1.0000
+
+
+NON-TIE COMPARISON
+----------------------------------------------------------------------
+
+Different Results:
+443
+
+V2 Win Rate among non-ties:
+0.5756
+
+
+ANSWER SIMILARITY DELTA
+----------------------------------------------------------------------
+
+Mean Delta:
++0.002533
+
+Median Delta:
++0.000000
+
+10th Percentile:
++0.000000
+
+90th Percentile:
++0.000000
+
+
+RETRIEVAL BEHAVIOR
+----------------------------------------------------------------------
+
+Same Top1 Ticket Rate:
+0.8226

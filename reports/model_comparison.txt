@@ -1,0 +1,30 @@
+BASELINE
+              precision    recall  f1-score   support
+
+      Change     0.9743    0.9075    0.9397       292
+    Incident     0.7564    0.9215    0.8308      1146
+     Problem     0.7542    0.4485    0.5625       602
+     Request     0.9736    0.9902    0.9818       819
+
+    accuracy                         0.8402      2859
+   macro avg     0.8646    0.8169    0.8287      2859
+weighted avg     0.8404    0.8402    0.8287      2859
+
+
+TRANSFORMER
+              precision    recall  f1-score   support
+
+      Change     0.9627    0.9726    0.9676       292
+    Incident     0.7864    0.8386    0.8117      1146
+     Problem     0.6490    0.5681    0.6058       602
+     Request     0.9963    0.9915    0.9939       819
+
+    accuracy                         0.8391      2859
+   macro avg     0.8486    0.8427    0.8448      2859
+weighted avg     0.8356    0.8391    0.8365      2859
+
+
+FINAL COMPARISON
+Accuracy: 0.8402 -> 0.8391
+Macro F1: 0.8287 -> 0.8448
+Problem Recall: 0.4485 -> 0.5681

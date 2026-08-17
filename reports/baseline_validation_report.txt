@@ -1,0 +1,23 @@
+Accuracy: 0.8402
+Macro F1: 0.8287
+Weighted F1: 0.8287
+
+Classification Report
+              precision    recall  f1-score   support
+
+      Change       0.97      0.91      0.94       292
+    Incident       0.76      0.92      0.83      1146
+     Problem       0.75      0.45      0.56       602
+     Request       0.97      0.99      0.98       819
+
+    accuracy                           0.84      2859
+   macro avg       0.86      0.82      0.83      2859
+weighted avg       0.84      0.84      0.83      2859
+
+
+Confusion Matrix
+                 pred_Change  pred_Incident  pred_Problem  pred_Request
+actual_Change            265              9             1            17
+actual_Incident            1           1056            87             2
+actual_Problem             0            329           270             3
+actual_Request             6              2             0           811

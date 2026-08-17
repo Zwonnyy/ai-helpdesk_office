@@ -1,0 +1,37 @@
+
+FINE-TUNED RETRIEVER EVALUATION
+=====================================
+
+Model:
+Helpdesk Fine-tuned Multilingual MiniLM
+
+Test Samples:
+2858
+
+
+TOP 1
+
+Type Match:
+0.9069
+
+Queue Match:
+0.7330
+
+Priority Match:
+0.7729
+
+
+TOP 3
+
+Type Match@3:
+0.9752
+
+Queue Match@3:
+0.8422
+
+Priority Match@3:
+0.9087
+
+
+Mean Top1 Similarity:
+0.9999

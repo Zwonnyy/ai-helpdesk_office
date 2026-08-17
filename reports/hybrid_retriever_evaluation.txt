@@ -1,0 +1,39 @@
+
+HYBRID RETRIEVER EVALUATION
+=====================================
+
+Method:
+TF-IDF + Semantic Embedding + RRF
+
+Candidate K:
+30
+
+RRF K:
+60
+
+Test Samples:
+2858
+
+
+TOP 1
+
+Type Match:
+0.9220
+
+Queue Match:
+0.7680
+
+Priority Match:
+0.8076
+
+
+TOP 3
+
+Type Match@3:
+0.9769
+
+Queue Match@3:
+0.8635
+
+Priority Match@3:
+0.9188

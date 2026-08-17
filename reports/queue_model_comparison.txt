@@ -1,0 +1,47 @@
+TARGET: queue
+
+BASELINE
+======================================================================
+                                 precision    recall  f1-score   support
+
+           Billing and Payments     0.8955    0.6498    0.7531       277
+               Customer Service     0.4194    0.4286    0.4240       413
+                General Inquiry     1.0000    0.0208    0.0408        48
+                Human Resources     1.0000    0.0339    0.0656        59
+                     IT Support     0.5912    0.2213    0.3221       366
+                Product Support     0.4294    0.4190    0.4241       537
+          Returns and Exchanges     0.8182    0.0682    0.1259       132
+            Sales and Pre-Sales     0.9167    0.1000    0.1803       110
+Service Outages and Maintenance     0.8043    0.3364    0.4744       110
+              Technical Support     0.4385    0.8166    0.5706       807
+
+                       accuracy                         0.4834      2859
+                      macro avg     0.7313    0.3095    0.3381      2859
+                   weighted avg     0.5689    0.4834    0.4492      2859
+
+
+TRANSFORMER
+======================================================================
+                                 precision    recall  f1-score   support
+
+           Billing and Payments     0.8167    0.7076    0.7582       277
+               Customer Service     0.3482    0.3777    0.3624       413
+                General Inquiry     0.0000    0.0000    0.0000        48
+                Human Resources     0.4000    0.0339    0.0625        59
+                     IT Support     0.4550    0.2486    0.3216       366
+                Product Support     0.3756    0.4302    0.4010       537
+          Returns and Exchanges     0.3696    0.1288    0.1910       132
+            Sales and Pre-Sales     0.3846    0.0455    0.0813       110
+Service Outages and Maintenance     0.6744    0.5273    0.5918       110
+              Technical Support     0.4701    0.7026    0.5633       807
+
+                       accuracy                         0.4627      2859
+                      macro avg     0.4294    0.3202    0.3333      2859
+                   weighted avg     0.4570    0.4627    0.4373      2859
+
+
+FINAL COMPARISON
+======================================================================
+Accuracy: 0.4834 -> 0.4627
+Macro F1: 0.3381 -> 0.3333
+Weighted F1: 0.4492 -> 0.4373

@@ -1,0 +1,37 @@
+
+FINE-TUNED V2 RETRIEVER EVALUATION
+=====================================
+
+Model:
+Helpdesk Fine-tuned Semantic Model V2
+
+Test Samples:
+2858
+
+
+TOP 1
+
+Type Match:
+0.9325
+
+Queue Match:
+0.8146
+
+Priority Match:
+0.8548
+
+
+TOP 3
+
+Type Match@3:
+0.9797
+
+Queue Match@3:
+0.8933
+
+Priority Match@3:
+0.9412
+
+
+Mean Top1 Similarity:
+0.8586

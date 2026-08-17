@@ -1,0 +1,27 @@
+Target: queue
+
+eval_loss: 1.541697382926941
+eval_accuracy: 0.4627492130115425
+eval_macro_f1: 0.33328862357836153
+eval_weighted_f1: 0.4373251297664846
+eval_runtime: 3.9216
+eval_samples_per_second: 729.037
+eval_steps_per_second: 45.644
+epoch: 3.0
+
+                                 precision    recall  f1-score   support
+
+           Billing and Payments     0.8167    0.7076    0.7582       277
+               Customer Service     0.3482    0.3777    0.3624       413
+                General Inquiry     0.0000    0.0000    0.0000        48
+                Human Resources     0.4000    0.0339    0.0625        59
+                     IT Support     0.4527    0.2486    0.3210       366
+                Product Support     0.3756    0.4302    0.4010       537
+          Returns and Exchanges     0.3696    0.1288    0.1910       132
+            Sales and Pre-Sales     0.3846    0.0455    0.0813       110
+Service Outages and Maintenance     0.6744    0.5273    0.5918       110
+              Technical Support     0.4705    0.7026    0.5636       807
+
+                       accuracy                         0.4627      2859
+                      macro avg     0.4292    0.3202    0.3333      2859
+                   weighted avg     0.4568    0.4627    0.4373      2859

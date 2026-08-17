@@ -1,0 +1,37 @@
+Target: queue
+
+Accuracy: 0.4834
+Macro F1: 0.3381
+Weighted F1: 0.4492
+
+Classification Report
+                                 precision    recall  f1-score   support
+
+           Billing and Payments     0.8955    0.6498    0.7531       277
+               Customer Service     0.4194    0.4286    0.4240       413
+                General Inquiry     1.0000    0.0208    0.0408        48
+                Human Resources     1.0000    0.0339    0.0656        59
+                     IT Support     0.5912    0.2213    0.3221       366
+                Product Support     0.4294    0.4190    0.4241       537
+          Returns and Exchanges     0.8182    0.0682    0.1259       132
+            Sales and Pre-Sales     0.9167    0.1000    0.1803       110
+Service Outages and Maintenance     0.8043    0.3364    0.4744       110
+              Technical Support     0.4385    0.8166    0.5706       807
+
+                       accuracy                         0.4834      2859
+                      macro avg     0.7313    0.3095    0.3381      2859
+                   weighted avg     0.5689    0.4834    0.4492      2859
+
+
+Confusion Matrix
+                                        pred_Billing and Payments  pred_Customer Service  pred_General Inquiry  pred_Human Resources  pred_IT Support  pred_Product Support  pred_Returns and Exchanges  pred_Sales and Pre-Sales  pred_Service Outages and Maintenance  pred_Technical Support
+actual_Billing and Payments                                   180                     31                     0                     0                2                    18                           0                         0                                     0                      46
+actual_Customer Service                                         6                    177                     0                     0                5                    64                           0                         0                                     0                     161
+actual_General Inquiry                                          0                      5                     1                     0                3                    14                           0                         0                                     0                      25
+actual_Human Resources                                          0                      8                     0                     2                2                    14                           0                         0                                     0                      33
+actual_IT Support                                               2                     29                     0                     0               81                    42                           0                         0                                     3                     209
+actual_Product Support                                          4                     66                     0                     0               14                   225                           2                         0                                     1                     225
+actual_Returns and Exchanges                                    2                     25                     0                     0                2                    37                           9                         1                                     0                      56
+actual_Sales and Pre-Sales                                      3                     28                     0                     0                2                    26                           0                        11                                     0                      40
+actual_Service Outages and Maintenance                          0                     10                     0                     0                9                     5                           0                         0                                    37                      49
+actual_Technical Support                                        4                     43                     0                     0               17                    79                           0                         0                                     5                     659

@@ -1,0 +1,33 @@
+
+RETRIEVER EVALUATION
+=====================================
+
+Test Samples:
+2858
+
+TOP 1
+
+Type Match:
+0.9094
+
+Queue Match:
+0.7439
+
+Priority Match:
+0.7866
+
+
+TOP 3
+
+Type Match@3:
+0.9734
+
+Queue Match@3:
+0.8307
+
+Priority Match@3:
+0.9069
+
+
+Mean Top1 Similarity:
+0.5010

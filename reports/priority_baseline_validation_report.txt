@@ -1,0 +1,23 @@
+Target: priority
+
+Accuracy: 0.5925
+Macro F1: 0.5344
+Weighted F1: 0.5741
+
+Classification Report
+              precision    recall  f1-score   support
+
+        high     0.6097    0.6756    0.6409      1119
+         low     0.6268    0.2306    0.3372       568
+      medium     0.5723    0.6886    0.6251      1172
+
+    accuracy                         0.5925      2859
+   macro avg     0.6029    0.5316    0.5344      2859
+weighted avg     0.5978    0.5925    0.5741      2859
+
+
+Confusion Matrix
+               pred_high  pred_low  pred_medium
+actual_high          756        23          340
+actual_low           174       131          263
+actual_medium        310        55          807

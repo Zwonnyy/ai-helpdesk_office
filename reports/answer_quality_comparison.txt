@@ -1,0 +1,76 @@
+
+ANSWER QUALITY COMPARISON
+======================================================================
+
+Judge Model:
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+Test Samples:
+2858
+
+NOTE:
+Answer similarity is an automatic semantic proxy.
+It is not equivalent to human answer-quality evaluation.
+
+
+PRETRAINED RETRIEVER
+----------------------------------------------------------------------
+
+Top1 Answer Similarity Mean:
+0.8749
+
+Top1 Answer Similarity Median:
+0.9313
+
+Best Answer@3 Similarity Mean:
+0.9011
+
+Best Answer@3 Similarity Median:
+0.9390
+
+Mean Answer@3 Similarity:
+0.8100
+
+
+FINE-TUNED V2 RETRIEVER
+----------------------------------------------------------------------
+
+Top1 Answer Similarity Mean:
+0.8795
+
+Top1 Answer Similarity Median:
+0.9316
+
+Best Answer@3 Similarity Mean:
+0.9036
+
+Best Answer@3 Similarity Median:
+0.9404
+
+Mean Answer@3 Similarity:
+0.8122
+
+
+COMPARISON
+----------------------------------------------------------------------
+
+Top1 Mean Improvement:
++0.0047
+
+Best@3 Mean Improvement:
++0.0025
+
+Mean@3 Improvement:
++0.0022
+
+
+Best@3 Win Rate
+
+V2 Wins:
+0.1039
+
+Pretrained Wins:
+0.0850
+
+Tie:
+0.8446

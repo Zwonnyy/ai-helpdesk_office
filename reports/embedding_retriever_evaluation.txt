@@ -1,0 +1,37 @@
+
+SEMANTIC RETRIEVER EVALUATION
+=====================================
+
+Model:
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+Test Samples:
+2858
+
+
+TOP 1
+
+Type Match:
+0.9206
+
+Queue Match:
+0.8016
+
+Priority Match:
+0.8373
+
+
+TOP 3
+
+Type Match@3:
+0.9762
+
+Queue Match@3:
+0.8761
+
+Priority Match@3:
+0.9318
+
+
+Mean Top1 Similarity:
+0.9295
