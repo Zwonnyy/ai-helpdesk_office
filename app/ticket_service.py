@@ -21,6 +21,10 @@ from app.models import (
     TicketStatus,
 )
 
+from app.review_policy import (
+    evaluate_review_risk,
+)
+
 
 # ============================================================
 # EXCEPTIONS
@@ -236,6 +240,12 @@ def analyze_ticket(
         )
     )
 
+    retrieval_top1_similarity = float(
+        similar_tickets[0]['score']
+        if similar_tickets
+        else 0.0
+    )
+
     # --------------------------------------------------------
     # UPDATE
     # --------------------------------------------------------
@@ -290,6 +300,27 @@ def analyze_ticket(
 
     ticket.similar_tickets = (
         similar_tickets
+    )
+
+    ticket.retrieval_top1_similarity = (
+        retrieval_top1_similarity
+    )
+
+    risk_result = evaluate_review_risk(
+        type_confidence=ticket.type_confidence,
+        queue_confidence=ticket.queue_confidence,
+        priority_confidence=ticket.priority_confidence,
+        retrieval_similarity=(
+            ticket.retrieval_top1_similarity
+        ),
+    )
+
+    ticket.risk_level = risk_result.risk_level
+    ticket.review_required = (
+        risk_result.review_required
+    )
+    ticket.risk_reasons = list(
+        risk_result.reasons
     )
 
     ticket.status = (
@@ -366,6 +397,26 @@ def analyze_ticket(
                     similar_tickets
                 )
             ),
+        },
+    )
+
+    add_ticket_event(
+        db=db,
+        ticket_id=ticket.id,
+        event_type=TicketEventType.RISK_EVALUATED.value,
+        from_status=TicketStatus.ANALYZED.value,
+        to_status=TicketStatus.ANALYZED.value,
+        message='AI review risk evaluated',
+        event_data={
+            'risk_level': ticket.risk_level,
+            'review_required': ticket.review_required,
+            'reasons': ticket.risk_reasons,
+            'threshold_inputs': {
+                'type_confidence': ticket.type_confidence,
+                'queue_confidence': ticket.queue_confidence,
+                'priority_confidence': ticket.priority_confidence,
+                'retrieval_similarity': ticket.retrieval_top1_similarity,
+            },
         },
     )
 

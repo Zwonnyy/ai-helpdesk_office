@@ -4,7 +4,7 @@
 
 이 프로젝트의 핵심은 모델 하나를 학습한 것이 아니라, 실패한 V1 representation을 진단하고 semantic positive mining과 hard negative mining으로 개선한 뒤 별도 holdout으로 검증하고 Human-in-the-loop workflow에 연결한 과정입니다.
 
-> **v1.0 범위:** Classification, V3 retrieval, Ticket workflow, Human Approval, Audit Trail은 API에 연결되어 있습니다. Risk Gate 정책과 calibration 코드는 구현됐지만 현재 `analyze_ticket()`에는 연결되지 않았습니다. Local Ollama LLM Draft는 Experimental입니다.
+> **v1.0 범위:** Classification, V3 retrieval, Risk Gate, Ticket workflow, Human Approval, Audit Trail은 API에 연결되어 있습니다. Local Ollama LLM Draft는 Experimental입니다.
 
 ## 주요 기능
 
@@ -28,14 +28,14 @@ flowchart TD
     D2 --> G
     D3 --> G
     F --> G
-    G -. integration pending .-> H[LOW / MEDIUM / HIGH]
+    G --> H[LOW / MEDIUM / HIGH]
     F --> I[Human Review]
     I --> J[APPROVED]
     I --> K[REJECTED]
     B --> L[Audit Trail]
 ```
 
-점선은 Risk Gate의 목표 연결 위치와 현재 남은 integration을 구분합니다.
+Ticket 분석 시 classification confidence와 Retrieval Top1 similarity를 Risk Gate에 전달해 risk를 저장합니다.
 
 ## Tech Stack
 
@@ -169,7 +169,7 @@ similarity < 0.6243            → critical condition
 
 최종 risk는 classifier confidence도 함께 봅니다. 일반 threshold 미달 reason 1개는 `MEDIUM`, 2개 이상이거나 critical threshold 미만 값이 하나라도 있으면 `HIGH`, reason이 없으면 `LOW`입니다. Classifier confidence threshold는 운영 정책 기반 초기값이며, **Retriever threshold만 validation 기반 calibration 결과**입니다.
 
-현재 DB/response schema에는 risk 필드가 있고 policy 함수도 존재하지만, `analyze_ticket()`이 함수를 호출하지 않아 API 분석 결과에는 risk가 자동 계산·저장되지 않습니다. 위 수치는 정책 calibration 실험 결과이며 end-to-end Risk Gate 운영 결과가 아닙니다.
+Ticket 분석 시 Top1 similarity와 classification confidence를 기존 policy 함수에 전달하며, 결과를 `retrieval_top1_similarity`, `risk_level`, `review_required`, `risk_reasons`에 저장합니다.
 
 ## Human-in-the-loop Workflow
 
@@ -191,11 +191,11 @@ v1.0에서는 AI가 분석해도 최종 답변은 사람이 승인합니다. `re
 
 `ticket_events` table은 `ticket_id`, `event_type`, `from_status`, `to_status`, `message`, `event_data`, `created_at`을 저장합니다.
 
-- 실제 기록 이벤트: `TICKET_CREATED`, `AI_ANALYZED`, `SUBMITTED_FOR_APPROVAL`, `APPROVED`, `REJECTED`
+- 실제 기록 이벤트: `TICKET_CREATED`, `AI_ANALYZED`, `RISK_EVALUATED`, `SUBMITTED_FOR_APPROVAL`, `APPROVED`, `REJECTED`
 - `AI_ANALYZED.event_data`: prediction label/confidence와 retrieval 결과 수
 - 승인 요청·승인·반려: draft/final Answer 존재 여부 또는 반려 사유
 
-`RISK_EVALUATED` event type은 schema에 정의되어 있지만 현재 workflow에서는 생성되지 않습니다.
+`RISK_EVALUATED`는 AI 분석과 같은 transaction에서 생성되며 risk 결과와 threshold 입력값을 `event_data`에 기록합니다.
 
 ## API
 
@@ -312,7 +312,6 @@ ai-helpdesk/
 - Authentication / RBAC 미구현
 - Local Ollama CUDA runtime 이슈
 - Classifier confidence calibration 미완료
-- Risk Gate가 Ticket analysis workflow에 미연결
 - Production 배포 미완료
 - Frontend 없음
 - Answer relevance는 automatic proxy metric
@@ -325,11 +324,10 @@ ai-helpdesk/
 - Docker
 - Authentication / RBAC
 - Classifier Calibration
-- Risk Gate API 연결과 `RISK_EVALUATED` event 기록
 - 안정적인 LLM Draft Generation
 - Structured Logging / Monitoring
 - Frontend Dashboard
 
 ## 결과 요약
 
-V1의 retrieval 성능 하락과 representation compression 징후를 진단하고 V2·V3로 개선했습니다. Final Holdout에서 Queue@1은 V2 **81.95%**에서 V3 **85.44%**로 **3.50%p**, Priority@1은 **85.09%**에서 **88.31%**로 **3.22%p** 향상됐습니다. 분리된 holdout 검증, V3 API, Human Approval, Audit Trail을 구현했으며 Risk Gate와 LLM의 현재 한계는 실험 결과와 구분했습니다.
+V1의 retrieval 성능 하락과 representation compression 징후를 진단하고 V2·V3로 개선했습니다. Final Holdout에서 Queue@1은 V2 **81.95%**에서 V3 **85.44%**로 **3.50%p**, Priority@1은 **85.09%**에서 **88.31%**로 **3.22%p** 향상됐습니다. 분리된 holdout 검증, V3 API, Risk Gate, Human Approval, Audit Trail을 구현했으며 LLM의 현재 한계는 실험 결과와 구분했습니다.
