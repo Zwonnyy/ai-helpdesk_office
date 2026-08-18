@@ -1,0 +1,14 @@
+EMBEDDING SPACE DIAGNOSTICS
+====================================================================================================
+
+     model  random_mean  random_std  positive_mean  negative_mean  positive_negative_gap  dimension_variance_mean  effective_rank  participation_ratio
+Pretrained     0.352034    0.159638       0.931237       0.325517               0.605720                 0.001696       59.058331            22.580736
+        V1     0.999376    0.000588       0.999905       0.999262               0.000643                 0.000002       16.398256             4.131590
+        V2     0.018926    0.141314       0.853945      -0.007516               0.861461                 0.002555       90.710678            47.113564
+        V3     0.010647    0.129408       0.827841      -0.011079               0.838920                 0.002583      106.467979            62.341763
+
+Interpretation:
+- Random cosine가 지나치게 높으면 전체 표현 공간 압축을 의심할 수 있음.
+- Positive-Negative Gap은 클수록 유사/비유사 구분이 잘 되는 방향.
+- Effective Rank / Participation Ratio가 극단적으로 낮아지면 차원 활용 축소를 의심할 수 있음.
+- 단일 지표만으로 collapse를 확정하지 않고 retrieval 성능과 함께 판단해야 함.

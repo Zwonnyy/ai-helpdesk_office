@@ -1,0 +1,115 @@
+
+V2 VS V3 DEV EVALUATION
+======================================================================
+
+Dev Samples:
+1429
+
+
+V2
+----------------------------------------------------------------------
+
+Type@1:
+0.9405
+
+Queue@1:
+0.8237
+
+Priority@1:
+0.8579
+
+Type@3:
+0.9762
+
+Queue@3:
+0.8992
+
+Priority@3:
+0.9419
+
+Mean Top1 Retrieval Similarity:
+0.8597
+
+Answer Top1 Mean:
+0.8773
+
+Answer Best@3 Mean:
+0.9026
+
+Answer Mean@3:
+0.8129
+
+
+V3
+----------------------------------------------------------------------
+
+Type@1:
+0.9538
+
+Queue@1:
+0.8509
+
+Priority@1:
+0.8782
+
+Type@3:
+0.9846
+
+Queue@3:
+0.9097
+
+Priority@3:
+0.9573
+
+Mean Top1 Retrieval Similarity:
+0.8363
+
+Answer Top1 Mean:
+0.8824
+
+Answer Best@3 Mean:
+0.9051
+
+Answer Mean@3:
+0.8161
+
+
+V3 - V2
+----------------------------------------------------------------------
+
+Type@1 Delta:
++0.0133
+
+Queue@1 Delta:
++0.0273
+
+Priority@1 Delta:
++0.0203
+
+Type@3 Delta:
++0.0084
+
+Queue@3 Delta:
++0.0105
+
+Priority@3 Delta:
++0.0154
+
+Answer Best@3 Delta:
++0.002529
+
+
+ANSWER BEST@3 WIN RATE
+----------------------------------------------------------------------
+
+V3 Wins:
+96
+
+V2 Wins:
+64
+
+Ties:
+1269
+
+V3 Non-Tie Win Rate:
+0.6000

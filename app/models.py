@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from datetime import (
     datetime,
     timezone,
@@ -6,8 +8,10 @@ from datetime import (
 from enum import Enum
 
 from sqlalchemy import (
+    Boolean,
     DateTime,
     Float,
+    ForeignKey,
     JSON,
     String,
     Text,
@@ -16,6 +20,7 @@ from sqlalchemy import (
 from sqlalchemy.orm import (
     Mapped,
     mapped_column,
+    relationship,
 )
 
 from app.database import Base
@@ -33,7 +38,7 @@ def utc_now():
 
 
 # ============================================================
-# STATUS
+# TICKET STATUS
 # ============================================================
 
 class TicketStatus(
@@ -55,6 +60,40 @@ class TicketStatus(
 
 
 # ============================================================
+# EVENT TYPE
+# ============================================================
+
+class TicketEventType(
+    str,
+    Enum,
+):
+
+    TICKET_CREATED = (
+        "TICKET_CREATED"
+    )
+
+    AI_ANALYZED = (
+        "AI_ANALYZED"
+    )
+
+    RISK_EVALUATED = (
+        "RISK_EVALUATED"
+    )
+
+    SUBMITTED_FOR_APPROVAL = (
+        "SUBMITTED_FOR_APPROVAL"
+    )
+
+    APPROVED = (
+        "APPROVED"
+    )
+
+    REJECTED = (
+        "REJECTED"
+    )
+
+
+# ============================================================
 # TICKET
 # ============================================================
 
@@ -64,17 +103,13 @@ class Ticket(
 
     __tablename__ = "tickets"
 
-    # --------------------------------------------------------
-    # ID
-    # --------------------------------------------------------
-
     id: Mapped[int] = mapped_column(
         primary_key=True,
         autoincrement=True,
     )
 
     # --------------------------------------------------------
-    # Original Ticket
+    # ORIGINAL TICKET
     # --------------------------------------------------------
 
     subject: Mapped[str] = mapped_column(
@@ -88,7 +123,7 @@ class Ticket(
     )
 
     # --------------------------------------------------------
-    # Workflow Status
+    # WORKFLOW
     # --------------------------------------------------------
 
     status: Mapped[str] = mapped_column(
@@ -99,7 +134,7 @@ class Ticket(
     )
 
     # --------------------------------------------------------
-    # AI Prediction
+    # CLASSIFICATION
     # --------------------------------------------------------
 
     predicted_type: Mapped[
@@ -145,9 +180,7 @@ class Ticket(
     )
 
     # --------------------------------------------------------
-    # Retrieval Result
-    #
-    # TOP 3 Ticket 정보를 JSON으로 저장
+    # RETRIEVAL
     # --------------------------------------------------------
 
     similar_tickets: Mapped[
@@ -157,8 +190,42 @@ class Ticket(
         nullable=True,
     )
 
+    retrieval_top1_similarity: Mapped[
+        float | None
+    ] = mapped_column(
+        Float,
+        nullable=True,
+    )
+
     # --------------------------------------------------------
-    # LLM / Human Approval
+    # RISK GATE
+    # --------------------------------------------------------
+
+    risk_level: Mapped[
+        str | None
+    ] = mapped_column(
+        String(32),
+        nullable=True,
+        index=True,
+    )
+
+    review_required: Mapped[
+        bool
+    ] = mapped_column(
+        Boolean,
+        default=False,
+        nullable=False,
+    )
+
+    risk_reasons: Mapped[
+        list | None
+    ] = mapped_column(
+        JSON,
+        nullable=True,
+    )
+
+    # --------------------------------------------------------
+    # HUMAN APPROVAL
     # --------------------------------------------------------
 
     draft_answer: Mapped[
@@ -183,7 +250,7 @@ class Ticket(
     )
 
     # --------------------------------------------------------
-    # Timestamp
+    # TIME
     # --------------------------------------------------------
 
     created_at: Mapped[
@@ -223,4 +290,92 @@ class Ticket(
             timezone=True
         ),
         nullable=True,
+    )
+
+    # --------------------------------------------------------
+    # EVENTS
+    # --------------------------------------------------------
+
+    events: Mapped[
+        list["TicketEvent"]
+    ] = relationship(
+        back_populates="ticket",
+        cascade="all, delete-orphan",
+    )
+
+
+# ============================================================
+# TICKET EVENT
+# ============================================================
+
+class TicketEvent(
+    Base
+):
+
+    __tablename__ = (
+        "ticket_events"
+    )
+
+    id: Mapped[int] = mapped_column(
+        primary_key=True,
+        autoincrement=True,
+    )
+
+    ticket_id: Mapped[int] = mapped_column(
+        ForeignKey(
+            "tickets.id"
+        ),
+        nullable=False,
+        index=True,
+    )
+
+    event_type: Mapped[str] = mapped_column(
+        String(64),
+        nullable=False,
+        index=True,
+    )
+
+    from_status: Mapped[
+        str | None
+    ] = mapped_column(
+        String(32),
+        nullable=True,
+    )
+
+    to_status: Mapped[
+        str | None
+    ] = mapped_column(
+        String(32),
+        nullable=True,
+    )
+
+    message: Mapped[
+        str | None
+    ] = mapped_column(
+        Text,
+        nullable=True,
+    )
+
+    event_data: Mapped[
+        dict | None
+    ] = mapped_column(
+        JSON,
+        nullable=True,
+    )
+
+    created_at: Mapped[
+        datetime
+    ] = mapped_column(
+        DateTime(
+            timezone=True
+        ),
+        default=utc_now,
+        nullable=False,
+        index=True,
+    )
+
+    ticket: Mapped[
+        "Ticket"
+    ] = relationship(
+        back_populates="events"
     )

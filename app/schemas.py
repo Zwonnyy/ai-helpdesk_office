@@ -12,7 +12,7 @@ from app.models import (
 
 
 # ============================================================
-# BASIC TICKET REQUEST
+# BASIC REQUEST
 # ============================================================
 
 class TicketRequest(
@@ -20,18 +20,11 @@ class TicketRequest(
 ):
 
     subject: str = Field(
-        min_length=1,
-        examples=[
-            "VPN connection unavailable"
-        ],
+        min_length=1
     )
 
     body: str = Field(
-        min_length=1,
-        examples=[
-            "All employees cannot "
-            "connect to the VPN."
-        ],
+        min_length=1
     )
 
 
@@ -100,7 +93,7 @@ class TicketAssistResponse(
 
 
 # ============================================================
-# LLM
+# LLM DRAFT
 # ============================================================
 
 class TicketDraftResponse(
@@ -121,7 +114,7 @@ class TicketDraftResponse(
 
 
 # ============================================================
-# DB CREATE
+# CREATE
 # ============================================================
 
 class TicketCreateRequest(
@@ -129,11 +122,11 @@ class TicketCreateRequest(
 ):
 
     subject: str = Field(
-        min_length=1,
+        min_length=1
     )
 
     body: str = Field(
-        min_length=1,
+        min_length=1
     )
 
 
@@ -164,12 +157,12 @@ class TicketRejectRequest(
 ):
 
     reason: str = Field(
-        min_length=1,
+        min_length=1
     )
 
 
 # ============================================================
-# DB RESPONSE
+# TICKET RESPONSE
 # ============================================================
 
 class TicketResponse(
@@ -189,7 +182,7 @@ class TicketResponse(
     status: TicketStatus
 
     # --------------------------------------------------------
-    # Classification
+    # CLASSIFICATION
     # --------------------------------------------------------
 
     predicted_type: (
@@ -217,7 +210,7 @@ class TicketResponse(
     ) = None
 
     # --------------------------------------------------------
-    # Retrieval
+    # RETRIEVAL
     # --------------------------------------------------------
 
     similar_tickets: (
@@ -225,8 +218,27 @@ class TicketResponse(
         | None
     ) = None
 
+    retrieval_top1_similarity: (
+        float | None
+    ) = None
+
     # --------------------------------------------------------
-    # Human Approval
+    # RISK
+    # --------------------------------------------------------
+
+    risk_level: (
+        str | None
+    ) = None
+
+    review_required: bool = False
+
+    risk_reasons: (
+        list[str]
+        | None
+    ) = None
+
+    # --------------------------------------------------------
+    # HUMAN APPROVAL
     # --------------------------------------------------------
 
     draft_answer: (
@@ -242,7 +254,7 @@ class TicketResponse(
     ) = None
 
     # --------------------------------------------------------
-    # Timestamp
+    # TIME
     # --------------------------------------------------------
 
     created_at: datetime
@@ -256,3 +268,40 @@ class TicketResponse(
     reviewed_at: (
         datetime | None
     ) = None
+
+
+# ============================================================
+# EVENT
+# ============================================================
+
+class TicketEventResponse(
+    BaseModel
+):
+
+    model_config = ConfigDict(
+        from_attributes=True
+    )
+
+    id: int
+
+    ticket_id: int
+
+    event_type: str
+
+    from_status: (
+        str | None
+    )
+
+    to_status: (
+        str | None
+    )
+
+    message: (
+        str | None
+    )
+
+    event_data: (
+        dict | None
+    )
+
+    created_at: datetime

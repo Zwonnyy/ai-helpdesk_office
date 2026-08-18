@@ -11,8 +11,13 @@ from sqlalchemy.orm import (
     Session,
 )
 
+from app.audit_service import (
+    add_ticket_event,
+)
+
 from app.models import (
     Ticket,
+    TicketEventType,
     TicketStatus,
 )
 
@@ -66,6 +71,34 @@ def create_ticket(
 
     db.add(
         ticket
+    )
+
+    # commit 전에 ID만 먼저 확보
+    db.flush()
+
+    add_ticket_event(
+
+        db=db,
+
+        ticket_id=ticket.id,
+
+        event_type=(
+            TicketEventType
+            .TICKET_CREATED
+            .value
+        ),
+
+        from_status=None,
+
+        to_status=(
+            TicketStatus
+            .PENDING
+            .value
+        ),
+
+        message=(
+            "Ticket created"
+        ),
     )
 
     db.commit()
@@ -146,12 +179,24 @@ def analyze_ticket(
 ) -> Ticket:
 
     allowed_status = {
-        TicketStatus.PENDING.value,
-        TicketStatus.ANALYZED.value,
-        TicketStatus.REJECTED.value,
+
+        TicketStatus
+        .PENDING
+        .value,
+
+        TicketStatus
+        .ANALYZED
+        .value,
+
+        TicketStatus
+        .REJECTED
+        .value,
     }
 
-    if ticket.status not in allowed_status:
+    if (
+        ticket.status
+        not in allowed_status
+    ):
 
         raise InvalidTicketStateError(
             "현재 상태에서는 "
@@ -159,33 +204,40 @@ def analyze_ticket(
             f"status={ticket.status}"
         )
 
+    old_status = (
+        ticket.status
+    )
+
     # --------------------------------------------------------
-    # STEP 1
-    # Classification
+    # CLASSIFICATION
     # --------------------------------------------------------
 
     predictions = (
         model_service.predict(
+
             subject=ticket.subject,
+
             body=ticket.body,
         )
     )
 
     # --------------------------------------------------------
-    # STEP 2
-    # Fine-tuned V2 Retrieval
+    # RETRIEVAL
     # --------------------------------------------------------
 
     similar_tickets = (
         answer_retriever.search(
+
             subject=ticket.subject,
+
             body=ticket.body,
+
             top_k=top_k,
         )
     )
 
     # --------------------------------------------------------
-    # DB
+    # UPDATE
     # --------------------------------------------------------
 
     ticket.predicted_type = (
@@ -250,9 +302,72 @@ def analyze_ticket(
         utc_now()
     )
 
-    # 재분석한 경우
-    # 기존 reviewer 상태 초기화
     ticket.reviewed_at = None
+
+    # --------------------------------------------------------
+    # AUDIT
+    # --------------------------------------------------------
+
+    add_ticket_event(
+
+        db=db,
+
+        ticket_id=ticket.id,
+
+        event_type=(
+            TicketEventType
+            .AI_ANALYZED
+            .value
+        ),
+
+        from_status=old_status,
+
+        to_status=(
+            TicketStatus
+            .ANALYZED
+            .value
+        ),
+
+        message=(
+            "AI classification and "
+            "retrieval completed"
+        ),
+
+        event_data={
+            "type": {
+                "label": (
+                    ticket.predicted_type
+                ),
+                "confidence": (
+                    ticket.type_confidence
+                ),
+            },
+
+            "queue": {
+                "label": (
+                    ticket.predicted_queue
+                ),
+                "confidence": (
+                    ticket.queue_confidence
+                ),
+            },
+
+            "priority": {
+                "label": (
+                    ticket.predicted_priority
+                ),
+                "confidence": (
+                    ticket.priority_confidence
+                ),
+            },
+
+            "retrieved_count": (
+                len(
+                    similar_tickets
+                )
+            ),
+        },
+    )
 
     db.commit()
 
@@ -264,7 +379,7 @@ def analyze_ticket(
 
 
 # ============================================================
-# SUBMIT FOR APPROVAL
+# SUBMIT
 # ============================================================
 
 def submit_for_approval(
@@ -274,17 +389,30 @@ def submit_for_approval(
 ) -> Ticket:
 
     allowed_status = {
-        TicketStatus.ANALYZED.value,
-        TicketStatus.REJECTED.value,
+
+        TicketStatus
+        .ANALYZED
+        .value,
+
+        TicketStatus
+        .REJECTED
+        .value,
     }
 
-    if ticket.status not in allowed_status:
+    if (
+        ticket.status
+        not in allowed_status
+    ):
 
         raise InvalidTicketStateError(
             "승인 요청은 ANALYZED 또는 "
             "REJECTED 상태에서만 가능합니다. "
             f"status={ticket.status}"
         )
+
+    old_status = (
+        ticket.status
+    )
 
     if draft_answer is not None:
 
@@ -307,6 +435,44 @@ def submit_for_approval(
     ticket.review_comment = None
 
     ticket.reviewed_at = None
+
+    # --------------------------------------------------------
+    # AUDIT
+    # --------------------------------------------------------
+
+    add_ticket_event(
+
+        db=db,
+
+        ticket_id=ticket.id,
+
+        event_type=(
+            TicketEventType
+            .SUBMITTED_FOR_APPROVAL
+            .value
+        ),
+
+        from_status=old_status,
+
+        to_status=(
+            TicketStatus
+            .WAITING_APPROVAL
+            .value
+        ),
+
+        message=(
+            "Ticket submitted "
+            "for human approval"
+        ),
+
+        event_data={
+            "has_draft_answer": (
+                bool(
+                    ticket.draft_answer
+                )
+            ),
+        },
+    )
 
     db.commit()
 
@@ -340,6 +506,10 @@ def approve_ticket(
             f"status={ticket.status}"
         )
 
+    old_status = (
+        ticket.status
+    )
+
     if final_answer is not None:
 
         final_answer = (
@@ -354,8 +524,6 @@ def approve_ticket(
 
     elif ticket.draft_answer:
 
-        # 수정하지 않고 승인하면
-        # draft를 final로 승격
         ticket.final_answer = (
             ticket.draft_answer
         )
@@ -371,6 +539,44 @@ def approve_ticket(
     )
 
     ticket.review_comment = None
+
+    # --------------------------------------------------------
+    # AUDIT
+    # --------------------------------------------------------
+
+    add_ticket_event(
+
+        db=db,
+
+        ticket_id=ticket.id,
+
+        event_type=(
+            TicketEventType
+            .APPROVED
+            .value
+        ),
+
+        from_status=old_status,
+
+        to_status=(
+            TicketStatus
+            .APPROVED
+            .value
+        ),
+
+        message=(
+            "Ticket approved "
+            "by human reviewer"
+        ),
+
+        event_data={
+            "final_answer_present": (
+                bool(
+                    ticket.final_answer
+                )
+            ),
+        },
+    )
 
     db.commit()
 
@@ -404,6 +610,10 @@ def reject_ticket(
             f"status={ticket.status}"
         )
 
+    old_status = (
+        ticket.status
+    )
+
     ticket.status = (
         TicketStatus
         .REJECTED
@@ -416,6 +626,42 @@ def reject_ticket(
 
     ticket.reviewed_at = (
         utc_now()
+    )
+
+    # --------------------------------------------------------
+    # AUDIT
+    # --------------------------------------------------------
+
+    add_ticket_event(
+
+        db=db,
+
+        ticket_id=ticket.id,
+
+        event_type=(
+            TicketEventType
+            .REJECTED
+            .value
+        ),
+
+        from_status=old_status,
+
+        to_status=(
+            TicketStatus
+            .REJECTED
+            .value
+        ),
+
+        message=(
+            "Ticket rejected "
+            "by human reviewer"
+        ),
+
+        event_data={
+            "reason": (
+                ticket.review_comment
+            ),
+        },
     )
 
     db.commit()

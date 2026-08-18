@@ -16,16 +16,16 @@ CORPUS_PATH = (
     / "rag_train.csv"
 )
 
-EMBEDDING_PATH = (
-    BASE_DIR
-    / "models"
-    / "rag_embeddings_finetuned_v2.npy"
-)
-
 MODEL_PATH = (
     BASE_DIR
     / "models"
-    / "helpdesk_embedding_model_v2"
+    / "helpdesk_embedding_model_v3"
+)
+
+EMBEDDING_PATH = (
+    BASE_DIR
+    / "models"
+    / "rag_embeddings_finetuned_v3.npy"
 )
 
 

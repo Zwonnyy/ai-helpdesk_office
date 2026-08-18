@@ -1,13 +1,17 @@
 from pathlib import Path
 
-import joblib
 import numpy as np
 import pandas as pd
+import torch
 
-from sklearn.metrics.pairwise import (
-    linear_kernel,
+from sentence_transformers import (
+    SentenceTransformer,
 )
 
+
+# ============================================================
+# PATH
+# ============================================================
 
 BASE_DIR = (
     Path(__file__)
@@ -19,89 +23,146 @@ CORPUS_PATH = (
     BASE_DIR
     / "data"
     / "processed"
-    / "answer_corpus.csv"
+    / "rag_train.csv"
 )
 
-RETRIEVER_PATH = (
+MODEL_PATH = (
     BASE_DIR
     / "models"
-    / "answer_retriever.joblib"
+    / "helpdesk_embedding_model_v3"
 )
 
+EMBEDDING_PATH = (
+    BASE_DIR
+    / "models"
+    / "rag_embeddings_finetuned_v3.npy"
+)
+
+
+# ============================================================
+# ANSWER RETRIEVER
+# ============================================================
 
 class AnswerRetriever:
 
-    def __init__(self):
+    def __init__(
+        self,
+    ):
 
-        self.vectorizer = None
-        self.matrix = None
+        self.device = (
+            "cuda"
+            if torch.cuda.is_available()
+            else "cpu"
+        )
+
+        self.model = None
+
         self.corpus = None
+
+        self.embeddings = None
 
         self.loaded = False
 
+
     # ========================================================
-    # 모델 로드
+    # LOAD
     # ========================================================
 
-    def load(self):
+    def load(
+        self,
+    ):
 
-        print("\n")
+        if self.loaded:
+            return
+
+        print()
         print("=" * 70)
-        print("ANSWER RETRIEVER LOADING")
+        print("V3 SEMANTIC ANSWER RETRIEVER")
         print("=" * 70)
 
-        if not CORPUS_PATH.exists():
+        print(
+            f"Device: {self.device}"
+        )
 
-            raise FileNotFoundError(
-                "answer_corpus.csv가 없습니다.\n"
-                f"{CORPUS_PATH}\n\n"
-                "먼저 다음을 실행하세요:\n"
-                "uv run python "
-                "src/prepare_answers.py"
-            )
-
-        if not RETRIEVER_PATH.exists():
-
-            raise FileNotFoundError(
-                "answer_retriever.joblib이 "
-                "없습니다.\n"
-                f"{RETRIEVER_PATH}"
-            )
+        # ----------------------------------------------------
+        # CORPUS
+        # ----------------------------------------------------
 
         self.corpus = pd.read_csv(
             CORPUS_PATH
         )
 
-        bundle = joblib.load(
-            RETRIEVER_PATH
+        # ----------------------------------------------------
+        # MODEL
+        # ----------------------------------------------------
+
+        print(
+            "V3 Embedding Model 로드..."
         )
 
-        self.vectorizer = (
-            bundle["vectorizer"]
+        self.model = (
+            SentenceTransformer(
+                str(
+                    MODEL_PATH
+                ),
+                device=(
+                    self.device
+                ),
+            )
         )
 
-        self.matrix = (
-            bundle["matrix"]
+        # ----------------------------------------------------
+        # CORPUS EMBEDDINGS
+        # ----------------------------------------------------
+
+        print(
+            "V3 Corpus Embeddings 로드..."
         )
+
+        self.embeddings = np.load(
+            EMBEDDING_PATH
+        ).astype(
+            np.float32
+        )
+
+        # ----------------------------------------------------
+        # VALIDATION
+        # ----------------------------------------------------
+
+        if (
+            len(self.corpus)
+            != len(
+                self.embeddings
+            )
+        ):
+
+            raise ValueError(
+                "Corpus와 Embedding 개수가 "
+                "일치하지 않습니다.\n"
+                f"Corpus={len(self.corpus)} "
+                f"Embeddings={len(self.embeddings)}"
+            )
 
         self.loaded = True
 
+        print()
         print(
-            f"Corpus: "
-            f"{len(self.corpus):,}건"
+            f"Corpus: {len(self.corpus):,}"
         )
 
         print(
-            f"Matrix: "
-            f"{self.matrix.shape}"
+            f"Embedding Shape: "
+            f"{self.embeddings.shape}"
         )
 
+        print()
         print(
-            "ANSWER RETRIEVER READY"
+            "V3 SEMANTIC RETRIEVER READY"
         )
+
 
     # ========================================================
-    # 검색
+    # SEARCH
     # ========================================================
 
     def search(
@@ -112,99 +173,135 @@ class AnswerRetriever:
     ):
 
         if not self.loaded:
-            raise RuntimeError(
-                "AnswerRetriever가 "
-                "로드되지 않았습니다."
-            )
 
-        text = (
-            subject.strip()
-            + "\n"
-            + body.strip()
+            self.load()
+
+        # ----------------------------------------------------
+        # QUERY
+        # ----------------------------------------------------
+
+        query = (
+            f"{subject.strip()}\n"
+            f"{body.strip()}"
         )
 
-        query_vector = (
-            self.vectorizer.transform(
-                [text]
+        # ----------------------------------------------------
+        # QUERY EMBEDDING
+        # ----------------------------------------------------
+
+        query_embedding = (
+            self.model.encode(
+                query,
+                normalize_embeddings=True,
+                convert_to_numpy=True,
+            )
+            .astype(
+                np.float32
             )
         )
+
+        # ----------------------------------------------------
+        # COSINE SIMILARITY
+        #
+        # corpus/query 모두 normalized 상태이므로
+        # dot product == cosine similarity
+        # ----------------------------------------------------
 
         similarities = (
-            linear_kernel(
-                query_vector,
-                self.matrix,
-            )
-            .flatten()
+            self.embeddings
+            @ query_embedding
         )
 
         top_k = min(
             top_k,
-            len(similarities),
+            len(
+                similarities
+            ),
         )
 
-        # 높은 similarity 순으로 정렬
-        top_indices = (
-            np.argsort(
-                similarities
-            )[::-1][:top_k]
+        # ----------------------------------------------------
+        # TOP K
+        # ----------------------------------------------------
+
+        candidate_indices = (
+            np.argpartition(
+                similarities,
+                -top_k,
+            )[-top_k:]
         )
+
+        sorted_indices = (
+            candidate_indices[
+                np.argsort(
+                    similarities[
+                        candidate_indices
+                    ]
+                )[::-1]
+            ]
+        )
+
+        # ----------------------------------------------------
+        # RESPONSE
+        # ----------------------------------------------------
 
         results = []
 
-        for index in top_indices:
+        for index in sorted_indices:
 
-            row = self.corpus.iloc[
-                index
-            ]
-
-            score = float(
-                similarities[index]
+            row = (
+                self.corpus.iloc[
+                    index
+                ]
             )
 
             results.append(
                 {
-                    "score": score,
-
-                    "subject": (
-                        str(
-                            row["subject"]
-                        )
+                    "score": float(
+                        similarities[
+                            index
+                        ]
                     ),
 
-                    "body": (
-                        str(
-                            row["body"]
-                        )
+                    "subject": str(
+                        row[
+                            "subject"
+                        ]
                     ),
 
-                    "answer": (
-                        str(
-                            row["answer"]
-                        )
+                    "body": str(
+                        row[
+                            "body"
+                        ]
                     ),
 
-                    "type": (
-                        str(
-                            row["type"]
-                        )
+                    "answer": str(
+                        row[
+                            "answer"
+                        ]
                     ),
 
-                    "queue": (
-                        str(
-                            row["queue"]
-                        )
+                    "type": str(
+                        row[
+                            "type"
+                        ]
                     ),
 
-                    "priority": (
-                        str(
-                            row["priority"]
-                        )
+                    "queue": str(
+                        row[
+                            "queue"
+                        ]
                     ),
 
-                    "language": (
-                        str(
-                            row["language"]
-                        )
+                    "priority": str(
+                        row[
+                            "priority"
+                        ]
+                    ),
+
+                    "language": str(
+                        row[
+                            "language"
+                        ]
                     ),
                 }
             )

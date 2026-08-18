@@ -1,0 +1,1430 @@
+subject,type,queue,priority,v2_top1_similarity,v3_top1_similarity,v2_answer_best3,v3_answer_best3,answer_delta
+Critical Support Needed for Cloud-Native SaaS System Disruption Affecting Business Functions,Incident,Customer Service,high,0.8848703,0.8614713,0.9542269110679626,0.9542269110679626,0.0
+,Incident,Product Support,low,0.86398095,0.8619646,0.9496034383773804,0.9496034383773804,0.0
+Sicherheitsmaßnahmen für Krankenhaus-IT-Systeme mit SAP ERP,Request,Sales and Pre-Sales,high,0.8794556,0.857243,0.943697452545166,0.943697452545166,0.0
+Hilfe bei Markenentwicklung,Request,Product Support,high,0.933478,0.90744686,0.9596537351608276,0.9596537351608276,0.0
+Datensicherheitsverletzung,Problem,Product Support,high,0.74556684,0.69981265,0.8655140399932861,0.8655140399932861,0.0
+Improving Performance and Scalability for SaaS Platform,Change,Technical Support,high,0.9318652,0.94974405,0.9836409091949463,0.9836409091949463,0.0
+Report of System Performance Degradation,Incident,Customer Service,medium,0.7814995,0.7656787,0.7673786878585815,0.7673786878585815,0.0
+Detailed Information on Scalable SaaS Solutions for Project Management,Request,Technical Support,high,0.9713772,0.968117,0.9976306557655334,0.9976306557655334,0.0
+Crash in Analytics Software,Incident,Technical Support,low,0.9269486,0.90530884,0.9865086078643799,0.9865086078643799,0.0
+Investment Analytics Tools,Problem,Returns and Exchanges,medium,0.6933725,0.6414999,0.6846959590911865,0.6846959590911865,0.0
+Support for Connectivity Issues on Scalable SaaS Platform,Problem,Technical Support,high,0.96380645,0.96208644,0.9828168153762817,0.9828168153762817,0.0
+,Incident,Human Resources,low,0.92577547,0.9064848,0.7264202833175659,0.7264202833175659,0.0
+Hilfe bei der Integration von Kubernetes mit der Oracle-Datenbank erforderlich,Incident,Technical Support,medium,0.8357798,0.83400893,0.8703827261924744,0.8703827261924744,0.0
+,Request,Human Resources,medium,0.78399104,0.7648128,0.892788290977478,0.892788290977478,0.0
+Support for Data Analytics in Investment Strategies,Request,Technical Support,low,0.90214,0.91355526,0.9617488384246826,0.9617488384246826,0.0
+Query Regarding Project Management Software,Request,Billing and Payments,high,0.9753958,0.9743402,0.9880625009536743,0.9880625009536743,0.0
+"Datenanalyse-System problem behebt, Optimierung Investitionen reaktiviert",Incident,Customer Service,high,0.8575537,0.84905684,0.9240739345550537,0.9240739345550537,0.0
+,Change,IT Support,high,0.9489146,0.93605554,0.9867700934410095,0.9867700934410095,0.0
+Services for Securing Medical Data in Hospital Systems,Request,Billing and Payments,low,0.95032287,0.9461817,0.9791839122772217,0.9791839122772217,0.0
+Decreased Engagement on Social Media,Problem,Customer Service,low,0.99016654,0.98696953,0.9923702478408813,0.9923702478408813,0.0
+Customer Support for Digital Expansion,Request,Technical Support,medium,0.8482398,0.8471068,0.9822298288345337,0.9822298288345337,0.0
+,Problem,Billing and Payments,medium,0.9477211,0.94287884,0.9913862347602844,0.9913862347602844,0.0
+Support for Enhancing Team Collaboration with Slack,Request,IT Support,medium,0.6710501,0.626425,0.6267571449279785,0.6267571449279785,0.0
+Concerns Regarding Brand Engagement Drop,Incident,Customer Service,high,0.93881005,0.92912626,0.9924184083938599,0.9924184083938599,0.0
+Request for Technical Support,Incident,Product Support,high,0.94182444,0.94468254,0.9804719686508179,0.9804719686508179,0.0
+,Change,Product Support,low,0.9734912,0.95504045,0.9887784719467163,0.9887784719467163,0.0
+Issues with Marketing-Dashboards,Incident,Technical Support,medium,0.69134074,0.64221466,0.737638533115387,0.8519105911254883,0.11427205801010132
+Issue with Task Synchronization in Project Management SaaS via Outlook,Incident,Human Resources,low,0.9283035,0.9090242,0.9919644594192505,0.9919644594192505,0.0
+,Incident,Human Resources,low,0.86215204,0.85729283,0.7994863986968994,0.7994863986968994,0.0
+Intermittent Login Failures Due to Server Problems,Problem,Technical Support,medium,0.98397875,0.97389555,0.9777885675430298,0.9777885675430298,0.0
+Hilfe bei technischen Problemen,Problem,Technical Support,high,0.66970575,0.629785,0.7585058212280273,0.7585058212280273,0.0
+Improving Investments with AWS Analytics,Request,Billing and Payments,high,0.98213035,0.97291946,0.9726125001907349,0.9726125001907349,0.0
+Sichere Medizinische Daten,Request,Billing and Payments,medium,0.8094311,0.7353343,0.8624027967453003,0.8661820888519287,0.003779292106628418
+,Incident,Technical Support,high,0.7242036,0.7401293,0.8975655436515808,0.8975655436515808,0.0
+Wiederholte Serviceunterbrechungen heute gemeldet,Problem,Technical Support,medium,0.830812,0.8311861,0.8236150741577148,0.8236150741577148,0.0
+,Problem,Product Support,high,0.9103366,0.91049546,0.9468348622322083,0.9468348622322083,0.0
+Software-Tools Aktualisierung zur Verbesserung der Funktionalität,Incident,Product Support,high,0.7994934,0.75295675,0.6377630233764648,0.6377630233764648,0.0
+Enhancing Investment Strategies via Data Analytics,Change,IT Support,high,0.8658366,0.8195934,0.9505645036697388,0.9505645036697388,0.0
+Health Issue,Incident,Billing and Payments,medium,0.7325172,0.74082,0.9428411722183228,0.9428411722183228,0.0
+Query for Support Concern,Problem,Customer Service,medium,0.77674127,0.7909266,0.9975250959396362,0.9975250959396362,0.0
+Challenge in Investment Optimization,Problem,Customer Service,medium,0.960055,0.9574402,0.9104417562484741,0.9104417562484741,0.0
+Reported Performance Issues with SaaS Platform,Incident,Technical Support,high,0.8026476,0.7524389,0.5984625816345215,0.8527740240097046,0.2543114423751831
+Team Kommunikationsprobleme,Incident,Human Resources,low,0.92586756,0.90410197,0.8278336524963379,0.8278336524963379,0.0
+Support Needed for Digital Marketing Strategy Optimization,Change,Customer Service,high,0.8716645,0.86315346,0.9962301254272461,0.9962301254272461,0.0
+Request for Support Regarding Data Security Incident,Problem,Product Support,low,0.919057,0.91897815,0.9583609104156494,0.9583609104156494,0.0
+,Incident,Technical Support,high,0.9702685,0.95580184,0.9976842999458313,0.9976842999458313,0.0
+System Outages During Peak Data Analysis,Incident,Technical Support,high,0.6641991,0.62457013,0.39496105909347534,0.39496105909347534,0.0
+Support for Equipment,Request,Billing and Payments,low,0.72394407,0.68072885,0.8265883922576904,0.7534782886505127,-0.07311010360717773
+Ensuring the Security of Medical Data,Request,Product Support,medium,0.9620794,0.9508221,0.9971317052841187,0.9971317052841187,0.0
+Login Problem on Windows 10,Incident,IT Support,medium,0.56532997,0.52835804,0.7238092422485352,0.7238092422485352,0.0
+Probleme mit der Verbindung des Routners,Incident,Customer Service,medium,0.6888894,0.681356,0.7628166675567627,0.7628166675567627,0.0
+Problem with Login on SaaS Platform,Incident,IT Support,medium,0.9571098,0.9295955,0.9269140362739563,0.9269140362739563,0.0
+Message Regarding System Outage,Incident,Service Outages and Maintenance,high,0.7373347,0.6868165,0.8538993000984192,0.9325606822967529,0.07866138219833374
+Datenschutzbedenken,Problem,IT Support,high,0.7877186,0.7341974,0.8411571979522705,0.8411571979522705,0.0
+Verbindung von Magento mit PyCharm Analyse-Workflows,Request,Billing and Payments,medium,0.98588437,0.97484505,0.9380248785018921,0.9380248785018921,0.0
+Feedback on Recent Software Updates and Billing Issues,Incident,Billing and Payments,medium,0.88211495,0.89996356,0.9717972278594971,0.9717972278594971,0.0
+Verbesserung der Zoho CRM Markenwachstumsstrategien,Request,Billing and Payments,high,0.9820609,0.9742132,0.9711285829544067,0.9711285829544067,0.0
+Improve Security Measures for Systems,Change,Product Support,medium,0.6412366,0.616141,0.8869123458862305,0.8869122266769409,-1.1920928955078125e-07
+Incident Report: Repeated Timeouts on Project Dashboards,Incident,Technical Support,high,0.96550536,0.95210975,0.9922027587890625,0.9922027587890625,0.0
+Problem with Marketing Tools,Incident,Service Outages and Maintenance,low,0.97847575,0.97249895,0.9785560369491577,0.9785560369491577,0.0
+Marketing Campaign Performance Concern,Incident,Customer Service,high,0.7746116,0.79445255,0.9931272268295288,0.9931272268295288,0.0
+Customer Concern,Incident,Service Outages and Maintenance,high,0.7126893,0.67200696,0.9229082465171814,0.9229082465171814,0.0
+Irregular Investment Performance Metrics Through Analytics Software,Problem,Customer Service,medium,0.85897267,0.8502675,0.9864015579223633,0.9864015579223633,0.0
+Identified problems with the data analytics platform,Incident,Billing and Payments,medium,0.8196844,0.7982988,0.9328690767288208,0.9328690767288208,0.0
+Concerns About Reduced Engagement in Recent Digital Marketing Campaigns,Incident,Returns and Exchanges,high,0.96776164,0.96208376,0.9881492853164673,0.9881492853164673,0.0
+Problem with Agile Team Collaboration Tools,Incident,Product Support,low,0.97984123,0.9731926,0.9466058015823364,0.9466058015823364,0.0
+Improve User Interface for Project Management SaaS,Change,Technical Support,high,0.92675453,0.93812,0.9778986573219299,0.9778986573219299,0.0
+Betreff: Missbrauchsfähige Ereignisse im Kontext von Datendurchbrüchen,Problem,Product Support,high,0.90212643,0.87161815,0.9435793161392212,0.9435793161392212,0.0
+Optimierung von Investitionsprodukten,Request,Product Support,low,0.89015174,0.84178764,0.924258828163147,0.924258828163147,0.0
+Digitale Markenoptimierung,Request,Product Support,low,0.8587949,0.8047753,0.9374459385871887,0.9374459385871887,0.0
+Discovery of Unauthorized Access to Medical Data,Problem,Technical Support,high,0.8744341,0.8536108,0.9683452844619751,0.9683452844619751,0.0
+,Incident,Product Support,low,0.9205002,0.9037645,0.9676225185394287,0.9676225185394287,0.0
+Effective Security Measures for Medical Data,Request,Technical Support,high,0.5152749,0.46909893,0.691487193107605,0.6418050527572632,-0.0496821403503418
+Notwendigkeit von Unterstützung bei Datenverlust,Incident,Technical Support,high,0.8191782,0.77401286,0.8620134592056274,0.8203257322311401,-0.041687726974487305
+Issue with Synchronization Across Devices,Problem,Product Support,high,0.8864702,0.85883915,0.9594709873199463,0.9594709873199463,0.0
+Identifiziert inkonsistente Markenbeteiligung-Probleme,Problem,Product Support,medium,0.6576084,0.6326153,0.841442346572876,0.841442346572876,0.0
+,Problem,IT Support,medium,0.7242378,0.64475703,0.7083669304847717,0.9068973660469055,0.1985304355621338
+Request for Information on Digital Strategies for ESET NOD32 Antivirus,Request,Billing and Payments,medium,0.9808852,0.9773045,0.9853478670120239,0.9853478670120239,0.0
+Issue with SaaS Project Management System,Problem,Technical Support,high,0.8384087,0.7981493,0.8175843954086304,0.8163505792617798,-0.001233816146850586
+,Incident,Product Support,medium,0.7652281,0.76285565,0.9524157047271729,0.8438037037849426,-0.10861200094223022
+Anfrage zu Skalierbarkeitsfunktionen und Integrationsoptionen,Request,Customer Service,medium,0.74568427,0.67448515,0.9051088094711304,0.9294757843017578,0.02436697483062744
+Inquiries About Digital Strategies for Brand Growth,Request,Customer Service,medium,0.87859756,0.8206271,0.879440188407898,0.879440188407898,0.0
+IT-Support,Request,Billing and Payments,medium,0.81835765,0.76638,0.8651503324508667,0.8637536764144897,-0.0013966560363769531
+Server Issue Affecting Multiple Products,Incident,Technical Support,medium,0.9676936,0.9567217,0.9743824601173401,0.9743824601173401,0.0
+Detektierter Kompatibilitätskonflikt bei Software,Problem,Product Support,high,0.85693276,0.8514734,0.9130607843399048,0.9130607843399048,0.0
+Fehlschlag im Digital Marketing,Problem,Product Support,medium,0.8285214,0.74846214,0.9073154330253601,0.9073154330253601,0.0
+Verbesserung der Datenanalyse in Produkten,Change,Product Support,high,0.75545347,0.7065157,0.878903329372406,0.8297329545021057,-0.04917037487030029
+Berücksichtigen Sie die Integration von Microsoft SQL Server 2019,Request,Technical Support,high,0.95252204,0.9312535,0.953403115272522,0.953403115272522,0.0
+Informationen zur Rechnungsstellungsoption mit QuickBooks Online-Integration,Request,Billing and Payments,high,0.8097995,0.72654843,0.8410135507583618,0.8410136699676514,1.1920928955078125e-07
+Medical Data Protection,Change,IT Support,high,0.72052485,0.6627717,0.8727655410766602,0.8727655410766602,0.0
+Erfolgreiche Optimierung von Projektmanagement-Tools,Request,Product Support,high,0.89289814,0.87646085,0.934695839881897,0.934695839881897,0.0
+Reduction in the Reach of Our Marketing Campaign,Problem,Customer Service,low,0.8357724,0.7860439,0.8983591794967651,0.8983591794967651,0.0
+Untersuchen momentaner Abrechnungsunterschiede mit digitalen Werkzeugen auf Grundlage neuer Abonnementänderungen.,Incident,Billing and Payments,medium,0.9329132,0.9346716,0.9440454840660095,0.9440454840660095,0.0
+Problems with Digital Tools Affecting Brand Development,Incident,IT Support,low,0.96496516,0.9589865,0.9848436117172241,0.9848436117172241,0.0
+,Change,Customer Service,medium,0.90749794,0.90175134,0.9934308528900146,0.9934308528900146,0.0
+Request for Progress on Agile Team Reorganization,Change,Customer Service,high,0.8610406,0.8586638,0.9759158492088318,0.9759158492088318,0.0
+,Request,Customer Service,high,0.8394793,0.85752416,0.9957727789878845,0.9957727789878845,0.0
+Issue with Medical Service,Incident,Service Outages and Maintenance,high,0.78727245,0.7587354,0.9855632781982422,0.9855632781982422,0.0
+Inquiry about Billing Details and Payment Methods for Pro Tools and Microsoft SQL Server 2019 Licenses,Request,Billing and Payments,medium,0.9761857,0.97613966,0.9989806413650513,0.9989806413650513,0.0
+Seeking Advice on Optimizing Investments with PostgreSQL,Request,Technical Support,medium,0.86507756,0.80798024,0.9200984835624695,0.9200984835624695,0.0
+Verbessern Sie Ihre Online-Digitalen Marketingstrategien,Change,IT Support,high,0.88709766,0.8647319,0.9621679782867432,0.9621679782867432,0.0
+Alarm wegen Sicherheitsverletzung,Incident,Technical Support,high,0.5890571,0.5964581,0.7940883040428162,0.7940882444381714,-5.960464477539063e-08
+Einbinden von Monday in die IBM Cloud,Request,Technical Support,medium,0.8902774,0.86621773,0.9296313524246216,0.9296313524246216,0.0
+Support Needed for Software Malfunctions,Incident,IT Support,medium,0.707078,0.6394962,0.6959247589111328,0.8325484991073608,0.13662374019622803
+ClickUp Brand Expansion Strategies,Request,Product Support,low,0.8588711,0.85575455,0.9798367619514465,0.9798367619514465,0.0
+Langsame Datenverarbeitungsprobleme bei Firmenanlagen,Problem,Product Support,medium,0.75567436,0.7488164,0.8697453141212463,0.8697453141212463,0.0
+Security,Request,Product Support,medium,0.8704202,0.8211372,0.767997145652771,0.767997145652771,0.0
+Required Support for Investment Analysis Tool,Problem,Technical Support,low,0.96143776,0.9574915,0.9954127669334412,0.9954127669334412,0.0
+Problem with Project Management Features,Incident,Human Resources,medium,0.9026178,0.8750949,0.9620810747146606,0.9620810747146606,0.0
+Frequente Ausfälle,Problem,Technical Support,high,0.7194201,0.7254041,0.6012789011001587,0.6012789011001587,0.0
+Problem with Integrations Today,Problem,Technical Support,high,0.76650655,0.73145187,0.9250074625015259,0.9250074625015259,0.0
+Medienverletzungen bei medizinischen Daten und IT-Ausfällen,Problem,Returns and Exchanges,high,0.7932696,0.7819427,0.8719191551208496,0.8719191551208496,0.0
+Problems Linking Microsoft Word VPN Router,Incident,General Inquiry,high,0.89167523,0.84755033,0.9089258313179016,0.9089258313179016,0.0
+In-depth Analysis Functions for ClickUp Investment Strategies,Request,Technical Support,high,0.9507982,0.92797667,0.9640733003616333,0.9640733003616333,0.0
+Alert for Unauthorized Entry,Problem,Customer Service,low,0.93902504,0.9249406,0.9811457395553589,0.9811457395553589,0.0
+Support for Error Ticket,Incident,Human Resources,low,0.59877986,0.58784384,0.8791112899780273,0.8791112899780273,0.0
+Security Notifications Across Several Systems,Incident,Technical Support,high,0.9697273,0.9640805,0.9560241103172302,0.9560241103172302,0.0
+,Incident,Sales and Pre-Sales,medium,0.7791793,0.79280853,0.8677645325660706,0.8677645325660706,0.0
+Challenge with NAS System,Incident,Technical Support,high,0.94614804,0.9243981,0.9725952744483948,0.9725952744483948,0.0
+Sicherheitslücke in dem Krankenhaus-IT-System,Problem,IT Support,high,0.7307112,0.7045238,0.6210585236549377,0.621058464050293,-5.960464477539063e-08
+Kritischer Datensperrfall im Medizindatenbankensystem melden,Incident,Technical Support,medium,0.5965266,0.525404,0.7529194951057434,0.7529194951057434,0.0
+Server Troubles,Problem,Returns and Exchanges,medium,0.9221666,0.9023046,0.9323726892471313,0.9323726892471313,0.0
+Dringende Meldung zu Sicherheitslücken in medizinischen IT-Systemen,Incident,IT Support,high,0.8596648,0.8411901,0.8935244083404541,0.8935244083404541,0.0
+Unapproved access probes to health records networks,Incident,Product Support,low,0.8088639,0.81202054,0.799638032913208,0.799638032913208,0.0
+,Request,Returns and Exchanges,medium,0.93095714,0.9240556,0.8354542255401611,0.8354542255401611,0.0
+Support Required for Smooth Integration,Incident,Customer Service,high,0.8977169,0.9072474,0.9934791326522827,0.9934791326522827,0.0
+System Failures During Peak Times,Problem,Technical Support,high,0.86348283,0.8540751,0.9945361614227295,0.9945361614227295,0.0
+Crash Issue with Avid Pro Tools 2021.6 on Ubuntu,Incident,Technical Support,medium,0.9352837,0.91589355,0.9250204563140869,0.9250204563140869,0.0
+Datenschutswidrigkeiten,Problem,Technical Support,high,0.7105542,0.68921345,0.7446991801261902,0.7446991801261902,0.0
+Forderung für Unterstützung bei Datenaufbereitung,Problem,Customer Service,low,0.6301869,0.5812762,0.7607101202011108,0.7607100009918213,-1.1920928955078125e-07
+,Change,Customer Service,high,0.97537446,0.97495216,0.9906859993934631,0.9906859993934631,0.0
+Schutz medizinischer Daten unter Windows,Request,Customer Service,medium,0.9684231,0.9607697,0.9780105352401733,0.9780105352401733,0.0
+Decrease in Observed Digital Brand Engagement,Incident,Returns and Exchanges,low,0.97665036,0.97445226,0.989805281162262,0.989805281162262,0.0
+Benötige Unterstützung bei Datenanalyse,Request,Product Support,high,0.83876413,0.8085135,0.9780402183532715,0.9780402183532715,0.0
+,Request,Customer Service,low,0.9705009,0.95415545,0.9648120999336243,0.9648120999336243,0.0
+Support for Digital Tools Required,Incident,IT Support,high,0.9549117,0.95870066,0.9691334962844849,0.9691334962844849,0.0
+Support for Gaming Products,Request,Product Support,medium,0.97222686,0.9660974,0.9864027500152588,0.9864027500152588,0.0
+,Change,IT Support,medium,0.9980001,0.9961118,0.9934241771697998,0.9934241771697998,0.0
+Reported Problems with Marketing Agency System Integration,Incident,Product Support,medium,0.8972832,0.87959087,0.9748046398162842,0.9748046398162842,0.0
+Digital Mark Growth Strategy,Request,Customer Service,medium,0.6950429,0.68135107,0.876409113407135,0.8738552331924438,-0.002553880214691162
+,Incident,Technical Support,high,0.8678814,0.84707844,0.9391769766807556,0.9391769766807556,0.0
+Query on Data Analytics Tools for Investment Strategy Enhancement,Request,Product Support,low,0.8940098,0.877341,0.9708318710327148,0.9708318710327148,0.0
+Support for Data Security Enhancements,Change,Product Support,medium,0.86488605,0.8567252,0.9754608273506165,0.9754608273506165,0.0
+Inquiry for Detailed Data Analytics Services,Request,Technical Support,high,0.8770555,0.8563032,0.9784215092658997,0.9784215092658997,0.0
+Enhancement Required for Marketing Strategies,Problem,Customer Service,high,0.94848704,0.9368181,0.980237603187561,0.980237603187561,0.0
+Verbesserung der Datenanalyseunterstützung für Investitionsstrategien,Request,Billing and Payments,high,0.8980106,0.87559843,0.9487980604171753,0.9487980604171753,0.0
+Strategies for Expanding Gaming Brands Digitally,Request,Customer Service,low,0.78101623,0.7731489,0.9634719491004944,0.9634719491004944,0.0
+Anfrage für technisches Support,Incident,Technical Support,medium,0.7110224,0.63681245,0.799500048160553,0.799500048160553,0.0
+,Request,Customer Service,low,0.8981033,0.8802171,0.960860013961792,0.960860013961792,0.0
+Concerns About Payment Services,Incident,Billing and Payments,medium,0.7503949,0.70958066,0.7901281118392944,0.790128231048584,1.1920928955078125e-07
+,Request,Billing and Payments,high,0.8746465,0.87811005,0.9875480532646179,0.9875480532646179,0.0
+System Fails During Peak Hours,Problem,Technical Support,high,0.9419131,0.9379847,0.9294449687004089,0.9294449687004089,0.0
+Unauthenticated Access Incidents on Medical Data Systems,Problem,General Inquiry,low,0.8323834,0.8449429,0.9801113605499268,0.9801113605499268,0.0
+Security Practices for Medical Data in Zoho Books,Request,Customer Service,low,0.9416206,0.9079362,0.8965381383895874,0.8965381383895874,0.0
+Service Issue Inquiry,Incident,Service Outages and Maintenance,medium,0.896657,0.90430826,0.919061005115509,0.919061005115509,0.0
+Service Problem,Incident,Service Outages and Maintenance,high,0.8304354,0.75862384,0.6328111886978149,0.6328111886978149,0.0
+Identification of Data Breach in Debian Systems,Incident,Technical Support,high,0.96375406,0.96626395,0.9977768063545227,0.9977768063545227,0.0
+Problem with SendGrid Email Delivery Service,Problem,Technical Support,low,0.9585094,0.94660056,0.9915785193443298,0.9915785193443298,0.0
+Inquiry About HubSpot Integration Features,Request,Product Support,high,0.9181506,0.8756833,0.9697874188423157,0.9697874188423157,0.0
+Urgent: Data Loss in Hospital IT Systems Due to Outdated Security Protocols,Problem,Billing and Payments,high,0.78509086,0.7143894,0.858692467212677,0.858692467212677,0.0
+,Incident,Technical Support,high,0.9896828,0.98513585,0.9883213639259338,0.9883213639259338,0.0
+Details on Securing Medical Data Solutions,Request,Customer Service,high,0.9601784,0.95527303,0.9966856837272644,0.9966856837272644,0.0
+Request for Software Integration Update,Change,IT Support,high,0.9119367,0.89029217,0.9749493598937988,0.9749493598937988,0.0
+Digital Marketing for Brand Growth,Request,Product Support,low,0.79551756,0.73680234,0.9266098141670227,0.8375179767608643,-0.08909183740615845
+,Request,Sales and Pre-Sales,high,0.93473506,0.9143345,0.9682061672210693,0.9682061672210693,0.0
+Support for Project Management SaaS,Request,Billing and Payments,medium,0.9892341,0.9864193,0.9868834018707275,0.9868834018707275,0.0
+Performance Issues in Financial Institution,Incident,Product Support,low,0.79483646,0.78000784,0.8727580308914185,0.8727580308914185,0.0
+Request for IT Supplies,Problem,Customer Service,medium,0.7229377,0.7058037,0.9128944277763367,0.9128944277763367,0.0
+Network Outage Impacts Data Analytics Tools,Incident,Technical Support,high,0.73013127,0.6896692,0.775661289691925,0.775661289691925,0.0
+Urgent Security Breach Report,Incident,Billing and Payments,high,0.89678884,0.8895761,0.9546977877616882,0.9546977877616882,0.0
+Geschäfts-Wachstum,Request,Service Outages and Maintenance,high,0.70329356,0.6442589,0.7878808975219727,0.7878808975219727,0.0
+Patienten-Daten-Sicherheit,Request,Billing and Payments,medium,0.85558546,0.83164084,0.8993793725967407,0.8993793725967407,0.0
+System Outage Impacting Data Analytics Operations,Incident,Product Support,high,0.97454906,0.9752682,0.9582162499427795,0.9582162499427795,0.0
+Inquiries on Data Analytics Services,Request,Billing and Payments,medium,0.8198126,0.8046556,0.8897460699081421,0.8897460699081421,0.0
+Support-Request,Incident,Technical Support,high,0.6651731,0.651257,0.8071452379226685,0.8071452379226685,0.0
+Anpassung des Wartungsplans zur Verbesserung der Leistung,Change,Service Outages and Maintenance,low,0.6383673,0.6609063,0.6903124451637268,0.6903125047683716,5.960464477539063e-08
+,Request,Billing and Payments,high,0.9788725,0.96896267,0.9795833230018616,0.9795833230018616,0.0
+Integration von ClickUp in skalierbare Docker-Umgebung,Request,Customer Service,low,0.97512484,0.9625436,0.9785647988319397,0.9785647988319397,0.0
+Unterstützung im Gesundheitswesen,Problem,Technical Support,low,0.5907229,0.58029896,0.7408024072647095,0.7408024072647095,0.0
+Error Detected in Payment Processing System,Problem,Billing and Payments,high,0.967149,0.9587404,0.9963947534561157,0.9963947534561157,0.0
+Support SaaS Platform Issue,Problem,IT Support,high,0.78693736,0.7855329,0.9251466989517212,0.9251466989517212,0.0
+Assistance Needed for Data Analytics Tool,Incident,Technical Support,high,0.67819893,0.59838265,0.7701162099838257,0.7701162099838257,0.0
+Inquiry on Elasticsearch Integration for Data Analytics Solutions,Request,Sales and Pre-Sales,high,0.9646931,0.9506736,0.9973723888397217,0.9973723888397217,0.0
+Incorrect Outcomes in Investment Analytics,Incident,Product Support,medium,0.95896024,0.95323336,0.9103187322616577,0.9103187322616577,0.0
+Safeguarding Medical Data Infrastructure,Request,Customer Service,low,0.75841004,0.728297,0.8911155462265015,0.8911155462265015,0.0
+Issue with Below-Average Campaign Performance by Marketing Agency,Incident,Technical Support,high,0.79585207,0.72870755,0.43605783581733704,0.43605783581733704,0.0
+Problem with System,Incident,Technical Support,high,0.7594167,0.73336685,0.7045618295669556,0.7045618295669556,0.0
+Informationen zu digitalen Markengröße-Dienstleistungen,Request,Customer Service,high,0.7823463,0.7717128,0.9319396018981934,0.9319396018981934,0.0
+Technische Anomalie beim Projektmanagement-Tool,Incident,Product Support,low,0.74612296,0.6927873,0.931641697883606,0.931641697883606,0.0
+Discrepancy in Billing Discovery,Problem,Billing and Payments,medium,0.93580234,0.94531226,0.9669157266616821,0.9669157266616821,0.0
+Netzstörung beeinträchtigt Datenanalyse,Incident,Technical Support,high,0.89732814,0.8767512,0.7734999656677246,0.7734999656677246,0.0
+Mehrere Integrationsprobleme behoben,Incident,Technical Support,high,0.96087295,0.95492244,0.9463949799537659,0.9463949799537659,0.0
+Update User Interface,Change,Customer Service,low,0.9536202,0.9434621,0.9939855337142944,0.9939855337142944,0.0
+Verbesserung von Leistungsschwierigkeiten bei Adobe Photoshop CC 2021,Request,Service Outages and Maintenance,high,0.96111214,0.915757,0.957482099533081,0.957482099533081,0.0
+Ungewöhnliche Berichterstattung über kritischen Datenverlust,Incident,Technical Support,low,0.65623546,0.60214716,0.8011813759803772,0.7589963674545288,-0.04218500852584839
+Inquiry Regarding Marketing Services,Request,Product Support,medium,0.7165934,0.6771779,0.8669388294219971,0.8513054251670837,-0.01563340425491333
+Hilfe beim Einbinden von Projektmanagementfunktionen in verschiedene Softwareprodukte,Problem,Product Support,low,0.85108465,0.85365033,0.9285833239555359,0.9285833239555359,0.0
+"Anfordern Wartungsplanung Aktualisierung, Verbesserte Kommunikation und Benutzererfahrung",Change,Service Outages and Maintenance,low,0.9137738,0.89560914,0.9546669721603394,0.9546669721603394,0.0
+Data Analytics Workflow,Change,Technical Support,medium,0.5746328,0.5397812,0.7081345319747925,0.6832326650619507,-0.024901866912841797
+Issues with Campaign,Problem,IT Support,high,0.864753,0.84907675,0.8555887341499329,0.8555887341499329,0.0
+Trouble with Task Assignments Saving Temporarily,Incident,Product Support,medium,0.73511934,0.69075173,0.7482097744941711,0.8632063865661621,0.11499661207199097
+Data Analytics Enhancement,Change,Product Support,medium,0.91500676,0.89099956,0.9559158086776733,0.9559158086776733,0.0
+Request for Assistance Due to Data Breach,Problem,Technical Support,medium,0.9109162,0.88471043,0.9426097869873047,0.9426097869873047,0.0
+Application Crash Notification,Incident,Technical Support,high,0.88702005,0.87033224,0.9756546020507812,0.9756546020507812,0.0
+Requirement for Assistance,Request,Customer Service,low,0.706013,0.6175857,0.6083526611328125,0.6932991743087769,0.08494651317596436
+Unapproved Entry in Medical Records,Incident,Product Support,medium,0.87536734,0.86327505,0.9561615586280823,0.9561615586280823,0.0
+,Incident,Technical Support,high,0.93046284,0.9154389,0.8563261032104492,0.8563261032104492,0.0
+,Incident,Product Support,high,0.8506087,0.85171545,0.9787637591362,0.9787637591362,0.0
+Issue with HubSpot CRM Connection Today,Incident,Technical Support,low,0.98635495,0.97625434,0.9454677104949951,0.9454677104949951,0.0
+,Incident,Returns and Exchanges,medium,0.8168205,0.7920671,0.9124449491500854,0.9124449491500854,0.0
+Digital Strategy Revision,Change,Customer Service,medium,0.92660534,0.9188455,0.9786835312843323,0.9786835312843323,0.0
+Integration,Request,Sales and Pre-Sales,medium,0.6651689,0.5662294,0.6462710499763489,0.6152383685112,-0.031032681465148926
+,Change,Sales and Pre-Sales,low,0.9777327,0.9764247,0.9744828939437866,0.9744828939437866,0.0
+Optimierung der Microservices-Implementierung,Change,IT Support,high,0.8033048,0.7805294,0.9218065738677979,0.9218065738677979,0.0
+Delay in Financial Data,Problem,Technical Support,high,0.9369782,0.93789476,0.9654393196105957,0.9654393196105957,0.0
+Nachricht Kundenservice,Request,Customer Service,medium,0.7674174,0.71195817,0.9244612455368042,0.9244611263275146,-1.1920928955078125e-07
+Google Cloud Platform Security Details,Request,Technical Support,low,0.89653623,0.8682587,0.8846712112426758,0.8846712112426758,0.0
+Problem with Adobe Premiere Pro 2021,Incident,Technical Support,medium,0.87799174,0.84592843,0.8660489320755005,0.8660489320755005,0.0
+,Incident,Customer Service,high,0.86166656,0.83662015,0.9732716083526611,0.9732716083526611,0.0
+,Problem,Billing and Payments,medium,0.8945019,0.8682209,0.9483972191810608,0.9483972191810608,0.0
+Accounting Issue,Incident,Billing and Payments,medium,0.7686439,0.76237285,0.7713196277618408,0.7713196277618408,0.0
+Recurrent System Failures in SaaS Solution,Incident,Product Support,medium,0.857733,0.82952154,0.8914501667022705,0.8914501667022705,0.0
+Ensuring Medical Data Security,Request,Returns and Exchanges,medium,0.8136411,0.74879056,0.770358681678772,0.8218454122543335,0.05148673057556152
+Meldung zu Website-Ausfällen,Incident,Technical Support,high,0.9242976,0.9077161,0.7851595282554626,0.7851595282554626,0.0
+Support-Anfrage zur Datenexposition,Incident,Human Resources,medium,0.85266364,0.84917545,0.9378384351730347,0.9378384351730347,0.0
+Support for JIRA Integration,Request,Returns and Exchanges,medium,0.9871781,0.98002875,0.9753229022026062,0.9753229022026062,0.0
+Fehler beim fehlgeschlagenen Daten-Upload,Incident,Returns and Exchanges,high,0.73019063,0.71997565,0.8619820475578308,0.8619820475578308,0.0
+Updates on Branding Strategies and Product Enhancements,Change,Returns and Exchanges,medium,0.85272175,0.82394344,0.9742732048034668,0.9742732048034668,0.0
+Folge von technischer Unterstützung anfordern,Incident,Product Support,medium,0.9196615,0.90721893,0.9360549449920654,0.9360549449920654,0.0
+Concern with Financial Performance Metrics,Incident,Returns and Exchanges,medium,0.970065,0.9712397,0.8775950074195862,0.8775950074195862,0.0
+,Incident,Technical Support,medium,0.9333812,0.93137765,0.974052369594574,0.974052369594574,0.0
+,Incident,Technical Support,low,0.96036047,0.9602314,0.9939419031143188,0.9939419031143188,0.0
+Support for Service Outage,Incident,Service Outages and Maintenance,high,0.769925,0.7228104,0.9074574112892151,0.9074574112892151,0.0
+Concern About Investment Reports Generation,Incident,Technical Support,high,0.9618859,0.9630598,0.977318525314331,0.977318525314331,0.0
+Sucht Unterstützung für Marketingstrategie,Incident,Customer Service,low,0.78791475,0.7292129,0.7909994125366211,0.8231861591339111,0.03218674659729004
+,Request,Billing and Payments,high,0.91177845,0.9230906,0.9890385866165161,0.9890385866165161,0.0
+Details zur Integration von QuickBooks Online in ClickUp,Request,Product Support,high,0.96348023,0.9463204,0.9236408472061157,0.9236408472061157,0.0
+,Change,Technical Support,high,0.9659593,0.9641557,0.9827296733856201,0.9827296733856201,0.0
+Problem with Marketing Agency,Incident,Technical Support,medium,0.95872307,0.950109,0.9813615083694458,0.9813615083694458,0.0
+,Problem,Product Support,medium,0.77679205,0.77238035,0.9688678979873657,0.9688678979873657,0.0
+Unapproved entry into hospital network,Problem,Returns and Exchanges,low,0.7731849,0.7607949,0.817082405090332,0.817082405090332,0.0
+Kritisches Dienstausfall,Incident,Service Outages and Maintenance,high,0.69074804,0.5852187,0.7876973748207092,0.7876973748207092,0.0
+Verletzung der Datensperre - Sicherheitsrisiko,Incident,Technical Support,high,0.74033904,0.6493358,0.5435516834259033,0.5435516834259033,0.0
+Guidance on Securing Medical Data with GitLab and IBM Cloud,Request,IT Support,medium,0.9549933,0.9440514,0.9484087228775024,0.9484087228775024,0.0
+Support for Invoice Errors,Incident,Billing and Payments,high,0.72757447,0.68549126,0.6856005191802979,0.8158475160598755,0.13024699687957764
+Unerwartete Störungen auf der SaaS-Plattform festgestellt,Incident,Technical Support,high,0.9451578,0.9170145,0.8637921810150146,0.8637921810150146,0.0
+Digital Strategies for Smart Products,Request,Product Support,medium,0.73066616,0.7313899,0.8657900094985962,0.8657900094985962,0.0
+System Crashes in Data Processing,Problem,Technical Support,high,0.92872405,0.9200628,0.9450408220291138,0.9450408220291138,0.0
+,Change,Technical Support,high,0.9772408,0.96965283,0.98758465051651,0.98758465051651,0.0
+Enhancing Security for Medical Data in Blackboard Learn,Request,Customer Service,medium,0.88497853,0.8591888,0.9386634826660156,0.9386634826660156,0.0
+Problem with Website,Problem,IT Support,low,0.62955475,0.62646484,0.18054145574569702,0.20883691310882568,0.028295457363128662
+,Problem,IT Support,high,0.92954296,0.90902996,0.9564236402511597,0.9564236402511597,0.0
+Sichere medizinische Daten in Azure,Request,Technical Support,high,0.89044225,0.86217034,0.922691822052002,0.922691822052002,0.0
+,Change,Service Outages and Maintenance,high,0.7689419,0.7617699,0.9537734389305115,0.9537734389305115,0.0
+,Problem,General Inquiry,low,0.9569481,0.9525968,0.9892416000366211,0.9892416000366211,0.0
+Problems with Wi-Fi Connectivity,Incident,Technical Support,high,0.90211976,0.8770368,0.9090744256973267,0.9090744256973267,0.0
+BigCommerce Data Analysis,Request,Customer Service,high,0.91014016,0.8940909,0.9651685953140259,0.9651685953140259,0.0
+Support for Marketing Agency Issues,Problem,Returns and Exchanges,medium,0.8838431,0.84735614,0.922297477722168,0.922297477722168,0.0
+Bemerkung zum unverzüglichen Einziehen von kritischen Datenverlust-Berichten,Incident,Technical Support,low,0.68298274,0.634797,0.7728248238563538,0.7728248238563538,0.0
+Support for Digital Brand Campaigns,Incident,Customer Service,medium,0.741034,0.7238903,0.859595775604248,0.859595775604248,0.0
+Possible Data Breach Impacting Medical Data Security,Incident,Product Support,low,0.9293656,0.9096025,0.9556183815002441,0.9556185007095337,1.1920928955078125e-07
+Unterstützung für Analysen,Incident,Technical Support,high,0.75669265,0.7612816,0.9060319066047668,0.9060319066047668,0.0
+Slow Response Times Identified in Digital Tools,Incident,Product Support,low,0.9882949,0.9865308,0.9090569019317627,0.9090569019317627,0.0
+Unplanned Downtime Affecting SaaS Platform Services,Incident,IT Support,high,0.92229414,0.9026166,0.8161642551422119,0.8161642551422119,0.0
+Unconventional Medical Data Security Measures,Request,Technical Support,high,0.47878674,0.433396,0.6500236988067627,0.6500236988067627,0.0
+Trouble with Tracking Digital Campaign Analytics,Incident,Technical Support,medium,0.9414723,0.94450605,0.9774346947669983,0.9774346947669983,0.0
+Concern Over Unauthorized Access Attempts on Medical Data,Incident,Technical Support,high,0.9508435,0.9456566,0.992843508720398,0.992843508720398,0.0
+Concern about Marketing Metrics,Incident,Product Support,low,0.9627398,0.95417607,0.9574910402297974,0.9574910402297974,0.0
+Problems with Synchronization Xero,Problem,Technical Support,medium,0.9646009,0.96454936,0.9788838624954224,0.9788838624954224,0.0
+Problem with Login for User Accounts,Incident,Customer Service,high,0.959882,0.9443176,0.9756275415420532,0.9756275415420532,0.0
+Verschlusssicherung medizinischer Daten in Kliniken,Request,Sales and Pre-Sales,high,0.83312047,0.8054893,0.9107776880264282,0.9107776880264282,0.0
+,Request,Customer Service,low,0.817896,0.8139938,0.9156813621520996,0.8350799083709717,-0.08060145378112793
+Support for Integrating Git 2.32 with Airtable,Request,Technical Support,medium,0.93264616,0.9046501,0.469353586435318,0.469353586435318,0.0
+Query on Integration Options for IBM Cloud,Request,Human Resources,medium,0.78777826,0.6712558,0.8149149417877197,0.8149149417877197,0.0
+Anfrage zu digitalen Strategiedienstleistungen für Markenwachstum,Request,Customer Service,low,0.86446637,0.83680785,0.8902040719985962,0.890204131603241,5.960464477539063e-08
+Support with Digital Campaign Performance Challenges,Incident,Product Support,low,0.9326672,0.9140971,0.9796184301376343,0.9796184301376343,0.0
+Data Analytics Investment Details,Request,Customer Service,high,0.7450104,0.6658063,0.6858696937561035,0.7062330842018127,0.02036339044570923
+,Incident,Product Support,medium,0.9803559,0.9734527,0.9740298390388489,0.9740298390388489,0.0
+Support Request for Documentation,Request,Technical Support,high,0.91908073,0.8923384,0.9936774969100952,0.9936774969100952,0.0
+,Incident,Billing and Payments,medium,0.8666345,0.82875884,0.8351105451583862,0.8351105451583862,0.0
+Datenschutzverletzung im Gesundheitswesen,Incident,Technical Support,high,0.701443,0.6375768,0.7210046052932739,0.8450467586517334,0.12404215335845947
+Delayed Performance,Problem,Technical Support,medium,0.61376643,0.5791865,0.5872374773025513,0.5872374773025513,0.0
+,Incident,Technical Support,high,0.9651154,0.94768244,0.9987539052963257,0.9987539052963257,0.0
+Software Compatibility Issue,Change,Product Support,low,0.9534264,0.9527907,0.9432783126831055,0.9432783126831055,0.0
+Request for System Modifications,Change,Service Outages and Maintenance,low,0.9516528,0.94367766,0.9783110618591309,0.9783110618591309,0.0
+Enhancing Investment Decisions with Data Analytics,Request,Customer Service,medium,0.951853,0.9349724,0.9861218333244324,0.9861218333244324,0.0
+Hospital System Problems,Problem,Technical Support,medium,0.9501058,0.95418715,0.9896623492240906,0.9896623492240906,0.0
+Enhancing Brand Growth with Adobe Photoshop CC 2021,Request,Customer Service,medium,0.9831612,0.96899176,0.98545902967453,0.98545902967453,0.0
+Enhanced Security Protocols,Change,Service Outages and Maintenance,low,0.84653175,0.76254916,0.8437678813934326,0.8984167575836182,0.05464887619018555
+Synchronisierungsprobleme bei Bildschirmrekorder mit mehreren Hardwareperipheriegeräten,Incident,Product Support,medium,0.7988258,0.7984018,0.8989535570144653,0.8989535570144653,0.0
+Anfrage zum Data Analytics Support,Request,Product Support,medium,0.8452362,0.87657994,0.9617956876754761,0.9617956876754761,0.0
+Concerns Regarding Data Synchronization Procedure,Problem,Customer Service,medium,0.87835956,0.83228004,0.9817073345184326,0.9817073345184326,0.0
+Plötzlicher Stillstand des Markenwachstums,Problem,Technical Support,high,0.7873294,0.71620375,0.9049398899078369,0.9049398899078369,0.0
+Issue with Shipping Delays and Marketing Campaigns,Problem,Product Support,high,0.7678931,0.7689239,0.8285287618637085,0.8285287618637085,0.0
+Secure Handling of Medical Data in Docker Environments,Request,IT Support,low,0.9328275,0.92731315,0.9775025844573975,0.9775025844573975,0.0
+Security Concern,Incident,IT Support,medium,0.7303261,0.76416844,0.803489625453949,0.7974720001220703,-0.006017625331878662
+Issues with Video Lag and Audio in Virtual Meetings,Incident,Technical Support,medium,0.98221445,0.97217923,0.990710973739624,0.990710973739624,0.0
+Support Required for Billing Issues,Incident,Billing and Payments,low,0.9346454,0.92119557,0.9905022978782654,0.9905022978782654,0.0
+,Incident,Customer Service,medium,0.9745913,0.96161306,0.9597223997116089,0.9597223997116089,0.0
+,Change,Product Support,high,0.7602633,0.6943009,0.8327969312667847,0.8327969312667847,0.0
+,Incident,Technical Support,low,0.84612435,0.82529587,0.8878086805343628,0.8878086805343628,0.0
+Report on Unapproved Access: Hospital Systems Affected,Incident,Technical Support,high,0.82684577,0.7999133,0.9374830722808838,0.9374830722808838,0.0
+Benötigte Unterstützung bei Investment-Optimierungs-Datenanalyse,Request,Product Support,low,0.8411195,0.79805017,0.8222479820251465,0.8222479820251465,0.0
+Issues with Investment Benchmarks,Incident,Technical Support,high,0.79827845,0.8029566,0.9405556321144104,0.9405556321144104,0.0
+,Incident,IT Support,high,0.6451292,0.6026255,0.8300890326499939,0.8400083780288696,0.009919345378875732
+Security Risks and Solutions for Healthcare Providers,Problem,Sales and Pre-Sales,low,0.9348512,0.93988085,0.9891113042831421,0.9891113042831421,0.0
+Issues with Data Integration in Investment Analysis,Problem,IT Support,medium,0.80641687,0.7927207,0.8821296691894531,0.8821296691894531,0.0
+,Request,Customer Service,high,0.95613885,0.9341287,0.9775099754333496,0.9775099754333496,0.0
+,Request,Customer Service,low,0.89529485,0.86332107,0.9518521428108215,0.9518521428108215,0.0
+,Request,Technical Support,low,0.9951476,0.9881253,0.9944079518318176,0.9944079518318176,0.0
+Strategies for Expanding Digital Brand Presence,Request,Sales and Pre-Sales,high,0.88420296,0.8594346,0.9038610458374023,0.9038610458374023,0.0
+"Probleme mit Software-Updates: Kompatibilität Microsoft OneNote, Malwarebytes 4.4",Incident,Returns and Exchanges,medium,0.9541305,0.9365591,0.9621106386184692,0.9621106386184692,0.0
+Enhance Software Tools and Digital Strategy,Change,IT Support,high,0.62501633,0.5927712,0.8121452331542969,0.8121452331542969,0.0
+Enhancing Security of Hospital Database Systems,Request,Technical Support,medium,0.9153261,0.89774925,0.9824923872947693,0.9824923872947693,0.0
+Securing Medical Data in Salesforce CRM with Django 3.2,Request,Billing and Payments,medium,0.950712,0.9495785,0.9872325658798218,0.9872326850891113,1.1920928955078125e-07
+Problem with Data Access Interruption,Incident,Customer Service,high,0.960731,0.96197635,0.9754795432090759,0.9754795432090759,0.0
+Bitten um Unterstützung für die Optimierung von Cisco Webex Meetings,Request,Technical Support,high,0.9244654,0.88983065,0.943786084651947,0.943786084651947,0.0
+Integration of SaaS Discord Platform,Request,Technical Support,medium,0.8982053,0.84654045,0.9596279859542847,0.9596279859542847,0.0
+Concern Regarding Investment Analysis Outputs,Incident,Sales and Pre-Sales,medium,0.94040805,0.91821367,0.9810454845428467,0.9810454845428467,0.0
+Assistance with Digital Marketing Services,Request,Billing and Payments,medium,0.8182887,0.7388568,0.7801007032394409,0.7801007032394409,0.0
+,Incident,Service Outages and Maintenance,low,0.98994446,0.98556864,0.988318681716919,0.988318681716919,0.0
+Notification,Incident,Technical Support,high,0.68703055,0.6094184,0.7080522775650024,0.7147620916366577,0.0067098140716552734
+Problem with SaaS Project Management,Incident,Customer Service,medium,0.9403561,0.9290254,0.9293726682662964,0.9293726682662964,0.0
+Improve Digital Marketing Strategies with Enhanced Tools,Change,Technical Support,high,0.7719938,0.71009815,0.9586815237998962,0.9586815237998962,0.0
+Digitale Marketingstrategien wirken wirksam,Incident,Technical Support,high,0.75802726,0.7333883,0.921501636505127,0.921501636505127,0.0
+Unbefugter Zugriff auf medizinische Aufzeichnungen entdeckt,Incident,Sales and Pre-Sales,medium,0.944752,0.9435997,0.9413413405418396,0.9413413405418396,0.0
+,Request,IT Support,medium,0.9925323,0.98457396,0.9932862520217896,0.9932862520217896,0.0
+Urgent: Cannot Submit Performance Marketing Analytics Report Due to Data Lake Issue,Incident,Product Support,medium,0.5934049,0.581038,0.6390730142593384,0.6269416809082031,-0.012131333351135254
+Hospital Assistance,Incident,Service Outages and Maintenance,high,0.8237558,0.81399286,0.9984921216964722,0.9984921216964722,0.0
+Strategien für die Digitale Markengröße,Request,Customer Service,medium,0.87448,0.80244684,0.8059945106506348,0.8059945106506348,0.0
+Application Crash,Incident,Returns and Exchanges,low,0.7257732,0.6856667,0.7978785037994385,0.8552522659301758,0.057373762130737305
+Support Concerning Security Incident,Incident,Technical Support,high,0.7294387,0.6762913,0.778830885887146,0.778830885887146,0.0
+Reported Data Discrepancies in Investment Analytics,Incident,Product Support,medium,0.9420124,0.91738904,0.9888018369674683,0.9888018369674683,0.0
+Optimize Digital Marketing Processes,Request,Technical Support,medium,0.88790166,0.83006966,0.9420861005783081,0.9420861005783081,0.0
+Assistance Required for Integration Errors,Incident,Product Support,high,0.9631983,0.95769113,0.9920811653137207,0.9920811653137207,0.0
+Investment Returns Report Discrepancy,Problem,Returns and Exchanges,high,0.91654956,0.9184304,0.9740047454833984,0.9740047454833984,0.0
+Wiederkehrende Ausfallzeiten und Leistungsprobleme gemeldet,Incident,Technical Support,medium,0.8703449,0.8468744,0.9432178735733032,0.9432178735733032,0.0
+Medizinische Datensicherheitsschwierigkeiten,Incident,Technical Support,low,0.66862726,0.6113616,0.7673593759536743,0.8617175817489624,0.09435820579528809
+,Problem,Customer Service,low,0.8830242,0.84598863,0.9389682412147522,0.9389682412147522,0.0
+Integrate SaaS Project Management with Zapier and Kubernetes,Request,Product Support,low,0.9670069,0.9505377,0.9903422594070435,0.9903422594070435,0.0
+Concern with Email Campaigns on Mailchimp,Incident,Technical Support,low,0.9354709,0.9165102,0.9858965873718262,0.9858965873718262,0.0
+Connectivity Problems with Digital Tools Following Network Updates,Incident,IT Support,medium,0.9032247,0.89085364,0.9825397729873657,0.9825397729873657,0.0
+Issues with Financial Analysis Indicators,Incident,Returns and Exchanges,medium,0.7321695,0.72672355,0.6774686574935913,0.6774686574935913,0.0
+Versuch Unautorisierten Zugriffs Heute bei Systemen,Incident,Technical Support,high,0.9014367,0.8475803,0.8677506446838379,0.8677506446838379,0.0
+Improve Security Protocols,Change,Billing and Payments,medium,0.7984598,0.73452437,0.7954039573669434,0.7954038977622986,-5.960464477539063e-08
+Error in Financial Analysis Tool Reports,Incident,Product Support,medium,0.7192674,0.71126723,0.8033799529075623,0.8033799529075623,0.0
+System Failure and Data Synchronization Problems Detected,Incident,Technical Support,high,0.9436951,0.94090885,0.9609127640724182,0.9609127640724182,0.0
+Challenging Data Analytics Speed in Zoho CRM SAP ERP,Problem,IT Support,medium,0.88178027,0.8749483,0.976692795753479,0.976692795753479,0.0
+,Problem,Technical Support,high,0.97931755,0.97549635,0.9829641580581665,0.9829641580581665,0.0
+Probleme mit dem Smart-Gerät,Incident,Technical Support,low,0.8314071,0.7918327,0.8465868234634399,0.8465868234634399,0.0
+Identified Discrepancies in Investment Analysis Data,Problem,Customer Service,medium,0.8925907,0.8761893,0.8799521923065186,0.8332639932632446,-0.046688199043273926
+Request for Digital Strategy Information,Request,Customer Service,medium,0.8782283,0.8661587,0.9641181230545044,0.9641181230545044,0.0
+Problem with Software Crashes During Data Analysis,Incident,Product Support,medium,0.7082037,0.6944732,0.8871801495552063,0.9052352905273438,0.01805514097213745
+Decline in Website Visitors - Observations and Possible Causes,Incident,Technical Support,high,0.84898627,0.7757679,0.7568800449371338,0.7568800449371338,0.0
+"Digital Tools Not Responding Today, Affecting Brand Campaigns",Incident,IT Support,high,0.9486432,0.9425583,0.9862000942230225,0.9862000942230225,0.0
+,Request,Customer Service,low,0.89790076,0.8505643,0.9692032337188721,0.9692032337188721,0.0
+Request for Assistance with Estate Data,Incident,Customer Service,low,0.650844,0.72109884,0.8752397298812866,0.8752397298812866,0.0
+Backup medizinischer Daten in IBM Cloud,Request,Customer Service,low,0.8853426,0.88607174,0.9794473648071289,0.9794473648071289,0.0
+Enhancing Investment Analytics Performance,Request,IT Support,medium,0.93330455,0.9344535,0.9814218282699585,0.9814218282699585,0.0
+Notify About Service Interruption,Incident,Service Outages and Maintenance,low,0.67585397,0.59085745,0.8744715452194214,0.7748463749885559,-0.09962517023086548
+,Problem,Customer Service,low,0.9671826,0.96786314,0.9622279405593872,0.9622279405593872,0.0
+Device-Related Technical Problems,Incident,Product Support,high,0.6838989,0.63291734,0.3455641269683838,0.37479329109191895,0.029229164123535156
+,Problem,IT Support,medium,0.9728687,0.9722897,0.9937453866004944,0.9937453866004944,0.0
+Assistance Required for Chromebook KVM Setup,Request,Customer Service,low,0.4967521,0.44573957,0.5512420535087585,0.5512420535087585,0.0
+Help with SaaS Integration for Valve Index VR Kit,Change,Product Support,medium,0.86736506,0.7903756,0.8881617784500122,0.8881617784500122,0.0
+Enhancing Security Protocols for Medical Data in Hospital Settings,Request,Product Support,medium,0.777263,0.714352,0.8312747478485107,0.8312747478485107,0.0
+Request to Update Billing for Digital Products,Change,Billing and Payments,high,0.72391915,0.65019256,0.8198785781860352,0.728030800819397,-0.09184777736663818
+,Request,Sales and Pre-Sales,high,0.922399,0.9250364,0.9633932709693909,0.9633932709693909,0.0
+Secure Handling of Medical Data,Request,Customer Service,low,0.7121007,0.69656456,0.7614668607711792,0.7614668607711792,0.0
+Nicht genaue Investment-Prognosen - Bitte Unterstützung,Problem,Technical Support,high,0.901867,0.8885995,0.9430217146873474,0.9430217146873474,0.0
+Multiple Equipment Malfunctions Reported,Incident,Technical Support,high,0.6997348,0.68213,0.6201260685920715,0.7653854489326477,0.14525938034057617
+Scalable SaaS Integration with SQL Server,Request,Returns and Exchanges,medium,0.6906582,0.61953735,0.7842636704444885,0.7528055906295776,-0.03145807981491089
+Detailierte Informationen zur Optimierung von Investitionen mit Smart-Tracker und Firebase Analytics,Request,Billing and Payments,medium,0.92908573,0.9306215,0.9499619007110596,0.9499619007110596,0.0
+-issue with project management tools integration,Problem,Customer Service,medium,0.9220046,0.90068614,0.9823708534240723,0.9823708534240723,0.0
+Optimierungseinstellungen für Bitdefender Antivirus Plus,Request,Technical Support,medium,0.898716,0.8837491,0.941129207611084,0.941129207611084,0.0
+,Problem,IT Support,high,0.9492903,0.9344848,0.9709718227386475,0.9709718227386475,0.0
+Assistance for Technical Issue,Incident,Customer Service,low,0.9532373,0.9562372,0.9576849341392517,0.9576849341392517,0.0
+Strategien für das Markenwachstum im Digitalland,Request,General Inquiry,medium,0.79399776,0.74343705,0.9427832365036011,0.9427832365036011,0.0
+Assistance with Security Breach Issue,Incident,Product Support,high,0.7213043,0.67513496,0.8883761763572693,0.8883761763572693,0.0
+,Incident,Product Support,high,0.9521475,0.9484099,0.9937504529953003,0.9937504529953003,0.0
+Ensuring Safety of Medical Data Services,Request,Billing and Payments,medium,0.832817,0.7708883,0.8856804966926575,0.9528087377548218,0.0671282410621643
+Sicherstellung der Sicherheit medizinischer Daten in Krankenhaussystemen,Request,Returns and Exchanges,low,0.8195174,0.73077863,0.8928984999656677,0.9087539911270142,0.015855491161346436
+Issue with Hospital IT Systems,Problem,Technical Support,medium,0.76783574,0.71161443,0.8707441687583923,0.9063668847084045,0.03562271595001221
+Verbessern des Projektablaufs für ein benutzerfreundliches Dashboard in unserer SaaS-Plattform,Change,Customer Service,low,0.73224044,0.71003366,0.7805486917495728,0.7805486917495728,0.0
+Notification of Data Security Breach,Problem,Customer Service,medium,0.8137367,0.8104774,0.9706062078475952,0.9706062078475952,0.0
+Problem mit der Latenz auf der Leistungsüberwachungsplattform,Incident,Product Support,low,0.7755071,0.74422956,0.9367086887359619,0.9367086887359619,0.0
+Sicherheitsfall medizinischer Daten,Incident,IT Support,medium,0.8246685,0.77694374,0.9417130351066589,0.9417130351066589,0.0
+Verbesserung des sichtbaren Markenprofils in Squarespace,Request,Service Outages and Maintenance,high,0.89201844,0.8733623,0.9528960585594177,0.9528960585594177,0.0
+Improve Digital Marketing Expansion Plans,Change,Service Outages and Maintenance,high,0.91556966,0.8961283,0.9238548874855042,0.9238548874855042,0.0
+Problem with Digital Service Downtime,Incident,Service Outages and Maintenance,medium,0.82975,0.82933336,0.937358558177948,0.937358558177948,0.0
+Assistance Needed with Data Analytics,Request,IT Support,high,0.79329556,0.718997,0.7398370504379272,0.742652952671051,0.0028159022331237793
+Technical Difficulty,Problem,IT Support,high,0.832445,0.77798176,0.6755034923553467,0.6755034923553467,0.0
+Concern about System Security,Incident,Product Support,low,0.7787097,0.770576,0.9825423955917358,0.9825423955917358,0.0
+Problems with Financial Reports,Incident,Returns and Exchanges,medium,0.685023,0.62433195,0.6996148228645325,0.6210753321647644,-0.07853949069976807
+Verzögerungen im Projekt-Dashboard reagieren langsam,Incident,Technical Support,medium,0.8647279,0.82039064,0.8068851232528687,0.8068851232528687,0.0
+Details zur Skalierbarkeit und Integrationsoptionen,Request,Product Support,low,0.8997786,0.8789673,0.8762251138687134,0.8762251138687134,0.0
+Support Inquiry: Customer Facing Issues with Accessing Project Files Across Multiple Platforms,Incident,Returns and Exchanges,low,0.705727,0.64804053,0.8449798822402954,0.8449798822402954,0.0
+,Request,Product Support,high,0.8780324,0.83693224,0.9532039165496826,0.9532039165496826,0.0
+Issue with Disruptions in Financial Services,Incident,Service Outages and Maintenance,high,0.7521738,0.70272183,0.7716547250747681,0.7716547250747681,0.0
+Unapproved Access Efforts on Medical Information Noted,Problem,Customer Service,medium,0.91688544,0.9051422,0.9546538591384888,0.9546538591384888,0.0
+Sage Accounting Assistance Required,Request,Technical Support,medium,0.80115384,0.7800218,0.880541980266571,0.880541980266571,0.0
+Support for Drupal SAP Integration,Request,IT Support,high,0.9845276,0.9679488,0.9575257301330566,0.9575257301330566,0.0
+,Incident,Technical Support,high,0.94075537,0.9324825,0.9831424951553345,0.9831424951553345,0.0
+Management of API Integration Capabilities,Request,Technical Support,high,0.9144287,0.83245784,0.8931132555007935,0.8931132555007935,0.0
+Unterstützung erforderlich,Incident,Technical Support,high,0.71453404,0.61559904,0.7241369485855103,0.7444273829460144,0.02029043436050415
+Investment Optimization Delays Due to Data Discrepancies - Report,Problem,Customer Service,low,0.8915054,0.8582144,0.9412804245948792,0.9412804245948792,0.0
+Request for Scaling Features,Request,Customer Service,high,0.86289275,0.83530575,0.9160162210464478,0.9160162210464478,0.0
+Data Analytics Enhancements,Change,Returns and Exchanges,high,0.7490188,0.64842576,0.7849490642547607,0.7599800229072571,-0.024969041347503662
+,Incident,Product Support,medium,0.9937763,0.98805064,0.9922605752944946,0.9922605752944946,0.0
+Assistance Required for Integrating Wolfram Mathematica into Project Management SaaS,Request,Technical Support,high,0.9620755,0.9384775,0.9791085124015808,0.9791085124015808,0.0
+Support Request for Optimizing Investments with MySQL 8.0,Request,Product Support,high,0.78329575,0.7062959,0.8722959160804749,0.8722959160804749,0.0
+Digitale Kampagnen erzielen schlechte Ergebnisse,Problem,Customer Service,medium,0.77528083,0.7626858,0.8155553340911865,0.8155553340911865,0.0
+,Problem,Billing and Payments,medium,0.9488152,0.93302673,0.9951232671737671,0.9951232671737671,0.0
+"Brauche Hilfe bei der Sicherung medizinischer Daten in Notion. Welche besten Praktiken gibt es für Krankenhäuser? Suchen Sie nach Möglichkeiten, sensible Informationen während der Nutzung von Notion zu schützen.",Request,Billing and Payments,low,0.90952873,0.90384305,0.9242428541183472,0.9242428541183472,0.0
+Unreliable Billing Summaries Affecting Payment Accuracy,Incident,Billing and Payments,high,0.9317583,0.92706513,0.9233778715133667,0.9233778715133667,0.0
+Problem with SaaS Platform Connectivity Today,Incident,IT Support,medium,0.8020184,0.7642181,0.8977885842323303,0.8977885842323303,0.0
+Query About Digital Marketing Services,Request,Customer Service,low,0.9385558,0.93567985,0.9690885543823242,0.9690885543823242,0.0
+Guidance on Integrating SaaS Solution with Third-Party Hardware,Request,Customer Service,medium,0.7632158,0.7106291,0.9279073476791382,0.9279073476791382,0.0
+Assistance with Marketing Initiatives,Request,Customer Service,high,0.98549825,0.97840166,0.9919654726982117,0.9919654726982117,0.0
+Enhancing Multi-Unit Marketing Processes,Request,Technical Support,high,0.7600487,0.73434186,0.8969078063964844,0.8969078063964844,0.0
+Support for ESET NOD32 Integration,Request,Technical Support,high,0.92766005,0.8716197,0.9761536121368408,0.9761536121368408,0.0
+Problem with Analytics Reports,Incident,Customer Service,medium,0.91118026,0.8702942,0.772442102432251,0.772442102432251,0.0
+IT-Security Issue,Incident,Product Support,medium,0.6664015,0.67183465,0.9244490265846252,0.9244490265846252,0.0
+Problem with Financial Dashboard Data,Incident,Product Support,medium,0.81462806,0.8193272,0.732977569103241,0.732977569103241,0.0
+Protection of Medical Security Data,Change,General Inquiry,medium,0.71147513,0.6811569,0.8392944931983948,0.83929443359375,-5.960464477539063e-08
+Billing Information,Request,Billing and Payments,medium,0.85940844,0.8286476,0.8808345794677734,0.8808345794677734,0.0
+Problem with Service Downtime,Incident,Service Outages and Maintenance,medium,0.7843434,0.6874527,0.5542904138565063,0.5542904138565063,0.0
+Concern Regarding Medical Records Access,Problem,IT Support,low,0.9023746,0.8963312,0.805048942565918,0.805048942565918,0.0
+Elasticsearch Brand Expansion Techniques,Request,Sales and Pre-Sales,medium,0.9931356,0.99013466,0.993302047252655,0.993302047252655,0.0
+,Request,Technical Support,high,0.99633664,0.99334407,0.988874614238739,0.988874614238739,0.0
+Campaign Effectiveness Concerns,Problem,Technical Support,high,0.9594748,0.9567137,0.9701423048973083,0.9701423048973083,0.0
+Digital Marketing Strategien zur Steigerung der Markenkenntnis,Request,Technical Support,high,0.74276716,0.6813165,0.7993557453155518,0.7993557453155518,0.0
+Safety of Medical Data,Change,Technical Support,high,0.83962816,0.8208989,0.8116408586502075,0.8116408586502075,0.0
+Concerns with Financial Firm's Data Analytics Tools,Incident,Product Support,low,0.9483732,0.9449389,0.9132357835769653,0.9132357835769653,0.0
+Issues with Software Update,Problem,Technical Support,medium,0.8994378,0.86347604,0.9139875173568726,0.9139875173568726,0.0
+Digital Campaigns Fell Short of Expectations This Quarter,Incident,Human Resources,low,0.8017873,0.7978203,0.9874206185340881,0.9874206185340881,0.0
+,Incident,Human Resources,medium,0.977482,0.9790985,0.9900896549224854,0.9900896549224854,0.0
+Support for Resolving Data Inconsistencies in Excel 2021,Problem,Product Support,medium,0.9310777,0.9007607,0.9856710433959961,0.9856710433959961,0.0
+,Request,Product Support,medium,0.97864306,0.97122604,0.993297278881073,0.993297278881073,0.0
+Oracle Database 19c Integration Assistance,Request,IT Support,high,0.86191386,0.7668992,0.9000117182731628,0.9000117182731628,0.0
+Falsche Gebühren bei neuem Kauf gemeldet,Incident,Billing and Payments,medium,0.90227556,0.87943876,0.946830153465271,0.946830153465271,0.0
+Gesundheitsdaten-Schutz und IT-Serviceangebote,Request,Billing and Payments,low,0.94246954,0.9265858,0.9610490202903748,0.9610490202903748,0.0
+,Problem,IT Support,low,0.992893,0.9906488,0.9862596988677979,0.9862596988677979,0.0
+Dringende Meldung: Sicherheitslücke in Krankenhaus-IT-Systemen,Incident,Technical Support,high,0.73666334,0.6709124,0.6742539405822754,0.6683820486068726,-0.005871891975402832
+Project Concern,Incident,IT Support,medium,0.681528,0.5563492,0.747748613357544,0.8267656564712524,0.0790170431137085
+Problem with Multiple Subscriptions,Problem,Billing and Payments,high,0.95324874,0.94949704,0.9842641353607178,0.9842641353607178,0.0
+Verletzung von Sicherheitsrichtlinien bei Systemen,Problem,Customer Service,medium,0.83651626,0.81124324,0.6412412524223328,0.6840601563453674,0.04281890392303467
+Datenschutzbeschränkung KI-Systeme Krankenhaus Sicherheitsprotokolle,Problem,Returns and Exchanges,high,0.6652952,0.6677238,0.8279123306274414,0.8279123306274414,0.0
+Systemfehler,Incident,Technical Support,high,0.744755,0.7106899,0.7151945233345032,0.7076939344406128,-0.007500588893890381
+Guidance on Securing Medical Data in Docker Django,Request,IT Support,medium,0.97169703,0.9563311,0.9871585369110107,0.9871585369110107,0.0
+Financial Data Issues,Problem,Product Support,medium,0.89101666,0.8660014,0.89556485414505,0.89556485414505,0.0
+Eilende Systemoptimierung notwendig,Change,Service Outages and Maintenance,high,0.6728601,0.67453027,0.8962117433547974,0.8962117433547974,0.0
+,Request,Billing and Payments,medium,0.994537,0.992375,0.9980231523513794,0.9980231523513794,0.0
+Could Provide Details on Project Management SaaS Features and Pricing Options?,Request,Customer Service,low,0.9623693,0.95543164,0.9872750639915466,0.9910272359848022,0.0037521719932556152
+Problems with Data Storage System,Incident,Technical Support,high,0.69388485,0.69178295,0.8785944581031799,0.8785944581031799,0.0
+Issue with Support Service Outages,Incident,Service Outages and Maintenance,high,0.76899356,0.6900646,0.7854012250900269,0.8391752243041992,0.05377399921417236
+Hilfe bei der Integration von Scrivener,Request,Technical Support,high,0.8567181,0.8162533,0.7837626934051514,0.7837626934051514,0.0
+Please Update Our Product Offerings,Change,Sales and Pre-Sales,medium,0.97556627,0.9679329,0.9806879162788391,0.9806879162788391,0.0
+Struggles with Digital Growth Strategies,Incident,Product Support,high,0.96334416,0.9674375,0.9893666505813599,0.9893666505813599,0.0
+Issues with Brand Messaging,Problem,Customer Service,low,0.93197536,0.8998018,0.8981029987335205,0.8981029987335205,0.0
+Problem with Account Access,Problem,Billing and Payments,medium,0.9475374,0.95902705,0.9889096617698669,0.9889096617698669,0.0
+,Request,Billing and Payments,medium,0.9312695,0.93173265,0.90170818567276,0.90170818567276,0.0
+Probleme mit dem Datenaufbereitungswerkzeug,Incident,IT Support,medium,0.68023086,0.59621465,0.8916465044021606,0.8372803926467896,-0.054366111755371094
+Support Inquiry Regarding Slow Loading Performance,Incident,Product Support,medium,0.8801377,0.84277207,0.9781601428985596,0.9781601428985596,0.0
+Versicherung medizinischer Daten Anbieter,Request,Customer Service,high,0.88884336,0.8704565,0.9241112470626831,0.9241112470626831,0.0
+Revise Software Brand Expansion,Change,IT Support,medium,0.7928329,0.7922517,0.9088460206985474,0.9088460206985474,0.0
+Assistance Needed with Product Integration Problems,Incident,Product Support,high,0.9640372,0.9581709,0.9773831367492676,0.9773831367492676,0.0
+Updating Campaign Metrics,Incident,Technical Support,high,0.82852626,0.80276865,0.8230466246604919,0.8230466246604919,0.0
+Bericht über Sicherheitsverstoß,Incident,Technical Support,medium,0.81881934,0.79090923,0.917959451675415,0.917959451675415,0.0
+Sage Buchhaltungsintegration für Investment-Analysen,Request,Customer Service,low,0.9282522,0.9152605,0.9376079440116882,0.9376079440116882,0.0
+Marketing Agency's Digital Campaigns Fall Short of Growth Targets,Incident,Customer Service,high,0.7914326,0.74825126,0.9957040548324585,0.9957040548324585,0.0
+Inquiry About Available Data Analytics Tools for Investment Optimization,Request,IT Support,low,0.9775207,0.96543527,0.9235765933990479,0.9235765933990479,0.0
+Problem mit Office-Software,Incident,IT Support,high,0.9089646,0.90148056,0.9210318326950073,0.9210318326950073,0.0
+Financial System,Incident,Service Outages and Maintenance,high,0.77709424,0.79214,0.9226906299591064,0.9226906299591064,0.0
+Verbesserung der Datenanalysetools und Investitionsoptimierung,Change,Technical Support,high,0.8684892,0.8180092,0.9332237243652344,0.9332237243652344,0.0
+Problems with Cross-Platform Integration,Incident,Customer Service,medium,0.88194805,0.9012933,0.9774473309516907,0.9774473309516907,0.0
+Project Management SaaS,Incident,Returns and Exchanges,low,0.73616207,0.6661502,0.7566547393798828,0.7566547393798828,0.0
+,Incident,Technical Support,high,0.9488395,0.93533933,0.9756750464439392,0.9756750464439392,0.0
+Verbesserung der Benutzerbenutzeroberfläche,Change,Technical Support,high,0.8472542,0.8282076,0.9109679460525513,0.9109679460525513,0.0
+Problem mit Daten-Unstimmigkeiten,Incident,Technical Support,high,0.74193835,0.7517387,0.9441670775413513,0.9441672563552856,1.7881393432617188e-07
+Assistance Required for Integration,Request,Customer Service,low,0.94120467,0.9307238,0.915151059627533,0.915151059627533,0.0
+Assistance for Brand Expansion,Request,Product Support,medium,0.76984024,0.70970523,0.8407076597213745,0.8407076597213745,0.0
+Troubleshooting Needed for Connectivity Issues with Google Nest Wifi Router,Incident,Technical Support,high,0.9626951,0.955097,0.9892566800117493,0.9892566800117493,0.0
+Request for Assistance with Digital Marketing,Problem,Technical Support,medium,0.8430576,0.80611897,0.9842406511306763,0.9842406511306763,0.0
+Security vulnerabilities in SAP ERP systems,Problem,Product Support,low,0.92304826,0.9056312,0.9518392086029053,0.9518392086029053,0.0
+Inquiry About Project Management SaaS Pricing,Request,Billing and Payments,medium,0.9637551,0.94579387,0.9826475381851196,0.9826475381851196,0.0
+Project Dashboard Timeout Issues,Incident,Technical Support,high,0.96742034,0.9566335,0.965490996837616,0.965490996837616,0.0
+Preismodell für Microsoft Office 365,Request,Sales and Pre-Sales,high,0.8916543,0.83879745,0.9001477360725403,0.9001477360725403,0.0
+Erneute vollständige Fehlfunktion bei der Integration digitaler Tools heute,Problem,IT Support,medium,0.95818794,0.960234,0.9590742588043213,0.9590742588043213,0.0
+Ongoing image distortion on projector following recent firmware update conflict,Incident,Technical Support,low,0.9382924,0.93964857,0.9839181900024414,0.9839181900024414,0.0
+Dringende Angelegenheit,Problem,Technical Support,medium,0.6973209,0.5975399,0.7441109418869019,0.7441109418869019,0.0
+Anfrage nach Unterstützung für Notierungen,Change,Service Outages and Maintenance,high,0.71845996,0.70429796,0.8470304012298584,0.8470304012298584,0.0
+Report on System Performance Issues,Incident,IT Support,medium,0.91361153,0.9165639,0.9622817635536194,0.9622817635536194,0.0
+Digital Platform Crashes,Problem,IT Support,medium,0.82488024,0.80450976,0.8686166405677795,0.8686166405677795,0.0
+,Incident,Product Support,medium,0.6610538,0.5773146,0.6919333338737488,0.6919333338737488,0.0
+Question on Update Planning for SaaS Project Management,Request,Service Outages and Maintenance,high,0.85693574,0.8472245,0.9145022630691528,0.9145022630691528,0.0
+Required Assistance for Marketing Support,Incident,Technical Support,high,0.967004,0.96134925,0.977759838104248,0.977759838104248,0.0
+Required: Strategies for Safeguarding Medical Data,Request,Sales and Pre-Sales,low,0.942773,0.9361578,0.9657266139984131,0.9657266139984131,0.0
+Seeking Insights on Smart Home Product Marketing Strategies,Request,Billing and Payments,medium,0.83819747,0.82686454,0.9140312075614929,0.9140312075614929,0.0
+Support for Hospital Security Alerts,Incident,IT Support,low,0.7282418,0.7037007,0.9055352807044983,0.9055352807044983,0.0
+Langsame Ladezeiten im Projektmanagement-System,Problem,IT Support,low,0.76856214,0.6917367,0.5768161416053772,0.8975296020507812,0.32071346044540405
+Assistance Required: Billing Details Requested,Request,Billing and Payments,low,0.9902765,0.98956996,0.9857030510902405,0.9857030510902405,0.0
+Support for AutoCAD and Squarespace,Request,Billing and Payments,high,0.966287,0.94633913,0.9656988382339478,0.9656988382339478,0.0
+Performance Issues with Multiple Products,Problem,IT Support,medium,0.92598474,0.9170989,0.9554199576377869,0.9554199576377869,0.0
+Update der Digitalstrategie,Change,Technical Support,high,0.854759,0.8190632,0.8420170545578003,0.8420170545578003,0.0
+Optimierung von Investitionen durch Datenanalyse-Dienstleistungen,Request,Customer Service,medium,0.93564963,0.90464336,0.9224268198013306,0.9258573651313782,0.0034305453300476074
+Issue with Marketing Campaign Tools,Problem,Technical Support,medium,0.8610091,0.8448272,0.8966415524482727,0.8966415524482727,0.0
+Einbinden intelligenter Waage in das Moodle-System,Request,Technical Support,medium,0.7958845,0.7900877,0.7900790572166443,0.7900790572166443,0.0
+Support for Adobe Creative Cloud,Request,Customer Service,medium,0.9216788,0.89495236,0.9508997201919556,0.9508997201919556,0.0
+Hilfe bei Systemleistungsschwierigkeiten,Incident,Technical Support,high,0.7174765,0.7185795,0.8039171695709229,0.8039171695709229,0.0
+,Incident,Billing and Payments,medium,0.73493725,0.66638565,0.8985134363174438,0.9032422304153442,0.004728794097900391
+Technical Aid for Digital Integration,Incident,Technical Support,medium,0.6609149,0.5836874,0.9040176272392273,0.9040176272392273,0.0
+Concerning Data Protection Breach,Incident,Technical Support,medium,0.8338121,0.81939,0.9332292079925537,0.9332292079925537,0.0
+Verbesserung der Investments durch Analyse,Request,Billing and Payments,low,0.84001446,0.7793976,0.8789969086647034,0.8789969086647034,0.0
+,Request,Human Resources,low,0.941706,0.91072047,0.9577305316925049,0.9577305316925049,0.0
+Azure Assistance Inquiry,Incident,Technical Support,high,0.91391313,0.911539,0.9636927843093872,0.9636927843093872,0.0
+Application Crashes and Slow Performance,Problem,Technical Support,high,0.77804905,0.78134215,0.8730156421661377,0.8730156421661377,0.0
+Develop Integration for Smart Devices,Change,IT Support,medium,0.9311218,0.9189026,0.997102677822113,0.997102677822113,0.0
+Solutions for Securing Medical Data in Hospital IT Environments,Request,Customer Service,medium,0.83004135,0.7832954,0.9667033553123474,0.9667033553123474,0.0
+Verbesserung der digitalen Markengründung,Request,Technical Support,high,0.65028924,0.5899837,0.8742495775222778,0.8742495775222778,0.0
+Informationen zu Preisplänen,Request,Product Support,low,0.8707893,0.8653413,0.9327374696731567,0.9327374696731567,0.0
+Kundenservice: Kritischer Fehler in der Projektmanagement-Software-as-a-Service-Plattform mit mehreren Störungen bei unseren Kunden verursacht,Problem,Product Support,high,0.613465,0.5356207,0.7964456677436829,0.7966481447219849,0.00020247697830200195
+Problem with Several Critical Tools,Incident,IT Support,high,0.96953416,0.97103494,0.9618781805038452,0.9618781805038452,0.0
+Untersuchung unkonstanter Investment-Prognosen durch Datenanalyse-Nutzungstool,Problem,Technical Support,high,0.7544701,0.6981302,0.863891065120697,0.863891065120697,0.0
+Digital Campaigns Are Significantly Underperforming,Incident,Product Support,medium,0.8427393,0.7373371,0.7497577667236328,0.7497577667236328,0.0
+Dringende Zugriffsprobleme beim Sicherheitssystem für medizinische Daten im Krankenhaus,Problem,Product Support,low,0.95687634,0.9421579,0.9826558232307434,0.9826558232307434,0.0
+Hilfe bei der Integration von Projektmanagement-Tools,Request,Technical Support,medium,0.89500195,0.85170674,0.9231674671173096,0.9231674671173096,0.0
+Issue with Data Discrepancy,Incident,Returns and Exchanges,low,0.9520182,0.9412713,0.9688901901245117,0.9688901901245117,0.0
+Beratung zur Xero-Investment-Analyse,Request,Billing and Payments,medium,0.9472727,0.91743886,0.9445531368255615,0.9445531368255615,0.0
+Issue with Integration Setup,Problem,Customer Service,high,0.7960819,0.74570596,0.8978654146194458,0.8978654146194458,0.0
+Documentation Request,Request,Product Support,medium,0.66424644,0.6058458,0.832851231098175,0.832851231098175,0.0
+IT-Services Issue,Incident,Service Outages and Maintenance,high,0.85496825,0.8473963,0.9353893995285034,0.9353893995285034,0.0
+Adding QuickBooks to ClickUp,Request,Product Support,high,0.9737511,0.9653069,0.960075855255127,0.960075855255127,0.0
+Assistance Needed with Product Integration Challenges,Incident,Product Support,high,0.96013,0.9569974,0.9923100471496582,0.9923100471496582,0.0
+Concern Over Hospital IT System Failures,Incident,Technical Support,medium,0.7557621,0.7454585,0.8668215870857239,0.8668215870857239,0.0
+Details for Integrating Smartsheet with Discord for Project Management,Request,Customer Service,low,0.8978362,0.8724799,0.9741451144218445,0.9741451144218445,0.0
+Integration of SaaS with Project Management Tools,Request,Billing and Payments,medium,0.95365155,0.9213559,0.9600489139556885,0.9600489139556885,0.0
+,Request,Technical Support,high,0.98755604,0.985337,0.9843611121177673,0.9843611121177673,0.0
+Medical Data Breach Event,Incident,Technical Support,high,0.8975054,0.914272,0.9799304604530334,0.9799304604530334,0.0
+Inquiry on Data Analytics Services for Investment Strategy Optimization,Request,Customer Service,high,0.81693196,0.7675535,0.8693994283676147,0.8693994283676147,0.0
+,Problem,Returns and Exchanges,low,0.97994137,0.97498345,0.9943523406982422,0.9943523406982422,0.0
+Request for ActiveCampaign Support,Request,Technical Support,low,0.8790677,0.8554546,0.8936142921447754,0.8936142921447754,0.0
+Concerns with Project Management Software,Incident,Technical Support,low,0.9830818,0.9702039,0.9978851079940796,0.9978851079940796,0.0
+Bewertung der Marketing-Agentur Markengrowth,Incident,Customer Service,medium,0.825909,0.7236491,0.9120301008224487,0.8874756097793579,-0.02455449104309082
+Concern Regarding Analytical Tool Error,Problem,Product Support,medium,0.6352421,0.59038126,0.6576621532440186,0.8358274698257446,0.17816531658172607
+Synchronization Problems with Task Update,Incident,Returns and Exchanges,low,0.9314537,0.8835136,0.9960615038871765,0.9960615038871765,0.0
+,Request,Customer Service,low,0.9458697,0.91843516,0.993032693862915,0.993032693862915,0.0
+Problem with Subscription,Problem,Returns and Exchanges,low,0.97888243,0.9749313,0.9808846116065979,0.9808846116065979,0.0
+Problem Connecting to SaaS Platform,Problem,IT Support,low,0.9609901,0.960132,0.9507564306259155,0.9507564306259155,0.0
+Fehler bei der Daten-Synchronisation,Incident,Product Support,medium,0.79410386,0.7836821,0.9276953935623169,0.9276953935623169,0.0
+Excel Formula Computation Issues,Problem,Technical Support,low,0.6598109,0.55440885,0.6231163144111633,0.6231163144111633,0.0
+,Change,Sales and Pre-Sales,low,0.9851228,0.98630315,0.9742670059204102,0.9742670059204102,0.0
+Unterstützung für Investitionen,Problem,Returns and Exchanges,medium,0.7051635,0.7094749,0.8432455062866211,0.8432455062866211,0.0
+Details on Integrating SendGrid SaaS,Request,IT Support,medium,0.9450135,0.9236438,0.893578827381134,0.893578827381134,0.0
+Details on Medical Data Security Services,Request,Billing and Payments,medium,0.77198863,0.6831289,0.8413233757019043,0.8413233757019043,0.0
+Kundenservice Marke,Request,Customer Service,low,0.84789145,0.7896588,0.915233850479126,0.915233850479126,0.0
+Urgent: Possible Data Breach in Medication Log System Identified,Incident,Technical Support,medium,0.982033,0.9722489,0.905249297618866,0.905249297618866,0.0
+Aktualisierung der Digitalen Marketingstrategie,Change,Service Outages and Maintenance,high,0.8460419,0.79163533,0.9362675547599792,0.9337219595909119,-0.002545595169067383
+Digital Marketing Efforts Unsuccessful,Problem,Product Support,medium,0.8161264,0.7575213,0.8940073251724243,0.8851600885391235,-0.008847236633300781
+Update of SaaS Tools,Change,Sales and Pre-Sales,medium,0.8032298,0.73881054,0.960705578327179,0.960705578327179,0.0
+,Incident,Technical Support,medium,0.83866924,0.81732965,0.927810549736023,0.927810549736023,0.0
+Multiple Product Disruptions,Incident,Product Support,medium,0.9078751,0.92388016,0.9866043925285339,0.9866043925285339,0.0
+Inquiry on Pricing for Project Management SaaS,Request,Billing and Payments,low,0.9731197,0.9607124,0.9673898220062256,0.9673898220062256,0.0
+Concerns About Digital Marketing Analytics Tools,Incident,Technical Support,high,0.9662205,0.953589,0.9665662050247192,0.9665662050247192,0.0
+Integration of LG PF50KA Projector,Request,Technical Support,high,0.89259243,0.84348464,0.9085499048233032,0.9085499048233032,0.0
+Unplanned Service Disruption Impacting Key Analytics Functions,Incident,Service Outages and Maintenance,high,0.82886755,0.85174453,0.9562511444091797,0.9562511444091797,0.0
+Technical Problem with Software Integration,Incident,Product Support,medium,0.8193757,0.78690624,0.882870614528656,0.882870614528656,0.0
+Investment Optimization Problem,Problem,Technical Support,high,0.89494246,0.90768176,0.9954566955566406,0.9954566955566406,0.0
+Blockierung Medikamente-Datenbank-System,Incident,Product Support,medium,0.55895674,0.48979434,0.6528649926185608,0.6528649926185608,0.0
+Support for Billing Discrepancies,Incident,Billing and Payments,medium,0.7435824,0.73802495,0.8348199725151062,0.8348199725151062,0.0
+,Request,IT Support,medium,0.90336806,0.904879,0.9888385534286499,0.9888385534286499,0.0
+,Request,Billing and Payments,medium,0.93041295,0.90211296,0.900152325630188,0.900152325630188,0.0
+Verbesserung von Datenanalyse-Lösungen und Optimierung von Investitionsstrategien,Request,Technical Support,medium,0.8079144,0.7688745,0.850222110748291,0.850222110748291,0.0
+Digitale Kampagnen wurden aufgrund von Problemen pausiert,Problem,Technical Support,high,0.8409262,0.84072626,0.955998957157135,0.955998957157135,0.0
+Support for Outage Issues,Incident,Service Outages and Maintenance,high,0.88043904,0.8684875,0.9471153616905212,0.9471153616905212,0.0
+Technical Support Assistance,Problem,Service Outages and Maintenance,high,0.6555953,0.6007344,0.8175122737884521,0.8175122737884521,0.0
+Digital Marketing Approaches Achieving Anticipated Expansion,Problem,Technical Support,medium,0.92204976,0.9223179,0.9903014302253723,0.9903014302253723,0.0
+Concern with Project Management Software,Incident,Technical Support,high,0.82594806,0.7889188,0.9728648662567139,0.9728648662567139,0.0
+Service Outage Affected Multiple Products Poorly,Incident,Service Outages and Maintenance,medium,0.8490972,0.8832627,0.9631715416908264,0.9631715416908264,0.0
+Update on the Digital Strategy Approach,Change,Product Support,medium,0.97120565,0.9733881,0.9905981421470642,0.9905981421470642,0.0
+Ineffective Marketing Tactics Require Assistance,Problem,Product Support,high,0.8644686,0.8474724,0.9697831869125366,0.9697831869125366,0.0
+Billing Discrepancies in Multiple Products,Problem,Billing and Payments,high,0.9011471,0.8824888,0.9522258639335632,0.9522258639335632,0.0
+,Request,Customer Service,low,0.88926065,0.8726188,0.9635181427001953,0.9635181427001953,0.0
+,Change,IT Support,medium,0.89535725,0.9023437,0.9605565071105957,0.9605565071105957,0.0
+Financial Company Encounters Integration Challenges,Problem,Sales and Pre-Sales,low,0.94773734,0.9231633,0.976322591304779,0.976322591304779,0.0
+Issue with Dashboard,Problem,IT Support,medium,0.9560901,0.948385,0.7425825595855713,0.7425825595855713,0.0
+Support Request for Server Downtime,Incident,Technical Support,medium,0.8958852,0.8776052,0.9555724859237671,0.9555724859237671,0.0
+Probleme bei der SendGrid-E-Mail-Berichtsfunktion,Problem,Technical Support,low,0.6539238,0.6217048,0.8714913129806519,0.8714913725852966,5.960464477539063e-08
+Problem with Application Crashing,Incident,Technical Support,high,0.98159957,0.9725949,0.9819704294204712,0.9819704294204712,0.0
+Digital Campaign Analytics Update Problem,Incident,Product Support,medium,0.9835118,0.98240656,0.970797061920166,0.970797061920166,0.0
+Hospital System Security Measures,Request,Returns and Exchanges,high,0.8485457,0.82417715,0.7589371800422668,0.7589371800422668,0.0
+Request for Integration Details of OneNote SaaS Project Management Solution,Request,Technical Support,medium,0.9661926,0.94575435,0.9688764810562134,0.9688764810562134,0.0
+Urgent Request for Upgrading Hospital Cybersecurity Software,Change,Customer Service,high,0.9187671,0.92286944,0.9911354780197144,0.9911354780197144,0.0
+Problem with Latest Invoices,Problem,Billing and Payments,low,0.9217883,0.9237437,0.8544543385505676,0.8544543385505676,0.0
+Enhanced Security Measures for Medical Data,Change,Customer Service,low,0.9342677,0.9339402,0.9967678785324097,0.9967678785324097,0.0
+Support Request for System Outage,Incident,IT Support,high,0.91970396,0.936954,0.9882434010505676,0.9882434010505676,0.0
+Probleme mit medizinischen Daten,Incident,IT Support,medium,0.84417796,0.83362556,0.8429123163223267,0.8576232194900513,0.01471090316772461
+Malfunction of Digital Campaign Tools,Incident,Technical Support,high,0.9729305,0.95735896,0.9975250959396362,0.9975250959396362,0.0
+Intermittent Access Issues with Hospital IT Systems Potentially Due to Device Compatibility Conflicts,Incident,Service Outages and Maintenance,low,0.8431045,0.8260004,0.9647150039672852,0.9647150039672852,0.0
+Update Software-Tools,Change,IT Support,high,0.6954062,0.67408454,0.7708048224449158,0.7848893404006958,0.01408451795578003
+Support Request for Slower Data Processing with Analytical Tools,Problem,Product Support,low,0.70888865,0.6133852,0.49749869108200073,0.49749866127967834,-2.9802322387695312e-08
+Report Website Downtime Issue,Incident,Technical Support,medium,0.87728494,0.8033577,0.8855319619178772,0.8855319619178772,0.0
+Enquiry Regarding Digital Strategy Services,Request,Product Support,low,0.9105612,0.8859476,0.9757599830627441,0.9757599830627441,0.0
+,Incident,Sales and Pre-Sales,medium,0.9578853,0.9437008,0.9924342632293701,0.9924342632293701,0.0
+Probleme bei digitalem Tool,Problem,Technical Support,low,0.72578,0.6786083,0.741827666759491,0.741827666759491,0.0
+ClickUp-App Störevents bei Spitzenzeiten,Incident,Product Support,medium,0.8271265,0.7994447,0.8681905269622803,0.8681905269622803,0.0
+,Request,Sales and Pre-Sales,medium,0.85454434,0.8577042,0.912253737449646,0.912253737449646,0.0
+Support Issues with CRM,Incident,Technical Support,high,0.8737217,0.84046257,0.9092377424240112,0.9092377424240112,0.0
+Technical Issue with Avast SQL Server,Problem,Customer Service,high,0.65026665,0.53191066,0.899131715297699,0.899131715297699,0.0
+Exploring Data Analytics in Investments,Request,Billing and Payments,high,0.9720651,0.95768654,0.9804213047027588,0.9804213047027588,0.0
+Unexpected disruption in multiple product connections,Incident,Service Outages and Maintenance,medium,0.97169715,0.97211146,0.6889500021934509,0.6889500021934509,0.0
+Hilfe zur Software-Unterbrechung erforderlich,Incident,Technical Support,medium,0.8971256,0.88081574,0.9527171850204468,0.9527171850204468,0.0
+Facilitate Smooth Integration with Google Cloud Platform Project Management SaaS,Request,Product Support,low,0.9249814,0.904364,0.976205050945282,0.976205050945282,0.0
+Support Request: Critical Outage on Investment Data Analytics Services,Incident,Service Outages and Maintenance,high,0.88593787,0.8797285,0.8658227324485779,0.8658227324485779,0.0
+Technische Schwierigkeiten mit Geräten,Incident,Product Support,high,0.69457984,0.65642124,0.4177654981613159,0.4177654981613159,0.0
+ClickUp Support Inquiry,Incident,Technical Support,high,0.95004296,0.93751895,0.9569039344787598,0.9569039344787598,0.0
+Digital Marketing Support Team,Request,Human Resources,low,0.84035355,0.77503777,0.9030867218971252,0.9030867218971252,0.0
+Interference of Digital Tools Disrupts Modern Brand Campaigns,Incident,IT Support,high,0.8283715,0.845914,0.9639108777046204,0.9639108777046204,0.0
+Assistance with Marketing Agency,Problem,Product Support,low,0.90120554,0.8898016,0.8531349897384644,0.8531349897384644,0.0
+Problem with Cross-User Data Synchronization,Incident,Product Support,low,0.85101855,0.8312638,0.8742252588272095,0.8742252588272095,0.0
+Issues with Loading Times,Problem,Returns and Exchanges,medium,0.91001266,0.87662685,0.7940894365310669,0.7940894365310669,0.0
+,Incident,Billing and Payments,high,0.62829936,0.6114271,0.806106686592102,0.806106686592102,0.0
+Marketing Campaigns Underperforming: Decreased Brand Engagement,Problem,Product Support,high,0.9064701,0.8916985,0.997490644454956,0.997490644454956,0.0
+Exploring Strategies for Promoting Smart Home Products,Request,Billing and Payments,medium,0.844527,0.84461355,0.9589246511459351,0.9589246511459351,0.0
+Protection of Systems,Request,Technical Support,medium,0.9290212,0.9242558,0.9684069156646729,0.9684069156646729,0.0
+Issues with the Handling of Medical Data,Problem,Sales and Pre-Sales,low,0.72109896,0.73637354,0.8780566453933716,0.8780566453933716,0.0
+Issues with System Updates,Incident,Service Outages and Maintenance,high,0.92318356,0.9006266,0.8859610557556152,0.8859610557556152,0.0
+Bündeln zusätzlicher Tools zur Steigerung der Projektmanagement Effizienz,Change,Customer Service,low,0.8899399,0.8899176,0.9175800085067749,0.9175800085067749,0.0
+WooCommerce Data Analytics Assistance,Request,IT Support,high,0.94591093,0.9268709,0.9977710247039795,0.9977710247039795,0.0
+Sync Problem,Problem,Technical Support,medium,0.6882608,0.63396233,0.7717115879058838,0.7717115879058838,0.0
+Support Inquiry for System Downtime,Incident,Technical Support,high,0.62814367,0.6013652,0.7786152362823486,0.7786151170730591,-1.1920928955078125e-07
+,Request,Technical Support,high,0.98204136,0.9771009,0.9935902953147888,0.9935902953147888,0.0
+Customer Support Assistance,Request,Product Support,medium,0.7403332,0.6671041,0.7857599854469299,0.7449747323989868,-0.040785253047943115
+Problem with Google Nest Wifi Router,Problem,IT Support,high,0.93797374,0.9032535,0.948324978351593,0.948324978351593,0.0
+Problem mit Analytics-Dashboards,Incident,Product Support,low,0.78429955,0.8041892,0.7848103046417236,0.7848103046417236,0.0
+Problem with IFTTT Integration,Incident,Technical Support,low,0.8926992,0.865093,0.9778732657432556,0.9778732657432556,0.0
+Inquiry About Digital Strategies and Services,Request,Returns and Exchanges,medium,0.75155854,0.735124,0.9162695407867432,0.9162695407867432,0.0
+,Problem,General Inquiry,low,0.928654,0.92776865,0.9944164752960205,0.9944164752960205,0.0
+,Incident,Returns and Exchanges,low,0.95737785,0.9458148,0.9965788125991821,0.9965788125991821,0.0
+Datenschutz-Probleme erkannt,Incident,Product Support,low,0.644856,0.67404836,0.7881754636764526,0.87006676197052,0.08189129829406738
+Help with Sluggish Data Analytics Tools,Incident,Technical Support,low,0.7688756,0.65492517,0.7334340810775757,0.8383872509002686,0.10495316982269287
+Mängel bei der Software-Hardware-Integration bei Markenförderungsaktionen,Incident,Returns and Exchanges,low,0.6481557,0.6430372,0.6945363283157349,0.6945363283157349,0.0
+Kundendienstliche Anfrage,Incident,Technical Support,high,0.5796505,0.52476144,0.6218709945678711,0.6218709945678711,0.0
+Reported Slow Performance Problem,Problem,Technical Support,high,0.97921056,0.9721327,0.998819887638092,0.998819887638092,0.0
+Hilfe bei nicht autorisierter Zugriffsnachricht,Incident,IT Support,high,0.8249558,0.73868763,0.8564091920852661,0.8564091324806213,-5.960464477539063e-08
+,Incident,IT Support,medium,0.9925108,0.9898472,0.9852732419967651,0.9852732419967651,0.0
+Details on Project Management SaaS Pricing,Request,Billing and Payments,medium,0.9525074,0.94868106,0.9928495287895203,0.9928495287895203,0.0
+,Request,Sales and Pre-Sales,low,0.9855315,0.9829466,0.9842150807380676,0.9842150807380676,0.0
+Detected Unauthorized Access to Medical Data. Possible Vulnerabilities Due to Software Misconfiguration or Network Security Settings. Conducted Preliminary Security Audit and Updated Antivirus Software.,Incident,Product Support,medium,0.6924121,0.71989524,0.947317361831665,0.947317361831665,0.0
+Verbesserungsvorschläge,Request,Customer Service,high,0.92041993,0.9151623,0.9864928126335144,0.9864928126335144,0.0
+Support for Login Problems,Incident,IT Support,medium,0.97511774,0.96952105,0.9494246244430542,0.9494246244430542,0.0
+Problems with Project Management Dashboard,Incident,Customer Service,low,0.8688476,0.83902574,0.9000029563903809,0.9000029563903809,0.0
+Seek Assistance for Integration Support,Change,Technical Support,medium,0.96306366,0.9362361,0.9735611081123352,0.9735610485076904,-5.960464477539063e-08
+Notwendige Unterstützung für den Projektbetrieb,Change,Service Outages and Maintenance,high,0.9231666,0.908252,0.955697774887085,0.955697774887085,0.0
+System Upgrade Request,Change,Service Outages and Maintenance,high,0.87287104,0.85778356,0.8644890189170837,0.8644890189170837,0.0
+Error in Data Analysis,Incident,IT Support,high,0.9434326,0.9320756,0.9923660159111023,0.9923660159111023,0.0
+Assistance Required from Support Team,Incident,Customer Service,medium,0.898337,0.8949506,0.8264962434768677,0.8264962434768677,0.0
+Fehler bei der Synchronisation,Incident,Technical Support,medium,0.87412906,0.8230722,0.5822693109512329,0.5822693109512329,0.0
+Request for Support Concerning System Performance,Problem,Customer Service,medium,0.8861003,0.90336484,0.9220791459083557,0.9220791459083557,0.0
+,Request,Technical Support,high,0.9991358,0.9987279,0.9922856688499451,0.9922856688499451,0.0
+Interruption of Medical Data Services,Problem,Technical Support,high,0.86170274,0.8513929,0.9906094074249268,0.9906094074249268,0.0
+Request for Support with Digital Campaign Integration Issues,Incident,Product Support,medium,0.9810581,0.9713633,0.9619438648223877,0.9619438648223877,0.0
+Detaillierte Integrationsoptionen für AutoCAD 2022 SaaS-Projektmanagementlösung,Request,Customer Service,medium,0.9707603,0.9615072,0.9842612743377686,0.9842612743377686,0.0
+Assistance with Digital Promotion for Udemy Courses,Request,Billing and Payments,low,0.9401885,0.9297073,0.9763345718383789,0.9763345718383789,0.0
+Concern Regarding Invoice,Incident,Billing and Payments,medium,0.931828,0.92361665,0.7942678928375244,0.7942678928375244,0.0
+Failure in Smart Robot Lawn Mower Operation,Problem,Technical Support,medium,0.93385375,0.92647696,0.9934310913085938,0.9934310913085938,0.0
+Hilfe bei Problemen der Websiteleistung,Incident,Technical Support,low,0.8235358,0.7934519,0.8851003646850586,0.8851003646850586,0.0
+Issues with Data Analytics Across Various Platforms,Incident,Technical Support,high,0.87830156,0.8969606,0.9171841740608215,0.9171841740608215,0.0
+Digitale Kampagnen sind erfolgreich,Incident,Customer Service,medium,0.82137275,0.7812203,0.921061098575592,0.921061098575592,0.0
+Misleading Charges on Account,Incident,Billing and Payments,medium,0.8888516,0.86295587,0.8657281398773193,0.8657281398773193,0.0
+Request for Enhancements in Data Protection Measures,Change,General Inquiry,low,0.80592597,0.77255297,0.860099196434021,0.860099196434021,0.0
+ActiveCampaign and PDFfiller Integration Inquiry,Request,General Inquiry,medium,0.9751364,0.9579488,0.9736931324005127,0.9736931324005127,0.0
+Issue with Online Publication,Incident,Technical Support,low,0.86410904,0.8501284,0.9504213333129883,0.9504213333129883,0.0
+Bitten um Unterstützung bei der Integration,Change,Technical Support,medium,0.81369495,0.73117375,0.9086628556251526,0.9086628556251526,0.0
+Unexplained Decline in Engagement Metrics for Campaigns,Incident,Returns and Exchanges,high,0.9759452,0.9567401,0.980715274810791,0.980715274810791,0.0
+Support for SaaS Project Management Platform,Change,Product Support,medium,0.88857096,0.8445735,0.9677392244338989,0.9677392244338989,0.0
+Mehrere Tools funktionieren gleichzeitig,Incident,Technical Support,high,0.82535064,0.8469817,0.8367089629173279,0.8367089629173279,0.0
+Kürzlich entdeckte Sicherheitsverletzung bei medizinischen Daten,Incident,Product Support,high,0.89834094,0.89703095,0.8912622332572937,0.8912622332572937,0.0
+Unauthorized Data Access Attempt,Incident,Returns and Exchanges,low,0.78421795,0.7778521,0.9110480546951294,0.9110480546951294,0.0
+,Request,General Inquiry,low,0.76320195,0.69790584,0.7559324502944946,0.7392560243606567,-0.01667642593383789
+Request for Guidance on Portfolio Optimization,Request,Customer Service,high,0.8624901,0.821875,0.9961079955101013,0.9961079955101013,0.0
+Security Vulnerability,Problem,IT Support,medium,0.7930242,0.6685957,0.6644945740699768,0.6644945740699768,0.0
+Request for Support with KNIME,Problem,Technical Support,low,0.97444767,0.97256565,0.9698386788368225,0.9698386788368225,0.0
+Recent Occurrence of Data Analytics Integration Error,Incident,Technical Support,high,0.851483,0.82314456,0.9500511288642883,0.9500511288642883,0.0
+Immediate Attention Needed: Agile Team Incident Affecting SaaS System Performance,Incident,General Inquiry,low,0.7819983,0.72510004,0.8749397993087769,0.8749397993087769,0.0
+,Request,Customer Service,medium,0.9429107,0.916382,0.9260293245315552,0.9260293245315552,0.0
+Incident: Data Breach,Problem,IT Support,medium,0.9208055,0.9057145,0.9961186647415161,0.9961186647415161,0.0
+Request for DataRobot Support Details,Request,Returns and Exchanges,medium,0.90278274,0.8781843,0.8977972269058228,0.8977972269058228,0.0
+Information on Integrating Elasticsearch for Project Management,Request,Billing and Payments,low,0.83638775,0.7843757,0.8289444446563721,0.8289444446563721,0.0
+Overview of Airtable Project Management,Request,Customer Service,medium,0.9656637,0.9529396,0.9990442395210266,0.9990442395210266,0.0
+Request for Invoice Discount,Change,Billing and Payments,medium,0.627295,0.56969094,0.6070510149002075,0.5927549600601196,-0.01429605484008789
+Problem with Network Connectivity Among Various Devices,Incident,Product Support,medium,0.970344,0.9689642,0.9501872062683105,0.9501872062683105,0.0
+,Incident,Product Support,high,0.9637674,0.9581126,0.9867245554924011,0.9867245554924011,0.0
+Technische Herausforderung bei der Investitionsanalyse-Datenaufarbeitung,Incident,Sales and Pre-Sales,low,0.6983329,0.60508794,0.8316730260848999,0.8316730260848999,0.0
+,Request,Service Outages and Maintenance,high,0.916331,0.88906276,0.9549453258514404,0.9549453258514404,0.0
+,Request,Billing and Payments,low,0.73883677,0.6756183,0.9005467891693115,0.9159775972366333,0.015430808067321777
+Versicherung medizinischer Daten,Request,Technical Support,high,0.6333276,0.5896504,0.7780838012695312,0.7780838012695312,0.0
+Probleme mit integriertem Produkt,Incident,Product Support,medium,0.8454416,0.85802597,0.801889181137085,0.801889181137085,0.0
+Reported Slow Website Performance,Incident,Product Support,low,0.9799433,0.9739005,0.9923406839370728,0.9923406839370728,0.0
+Support Incident Report,Incident,IT Support,high,0.9505037,0.927876,0.922371506690979,0.922371506690979,0.0
+Efforts in Digital Marketing Strategies,Incident,Technical Support,high,0.88516206,0.86866325,0.9870166182518005,0.9870166182518005,0.0
+Challenge with Investment Data Processing,Incident,Product Support,high,0.8838055,0.8622713,0.9788033366203308,0.9788033366203308,0.0
+Versicherung medizinischer Daten Anbietender,Request,Customer Service,high,0.8478514,0.82656276,0.8951727151870728,0.8951727151870728,0.0
+Issue with Smart Steckdose Device,Incident,Technical Support,medium,0.82740885,0.81927335,0.8135478496551514,0.8135478496551514,0.0
+Failure in Integrating Multiple Products,Incident,Service Outages and Maintenance,medium,0.7601093,0.7384893,0.8491985201835632,0.8491985201835632,0.0
+Assistance with Digital Marketing Strategy,Request,Product Support,medium,0.8094284,0.7286495,0.9146162867546082,0.9146162867546082,0.0
+Data Synchronization Problem,Incident,Technical Support,high,0.8383084,0.8410114,0.7799617648124695,0.7799617648124695,0.0
+,Request,Billing and Payments,medium,0.7990554,0.76675415,0.8907870054244995,0.8907870054244995,0.0
+Assistance with Payment Issues,Problem,Billing and Payments,high,0.9218055,0.90911734,0.9744725227355957,0.9744725227355957,0.0
+Server Downtime,Problem,Product Support,high,0.8426205,0.83729684,0.9645751714706421,0.9645751118659973,-5.960464477539063e-08
+Support for Security Issue,Incident,Customer Service,low,0.90578175,0.891649,0.9306092262268066,0.9306092262268066,0.0
+Ungeplantes Datenverarbeitungs-Schwund,Incident,Technical Support,medium,0.6473128,0.58258814,0.7788591384887695,0.7788591384887695,0.0
+,Incident,Product Support,medium,0.882197,0.88117856,0.9410586953163147,0.9410586953163147,0.0
+Support for Database Issues,Incident,Technical Support,high,0.9445552,0.9449996,0.9612493515014648,0.9612493515014648,0.0
+Ungestorbener Zugriff auf Gesundheitsdienstleistungsdatensysteme,Problem,Product Support,medium,0.7126042,0.64450496,0.6509246230125427,0.8468835949897766,0.1959589719772339
+Support for Digital Strategy Challenges,Incident,Product Support,high,0.9573852,0.9451679,0.9692150950431824,0.9692150950431824,0.0
+"Kundenservice, bezüglich Vorfall: unautorisierte Zugriffsversuche auf medizinische Daten im IT-System des Krankenhauses",Incident,IT Support,medium,0.77276105,0.69630736,0.5943642258644104,0.5943641662597656,-5.960464477539063e-08
+Anfrage Betreuung,Incident,Technical Support,high,0.78394645,0.7055903,0.7628985643386841,0.7628984451293945,-1.1920928955078125e-07
+Security Issue with Systems,Incident,Product Support,low,0.86864424,0.88805413,0.9766043424606323,0.9766043424606323,0.0
+Optimierung der Investitionsanalysetools,Change,Returns and Exchanges,high,0.7946116,0.7249365,0.872725784778595,0.821231484413147,-0.051494300365448
+Review of Security Measures Required,Problem,Billing and Payments,high,0.85836697,0.8766809,0.9582034945487976,0.9582034945487976,0.0
+Support Request for Data Loss Issue in Hospital IT Systems,Incident,Technical Support,high,0.7716706,0.74507993,0.8731838464736938,0.8731838464736938,0.0
+Hospital Systems Problem,Problem,Technical Support,medium,0.9045228,0.91978276,0.9836369156837463,0.9836369156837463,0.0
+Terraform Integration in Data Analytics Assistance,Request,Customer Service,low,0.9436928,0.8947003,0.9323126077651978,0.9323126077651978,0.0
+Betreff: Sicherheitsverstoß,Problem,IT Support,high,0.64006865,0.5217631,0.7011157274246216,0.7110258340835571,0.009910106658935547
+Performance Problem with Analytics Platform,Problem,Technical Support,high,0.9848675,0.985271,0.9872258305549622,0.9872258305549622,0.0
+Issues with Software,Incident,Product Support,low,0.87570727,0.865235,0.8895862102508545,0.8895862102508545,0.0
+,Incident,Technical Support,low,0.94135314,0.91558754,0.9795047044754028,0.9795047044754028,0.0
+Bericht über Vorfälle,Incident,Product Support,high,0.934139,0.92996573,0.9839353561401367,0.9839353561401367,0.0
+Kundendienst-Anfrage erhalten,Request,Product Support,low,0.8068234,0.7368546,0.8683982491493225,0.8930220007896423,0.024623751640319824
+Unterstützung bei SAP ERP-Integration,Request,Product Support,medium,0.8528992,0.8154507,0.9244375824928284,0.9244375824928284,0.0
+,Change,Returns and Exchanges,medium,0.98863125,0.98309296,0.9116140604019165,0.9116140604019165,0.0
+Benötigte technische Unterstützung,Change,Technical Support,high,0.98160523,0.9763021,0.9767894744873047,0.9767894744873047,0.0
+Improving Investment Efficiency Through Advanced Data Analytics,Request,General Inquiry,low,0.88843703,0.8617667,0.9864212870597839,0.9864212870597839,0.0
+,Request,Returns and Exchanges,low,0.9890787,0.9827392,0.9939321875572205,0.9939321875572205,0.0
+SaaS Deployment Issue,Problem,Technical Support,medium,0.9561666,0.9281252,0.8970980644226074,0.8970980644226074,0.0
+Sichere medizinische Daten in Krankenhaus-IT-Systemen,Request,Product Support,high,0.8135969,0.7478062,0.848619818687439,0.8627432584762573,0.01412343978881836
+,Problem,Technical Support,medium,0.7654952,0.761095,0.9077780246734619,0.9077780246734619,0.0
+Issue with Project Data Export Frequently Resulting in Crashes,Problem,Product Support,high,0.9488659,0.9404118,0.95688796043396,0.95688796043396,0.0
+Enhancing Security Protocols for Healthcare Data,Change,Customer Service,medium,0.81454575,0.77239954,0.8447997570037842,0.8447997570037842,0.0
+IT-System-Zugriffsprobleme,Incident,Customer Service,low,0.6080475,0.5307601,0.7243709564208984,0.7243708968162537,-5.960464477539063e-08
+Alarm bezüglich Datensicherheit,Incident,General Inquiry,medium,0.9618375,0.9495145,0.9526042342185974,0.9526042342185974,0.0
+Unterstützung für Terraform-Integration und Datenanalyse,Request,Customer Service,low,0.8327135,0.80253255,0.8804705739021301,0.8804705739021301,0.0
+Sichere medizinische Informationssysteme,Request,Technical Support,high,0.83957857,0.76981103,0.8499931693077087,0.8192871809005737,-0.03070598840713501
+Anleitung zur Integration von Data Analytics erforderlich,Request,Product Support,high,0.60544646,0.51975024,0.6557671427726746,0.6968644857406616,0.04109734296798706
+Challenges with Digital Marketing Tools,Incident,IT Support,high,0.78855014,0.7125832,0.8805519938468933,0.8805519938468933,0.0
+Beratung zur Sicherheit medizinischer Daten in Krankenhaus-IT-Lösungen,Request,Customer Service,high,0.8418833,0.76702154,0.8617463111877441,0.8594093322753906,-0.0023369789123535156
+Support Request for Inconsistent Investment Performance Metrics,Incident,Technical Support,high,0.7989938,0.7484238,0.738431453704834,0.738431453704834,0.0
+Incident of Data Breach at Hospital,Incident,IT Support,high,0.9786101,0.9607714,0.9970093369483948,0.9970093369483948,0.0
+Probleme bei den Leistungsmaßen der Kampagne heute,Incident,Customer Service,low,0.8136754,0.788262,0.8241690397262573,0.8241690397262573,0.0
+,Problem,Returns and Exchanges,low,0.81266963,0.79523945,0.8124416470527649,0.8124416470527649,0.0
+Support for Security Incident Involving Medical Data Exposure,Incident,IT Support,medium,0.9401716,0.9314158,0.9628561735153198,0.9628561735153198,0.0
+Question Regarding Account Management Center Integration,Request,Customer Service,medium,0.9713072,0.9523634,0.9829661846160889,0.9829661846160889,0.0
+Decline in Client Engagement Metrics Lately,Problem,Customer Service,medium,0.8595867,0.81062293,0.8868841528892517,0.8868841528892517,0.0
+Request for Detailed Documentation and Support Services,Request,Technical Support,high,0.7954525,0.666501,0.904454231262207,0.904454231262207,0.0
+Konfiguration Skalierbarkeitsoptionen notwendig,Request,Technical Support,medium,0.9114554,0.87474716,0.9405437707901001,0.9405437707901001,0.0
+Issue with Data Preparation Software,Incident,Technical Support,low,0.67011523,0.6189151,0.8649240732192993,0.8649240732192993,0.0
+Verbessere die digitalen Tools für eine verbesserte Markensichtbarkeit und Wachstum,Change,IT Support,medium,0.92443556,0.9078762,0.9472652673721313,0.9472652673721313,0.0
+Problem with Router,Problem,Technical Support,medium,0.8372363,0.85208774,0.982001781463623,0.982001781463623,0.0
+Request for MATLAB R2021a for Investment Optimization,Request,Customer Service,medium,0.9828989,0.969645,0.9522342681884766,0.9522342681884766,0.0
+Warnmeldung,Incident,Technical Support,high,0.870189,0.86909723,0.9804591536521912,0.9804591536521912,0.0
+Support for Delays,Incident,Human Resources,medium,0.9551053,0.9483832,0.9770137071609497,0.9770137071609497,0.0
+,Incident,Product Support,high,0.74189097,0.6434182,0.6790725588798523,0.9091334342956543,0.230060875415802
+Steigere Datenanalyse für bessere Investitionsentscheidungen,Change,Technical Support,high,0.864023,0.8210714,0.9215139746665955,0.9215139746665955,0.0
+Dringend: Persistierende Verbindungsprobleme bei Switches,Problem,Customer Service,low,0.8254408,0.81832284,0.7667823433876038,0.7667823433876038,0.0
+Notify of Slight User Interface Lag Problems,Incident,Technical Support,low,0.962358,0.95765716,0.9567205905914307,0.9567205905914307,0.0
+Integration with Google Keep,Request,Customer Service,medium,0.84853923,0.76826364,0.8349950313568115,0.8349950313568115,0.0
+Problems with Integration,Problem,Technical Support,medium,0.617193,0.5624832,0.535851001739502,0.535851001739502,0.0
+Verbesserung der Datenanalyse-Tools-Integration,Change,Customer Service,low,0.8250304,0.81340265,0.9535027742385864,0.9535027742385864,0.0
+Digital Campaigns Encountering Downtime Problems,Problem,Technical Support,high,0.8535,0.8631381,0.9448886513710022,0.9448886513710022,0.0
+SaaS Software Billing Options,Request,Billing and Payments,medium,0.98129153,0.9803656,0.991601288318634,0.991601288318634,0.0
+Problem with Data Analytics Software Operation,Problem,Technical Support,high,0.887668,0.89173245,0.9633323550224304,0.9633323550224304,0.0
+Wiederholte Abstürze auf mehreren Plattformen,Incident,Technical Support,high,0.78472054,0.78101254,0.8800491094589233,0.8800491094589233,0.0
+Probleme bei der Verbindung zur Projektmanagement SaaS-Plattform,Incident,Sales and Pre-Sales,medium,0.8069937,0.7928829,0.9192631840705872,0.9192631840705872,0.0
+Technical Support for Data Analytics Tools,Problem,Technical Support,high,0.9246305,0.9208391,0.9936272501945496,0.9936272501945496,0.0
+Integrationsprobleme mit Marketingagentur,Incident,Customer Service,medium,0.940323,0.9134134,0.981419563293457,0.981419563293457,0.0
+Guidance on Medical Data Security for MySQL 8.0,Request,Service Outages and Maintenance,high,0.6754844,0.6460144,0.7758576273918152,0.7579624056816101,-0.017895221710205078
+Strategies for Growing a Digital Brand,Request,Customer Service,medium,0.93221486,0.9099759,0.9959709644317627,0.9959709644317627,0.0
+Request for Improvement in Data Analysis Integration,Change,IT Support,high,0.95539486,0.93124115,0.9717870950698853,0.9717870950698853,0.0
+Intermittent Problems Accessing Medical Records Detected,Problem,Customer Service,low,0.94950056,0.93499064,0.9846266508102417,0.9846266508102417,0.0
+IT-Problem,Problem,Product Support,medium,0.8011406,0.80919755,0.8905187249183655,0.8905187249183655,0.0
+Verschlüsselung von Medizinischen Datenlösungen,Request,Customer Service,high,0.80292654,0.7422235,0.9074714183807373,0.9074714183807373,0.0
+System Performance Problem,Incident,Product Support,low,0.61108667,0.5715844,0.8186203241348267,0.8186203241348267,0.0
+Abnahme der Marke Engagement-Metriken und Benachrichtigung,Incident,Product Support,medium,0.61374104,0.62671983,0.797873854637146,0.7416354417800903,-0.056238412857055664
+Concern Regarding Latest Integration Update,Incident,Customer Service,high,0.94690603,0.93112314,0.9751503467559814,0.9751503467559814,0.0
+,Incident,Returns and Exchanges,low,0.9950753,0.99322844,0.9917352795600891,0.9917352795600891,0.0
+Failure in High-Intensity Projector Automation Process,Incident,Technical Support,high,0.8404653,0.8250291,0.9357195496559143,0.9357195496559143,0.0
+System Crash Due to Compatibility Issues,Problem,Product Support,low,0.90534866,0.8920205,0.9112598299980164,0.9112598299980164,0.0
+Improve Digital Strategy Resources,Change,Technical Support,high,0.80651295,0.80384195,0.9179470539093018,0.9179470539093018,0.0
+,Request,Customer Service,medium,0.9937855,0.98544306,0.9965753555297852,0.9965753555297852,0.0
+Secure Management of Medical Data,Request,Billing and Payments,medium,0.8575634,0.8066827,0.9539456963539124,0.9539456963539124,0.0
+,Incident,Product Support,low,0.77657115,0.68320435,0.666205883026123,0.666205883026123,0.0
+Request for Assistance with Data Breach Resolution,Problem,Returns and Exchanges,medium,0.9216696,0.9074527,0.9761487245559692,0.9761487245559692,0.0
+Mehrere Produkte verursachen technische Schwierigkeiten,Incident,Technical Support,medium,0.98150903,0.97729397,0.9695817232131958,0.9695817232131958,0.0
+Report of Data Processing System Issue,Problem,IT Support,medium,0.7959577,0.77580893,0.9238455891609192,0.9238455891609192,0.0
+Support for Digital Strategy Integration,Request,Product Support,high,0.93400294,0.91696197,0.9581649303436279,0.9581649303436279,0.0
+Billing Concerns for Multiple Subscriptions,Incident,Billing and Payments,low,0.9692449,0.95940953,0.9453796744346619,0.9453796744346619,0.0
+Protocols for Safeguarding Patient Data,Request,IT Support,high,0.8220737,0.8219782,0.9940483570098877,0.9940483570098877,0.0
+Probleme mit der WLAN-Verbindung,Problem,Product Support,medium,0.8056591,0.80649555,0.9153608679771423,0.9153608679771423,0.0
+Problems with Laravel Application,Incident,Technical Support,high,0.96950996,0.9616307,0.9721187949180603,0.9721187949180603,0.0
+,Request,Returns and Exchanges,low,0.9958151,0.9944268,0.9957079291343689,0.9957079291343689,0.0
+Reported Data Synchronization Issue,Incident,Technical Support,high,0.9011986,0.8490328,0.9718600511550903,0.9718600511550903,0.0
+Support Inquiry: Issue with Slow Loading Times,Incident,Product Support,medium,0.96246064,0.9490607,0.9801175594329834,0.9801175594329834,0.0
+Fehler im System Kundensupport,Incident,Product Support,medium,0.68710345,0.63989276,0.7610403299331665,0.6197685599327087,-0.14127177000045776
+Update Software Tools,Change,IT Support,high,0.77423954,0.74587697,0.7561943531036377,0.7561943531036377,0.0
+Request for Assistance with Data Security Breach,Problem,Technical Support,high,0.69410133,0.67641056,0.8208961486816406,0.8208961486816406,0.0
+Anfrage zur Integration von Norton Antivirus in SaaS-Projektmanagement-Tools,Request,IT Support,low,0.9261353,0.8915324,0.923060417175293,0.923060417175293,0.0
+Support Project Software Problems,Incident,IT Support,high,0.9423092,0.93492216,0.9887467622756958,0.9887467622756958,0.0
+,Request,Technical Support,medium,0.94805425,0.93285227,0.9930174946784973,0.9930176138877869,1.1920928955078125e-07
+Report on Decrease in Online Engagement,Incident,Product Support,medium,0.9106622,0.9055952,0.9591163396835327,0.9591163396835327,0.0
+,Problem,Product Support,low,0.982594,0.97759235,0.9865695834159851,0.9865695834159851,0.0
+,Request,Customer Service,high,0.95595074,0.9564862,0.9727544784545898,0.9727544784545898,0.0
+Concerns About SaaS Tool Performance,Problem,Technical Support,high,0.93565094,0.9206656,0.9750854969024658,0.9750854969024658,0.0
+Information on Digital Marketing Strategies for Brand Growth,Request,Billing and Payments,medium,0.9180164,0.89400125,0.9838417172431946,0.9838417172431946,0.0
+Issue with Synchronization in Account Management Center,Incident,Technical Support,high,0.8062334,0.79780686,0.7883952260017395,0.7883952260017395,0.0
+HelloSign Integration Guide,Request,Customer Service,high,0.9854904,0.9794205,0.8614199161529541,0.8614199161529541,0.0
+Hospital System Security Breach Detected,Problem,Product Support,medium,0.93714654,0.9292397,0.9908653497695923,0.9908653497695923,0.0
+Issue Reported,Incident,Billing and Payments,low,0.7402077,0.68718004,0.7313122749328613,0.707352340221405,-0.0239599347114563
+Rails and Kubernetes Integration Assistance,Request,Human Resources,low,0.9723389,0.9661629,0.9970981478691101,0.9970981478691101,0.0
+Beratung zu Sicherung medizinischer Daten auf IBM Cloud,Request,Billing and Payments,high,0.8670622,0.8075564,0.8469011783599854,0.8469011783599854,0.0
+Message Regarding Software Startup Errors,Incident,IT Support,high,0.91359997,0.91184914,0.8358383178710938,0.8358383178710938,0.0
+Detected Billing Inconsistencies,Problem,Billing and Payments,medium,0.9357027,0.9301542,0.895959734916687,0.895959734916687,0.0
+Analyse von Digitalen Strategien für Wachstum,Request,Returns and Exchanges,medium,0.58601886,0.51330817,0.6472885012626648,0.610448956489563,-0.03683954477310181
+Problem mit Antivirensoftware,Problem,Product Support,low,0.8480086,0.8405926,0.9366122484207153,0.9366122484207153,0.0
+Request for Information on Integrating RapidMiner Project Management SaaS,Request,Customer Service,medium,0.9085601,0.88705444,0.9987388849258423,0.9987388849258423,0.0
+Fehlschlag letzter Campagne durch technische Schwierigkeiten,Incident,Returns and Exchanges,medium,0.88841414,0.864604,0.9212455153465271,0.9212455153465271,0.0
+Protect Hospital Data Infrastructure,Change,IT Support,medium,0.9373367,0.9183393,0.9558702111244202,0.9558702111244202,0.0
+Benötigte Hilfe bei Redis-Integration,Request,Technical Support,medium,0.9409163,0.93689793,0.9289708137512207,0.9289708137512207,0.0
+Concerns with Connectivity of Logitech K780 Keyboard,Problem,IT Support,medium,0.9592688,0.94980234,0.8589672446250916,0.8589672446250916,0.0
+Urgent: Major System Failure Noted,Incident,IT Support,high,0.7546763,0.76516604,0.8312276005744934,0.8312275409698486,-5.960464477539063e-08
+Request for Assistance with Financial Analytics Tools,Incident,Technical Support,high,0.5977982,0.5414393,0.6473845839500427,0.6207314729690552,-0.02665311098098755
+Request for Guidance on Integrating DocuSign and JIRA Software,Change,Technical Support,high,0.9101393,0.88877827,0.971786618232727,0.971786618232727,0.0
+Problem Detected with Dell Monitor,Incident,Technical Support,high,0.8882055,0.8567781,0.8428894281387329,0.8428894281387329,0.0
+Intermittent Connection Issues with Software Tools,Incident,Technical Support,medium,0.6459449,0.5830724,0.7550976276397705,0.755097508430481,-1.1920928955078125e-07
+Problem with Synchronization of Data Across Devices,Problem,Returns and Exchanges,high,0.9690088,0.96604425,0.9580932855606079,0.9580932855606079,0.0
+,Change,Customer Service,low,0.8239741,0.80205536,0.9486634731292725,0.9486634731292725,0.0
+Report of Occurring Incident,Incident,Technical Support,medium,0.96862054,0.9631093,0.9863728880882263,0.9863728880882263,0.0
+Data Protection Request,Change,General Inquiry,low,0.8113327,0.8191777,0.9429751038551331,0.9429751038551331,0.0
+,Incident,Customer Service,high,0.81683576,0.8058621,0.8325954079627991,0.8325954079627991,0.0
+Issue with Cloud Platform Crashed Today,Problem,IT Support,high,0.8905856,0.87419665,0.9469737410545349,0.9469737410545349,0.0
+Concerns About Data Security in Hospital System,Problem,Technical Support,medium,0.9597637,0.96439946,0.9561282396316528,0.9561282396316528,0.0
+,Incident,Product Support,medium,0.6286051,0.5950875,0.8536382913589478,0.8673214316368103,0.013683140277862549
+Traffic disruptions on SaaS platform,Incident,Returns and Exchanges,low,0.8168568,0.81477267,0.9241009950637817,0.9241009950637817,0.0
+Enhancing Investment Strategies with Data Analytics,Request,Returns and Exchanges,medium,0.81327754,0.7158202,0.8965533971786499,0.7678222060203552,-0.12873119115829468
+Update on the Problem with Financial Analytics Software,Incident,Product Support,medium,0.85463953,0.86292154,0.8289965391159058,0.8289965391159058,0.0
+Issue with Network Access Products,Incident,Technical Support,low,0.90031683,0.86686873,0.8985416889190674,0.8985416889190674,0.0
+Problems with Patient Billing Access,Incident,Billing and Payments,high,0.75352246,0.79222476,0.8887078166007996,0.8887078762054443,5.960464477539063e-08
+Detected Unauthorised Access Attempt on Hospital Systems,Incident,IT Support,low,0.95233047,0.9488144,0.8771279454231262,0.8771279454231262,0.0
+Security Incident Involving Medical Data,Incident,Billing and Payments,medium,0.7226788,0.6241866,0.7558596730232239,0.7514621019363403,-0.004397571086883545
+,Incident,IT Support,medium,0.9922399,0.99022985,0.9782862067222595,0.9782862067222595,0.0
+Query on Project Management SaaS,Request,Sales and Pre-Sales,high,0.91262233,0.8986827,0.98388671875,0.98388671875,0.0
+Assistance Needed for Data Breach Event,Incident,IT Support,high,0.8386824,0.7606855,0.7527472972869873,0.7527472972869873,0.0
+,Incident,Customer Service,low,0.9204409,0.91884047,0.9981846809387207,0.9981846809387207,0.0
+Discrepancy in Billing Identified,Incident,Billing and Payments,medium,0.9133254,0.8761411,0.8774666786193848,0.8774667382240295,5.960464477539063e-08
+,Incident,Technical Support,high,0.93279314,0.9180722,0.9733959436416626,0.9733959436416626,0.0
+Query on Digital Strategies for Online Growth,Request,Customer Service,high,0.9355712,0.91499925,0.8942728638648987,0.8942728638648987,0.0
+Alarmmeldung,Incident,General Inquiry,medium,0.6061729,0.54653025,0.7245470285415649,0.7282559871673584,0.003708958625793457
+Request for Optimization of Investment Data Analytics Workflow,Change,IT Support,high,0.84419256,0.84923774,0.9254509210586548,0.9254509210586548,0.0
+Incident Report: Unauthorized Access Identified,Incident,Technical Support,high,0.6996008,0.64792776,0.8863200545310974,0.8863200545310974,0.0
+,Problem,Technical Support,medium,0.9578022,0.94383466,0.9909635782241821,0.9909635782241821,0.0
+Decrease in Engagement Metrics Noted by Marketing Agency,Incident,Customer Service,medium,0.959741,0.96101826,0.9686427116394043,0.9686427116394043,0.0
+Request for Details on Medical Data Security Services,Request,Sales and Pre-Sales,low,0.9633456,0.95417094,0.9836919903755188,0.9836919903755188,0.0
+Support Request for System Update,Change,Billing and Payments,medium,0.9592274,0.9552241,0.8305670619010925,0.8305670619010925,0.0
+Unterstützung bei Sicherheitsvorfall benötigt,Problem,IT Support,medium,0.94803953,0.9278947,0.9643142223358154,0.9643142223358154,0.0
+Improve Document Management Solutions,Change,Sales and Pre-Sales,medium,0.9813793,0.97885025,0.9945449829101562,0.9945449829101562,0.0
+Improvements in Cassandra 4.0 for Investment Data Analytics,Request,Sales and Pre-Sales,low,0.98930454,0.987114,0.9954717755317688,0.9954717755317688,0.0
+Investigation into Delays of Investment Guidance,Incident,Product Support,medium,0.9162648,0.8913512,0.9509963989257812,0.9509963989257812,0.0
+Latency Problem in Financial System,Problem,IT Support,high,0.93547297,0.9191724,0.9076534509658813,0.9076534509658813,0.0
+Unapproved Entry into Medical Files,Incident,Billing and Payments,high,0.7618356,0.7046919,0.8141540288925171,0.8141540288925171,0.0
+Billing Discrepancy Inquiry,Incident,Billing and Payments,medium,0.78495526,0.78219587,0.9807428121566772,0.9807428121566772,0.0
+,Incident,Technical Support,high,0.98384446,0.98385733,0.9852585792541504,0.9852585792541504,0.0
+Healthcare System Data Breach Alert,Problem,IT Support,medium,0.8330765,0.8400436,0.9937756061553955,0.9937756061553955,0.0
+"Akuter Vorfall, mehrere Geräte und Plattformen betroffen",Incident,Product Support,high,0.696171,0.684985,0.8656864166259766,0.7207695245742798,-0.14491689205169678
+Possible Security Compromise Detected,Problem,Technical Support,high,0.90433353,0.90346223,0.9158273935317993,0.9158273935317993,0.0
+,Request,Billing and Payments,medium,0.94728243,0.93307483,0.9900920391082764,0.9900920391082764,0.0
+JIRA-Integration-Hilfe notwendig,Request,Customer Service,low,0.79931897,0.7307998,0.7693910002708435,0.7693910002708435,0.0
+Datenabweichung,Incident,Returns and Exchanges,low,0.66348773,0.6858336,0.9162499904632568,0.9162499904632568,0.0
+Support Inquiry about Investment Forecasting Tool,Problem,IT Support,low,0.8740053,0.8520783,0.960075855255127,0.960075855255127,0.0
+Problem with Synchronizing Project Data Across Platforms,Incident,Product Support,medium,0.9216874,0.8924372,0.9693154096603394,0.9693154096603394,0.0
+Request for Updating Analytics Tools,Change,Service Outages and Maintenance,low,0.7297691,0.67440486,0.6967605352401733,0.8103638887405396,0.11360335350036621
+Improve Security Measures for Medical Data,Change,Customer Service,medium,0.7902755,0.7246932,0.8803074359893799,0.8803074359893799,0.0
+Problems with Data Synchronization Between Applications,Incident,Billing and Payments,high,0.9491947,0.9399904,0.9750316143035889,0.9750316143035889,0.0
+Support for Digital Marketing Campaigns Needed,Problem,Sales and Pre-Sales,medium,0.8588371,0.82891476,0.9510284066200256,0.9510284066200256,0.0
+,Change,Returns and Exchanges,medium,0.9257457,0.9164881,0.917235255241394,0.917235255241394,0.0
+Sound-Issue,Incident,Returns and Exchanges,medium,0.9689026,0.95569396,0.9626752138137817,0.9626752138137817,0.0
+Support Inquiry Problem,Incident,Customer Service,medium,0.88916373,0.8700985,0.9882950186729431,0.9882950186729431,0.0
+Reported Login Issues Today,Problem,Technical Support,medium,0.9812013,0.9778234,0.9519394636154175,0.9519394636154175,0.0
+Concern Regarding Investment Analytics Tool,Problem,Technical Support,medium,0.68185544,0.69805396,0.7551287412643433,0.7551287412643433,0.0
+Update User Rights Interfaces,Change,Technical Support,low,0.89090693,0.88392556,0.9071221947669983,0.9071221947669983,0.0
+Problem with Financial Data Analytics Platform,Incident,Technical Support,medium,0.94610155,0.9387286,0.9506878852844238,0.9506878852844238,0.0
+Enhancing Digital Content with Adobe Premiere Pro 2021,Request,IT Support,high,0.95929503,0.951596,0.9898600578308105,0.9898600578308105,0.0
+Sicherheitsrisiko,Incident,Technical Support,high,0.7410557,0.6808088,0.7736784219741821,0.7736784219741821,0.0
+Anfrage zu Digitalen Strategien und Fördermöglichkeiten,Request,Product Support,high,0.8916814,0.8702554,0.9814414978027344,0.9814414978027344,0.0
+QuickBooks Integration Details,Request,Product Support,medium,0.9546058,0.92125463,0.9855992794036865,0.9855992794036865,0.0
+Request for Support with Campaign Performance Issues,Incident,Sales and Pre-Sales,low,0.7972125,0.79099303,0.9619308710098267,0.9619308710098267,0.0
+Technical Assistance,Incident,Technical Support,low,0.56736445,0.47053748,0.5962483286857605,0.7478834390640259,0.15163511037826538
+Importance of Protecting Medical Data,Request,Returns and Exchanges,low,0.9407995,0.92317176,0.947683572769165,0.947683572769165,0.0
+Investigation Required for Investment Analysis Projections Error,Incident,Product Support,medium,0.9470243,0.9331509,0.977412760257721,0.977412760257721,0.0
+Query on Data Analytics Services,Request,Customer Service,high,0.83223444,0.7226968,0.8747776746749878,0.8747776746749878,0.0
+Address Decrease in Brand Engagement Amidst Utilized Digital Strategies,Problem,Human Resources,medium,0.98732245,0.9807431,0.9921499490737915,0.9921499490737915,0.0
+Verschleierung von medizinischen Daten,Incident,Billing and Payments,high,0.6464647,0.56340724,0.8128974437713623,0.8128975033760071,5.960464477539063e-08
+Issue with Invoice,Problem,Billing and Payments,medium,0.69582474,0.64088297,0.8353015184402466,0.8353015184402466,0.0
+Peripheral Device Challenges,Problem,Human Resources,low,0.9631997,0.96030533,0.9715102910995483,0.9715102910995483,0.0
+Request for Pricing Information,Request,Billing and Payments,low,0.68687165,0.647985,0.7421549558639526,0.7287190556526184,-0.013435900211334229
+Request for Updating Billing Information,Change,Billing and Payments,high,0.94048023,0.90969074,0.9617112874984741,0.9617112874984741,0.0
+Sicherheitslücke in medizinischen IT-Systemen des Krankenhauses gemeldet,Problem,Returns and Exchanges,low,0.7961775,0.7852053,0.724239706993103,0.724239706993103,0.0
+Dringende Verbindungsstörungen bei Geräten beeinträchtigen Büroabläufe,Incident,Technical Support,low,0.95672846,0.94347125,0.9782931804656982,0.9782931804656982,0.0
+,Problem,IT Support,medium,0.7942052,0.7569869,0.9244436025619507,0.9244436025619507,0.0
+Medizinische Daten-Sicherungslösungen,Request,Customer Service,low,0.85213315,0.8537502,0.9815396070480347,0.9815396070480347,0.0
+Issue with Adobe Effects,Incident,Technical Support,high,0.9664341,0.94376105,0.9507691264152527,0.9507691264152527,0.0
+Optimizing ClickUp for Better Project Management,Request,Technical Support,high,0.9519649,0.9403259,0.9832226634025574,0.9832226634025574,0.0
+Reported Problem with Data Synchronization,Problem,Technical Support,medium,0.82661587,0.7164,0.805835485458374,0.805835485458374,0.0
+Request for Enhancements in User Interface for Project Management,Change,Product Support,high,0.9595674,0.96353805,0.9820516109466553,0.9820516109466553,0.0
+Eilige Unterstützung benötigt,Incident,Technical Support,high,0.71389407,0.67627287,0.7681830525398254,0.7681830525398254,0.0
+Protecting Patient Data in a Hospital Setting,Request,Technical Support,low,0.8702575,0.85006446,0.9638290405273438,0.9638290405273438,0.0
+,Change,Billing and Payments,low,0.7843833,0.77610993,0.8574073314666748,0.8574073314666748,0.0
+Fehlerhafte Anlageleistungsdaten Analytics-Desktop,Problem,Customer Service,medium,0.65651023,0.616156,0.6924282312393188,0.6632532477378845,-0.029174983501434326
+Details on SaaS Project Management Features,Request,IT Support,low,0.8998319,0.88000715,0.9775781631469727,0.9775781631469727,0.0
+Sicherheitsanleitungen für MongoDB,Request,Technical Support,medium,0.9744846,0.9662795,0.9793058633804321,0.9793058633804321,0.0
+Handling Unauthorized Access Attempts to Medical Data Systems,Problem,Technical Support,high,0.8375514,0.82054067,0.8390045166015625,0.8390045166015625,0.0
+Discrepancy in Recent Invoice Charges,Problem,Billing and Payments,medium,0.8236357,0.7928996,0.7909103631973267,0.7909103631973267,0.0
+Issue with System Failure,Incident,Technical Support,high,0.7887223,0.8009744,0.8750847578048706,0.8750847578048706,0.0
+Problems with Online Publication,Incident,Technical Support,low,0.74206823,0.72019535,0.9069919586181641,0.9069919586181641,0.0
+Failure of Digital Strategies,Incident,Technical Support,high,0.9552967,0.95496964,0.8835944533348083,0.8835944533348083,0.0
+,Incident,Technical Support,low,0.9808784,0.97571397,0.9973952770233154,0.9973952770233154,0.0
+Probleme bei der Anmeldung auf der Website nach einem Systemcrash,Problem,IT Support,high,0.69110304,0.66214615,0.8189727067947388,0.8189727067947388,0.0
+Concern Regarding Security Breach of Medical Data,Problem,Returns and Exchanges,medium,0.85095567,0.8624044,0.979320228099823,0.979320228099823,0.0
+Unterstützung bei Datenverstoßfall,Problem,IT Support,high,0.63495666,0.5760222,0.847147524356842,0.9131935834884644,0.06604605913162231
+Informationen zur Sicherung medizinischer Daten mit Symantec Endpoint Protection 14.3,Request,Returns and Exchanges,high,0.9070002,0.85646003,0.8987995386123657,0.8987995386123657,0.0
+Problem mit Smart-Thermometer und Chef-Apps,Problem,Customer Service,low,0.91632706,0.9011231,0.9270120859146118,0.9270120859146118,0.0
+Issues with Application Crashes,Incident,Technical Support,high,0.9381884,0.9093156,0.9747912287712097,0.9747912287712097,0.0
+Device Software Compatibility Concerns,Problem,Sales and Pre-Sales,high,0.9430269,0.94167745,0.9946473836898804,0.9946473836898804,0.0
+Anleitung zur Integration von Norton Antivirus erforderlich,Request,Technical Support,medium,0.9448088,0.91307485,0.9453692436218262,0.9453692436218262,0.0
+Assistance Required for Digital Tools,Problem,IT Support,medium,0.74278736,0.7303708,0.5829391479492188,0.5829392075538635,5.960464477539063e-08
+Revise Digital Strategy for Enhanced Growth,Change,Product Support,medium,0.9256128,0.94570875,0.9644332528114319,0.9644332528114319,0.0
+Report on System Failure,Incident,Technical Support,medium,0.8991936,0.9084368,0.8850232362747192,0.8850232362747192,0.0
+Suspicion of Security Breach,Problem,Technical Support,high,0.768363,0.7600709,0.8635287880897522,0.8635287880897522,0.0
+Expansion of Marketing Strategies,Change,Returns and Exchanges,low,0.9102986,0.90837175,0.9055824279785156,0.9055824279785156,0.0
+Request for Data Update Preparation,Change,Technical Support,low,0.8512968,0.8409942,0.9000324010848999,0.9000324010848999,0.0
+Software Integration Challenge,Change,Product Support,low,0.9676862,0.9584339,0.9807491302490234,0.9807491302490234,0.0
+Sicherheitsrisiko im medizinischen Datensystem des Gesundheitsversorgers,Incident,Product Support,medium,0.6954843,0.6069042,0.8169249296188354,0.8547980785369873,0.037873148918151855
+Performance Problems During Peak Times,Incident,IT Support,medium,0.8223836,0.8053696,0.9082003831863403,0.9082003831863403,0.0
+Unterstützung beim Schutz sensibler medizinischer Daten,Request,Human Resources,low,0.912938,0.877474,0.9306396245956421,0.9306396245956421,0.0
+Digital Campaign Underachievement Due to Errors,Incident,Product Support,medium,0.929656,0.9245711,0.8745476007461548,0.8745476007461548,0.0
+Issue with Project Boards,Problem,Customer Service,medium,0.73683333,0.7007962,0.8061507344245911,0.8061506748199463,-5.960464477539063e-08
+Seeking Support for Integrating MATLAB R2021a Project Management Tool,Request,Customer Service,low,0.9773958,0.9507583,0.969444990158081,0.969444990158081,0.0
+Anpassung Rechnungsstellungsoptionen in Dynamics,Request,Billing and Payments,medium,0.92793566,0.9256209,0.921358048915863,0.921358048915863,0.0
+Feedback to Sales Strategy,Change,Sales and Pre-Sales,medium,0.90569514,0.8914707,0.9401549696922302,0.9401549696922302,0.0
+,Incident,Returns and Exchanges,low,0.8856653,0.8579518,0.9593384265899658,0.9593384265899658,0.0
+Effektive Datenschutzmaßnahmen für medizinische Daten,Request,Technical Support,high,0.5390885,0.47416857,0.6091387271881104,0.6251150369644165,0.015976309776306152
+Hilfe zur Behandlung unerlaubten Zugriffs auf die IT-Infrastruktur,Incident,IT Support,high,0.72583807,0.637994,0.5112253427505493,0.893731951713562,0.3825066089630127
+Technical Support for QuickBooks Alteryx Performance Lag,Incident,Technical Support,medium,0.52119976,0.50948167,0.6821245551109314,0.6626381874084473,-0.01948636770248413
+Support for Software Malfunctions,Incident,IT Support,medium,0.6617935,0.660166,0.7972311973571777,0.7019171714782715,-0.09531402587890625
+Technische Anomaly,Incident,Technical Support,high,0.8272118,0.8233204,0.8873378038406372,0.8873378038406372,0.0
+,Problem,Technical Support,medium,0.96183276,0.9411835,0.9852813482284546,0.9852813482284546,0.0
+Issues with Demo-Access Area,Incident,Sales and Pre-Sales,medium,0.7113348,0.6836089,0.9439556002616882,0.9439556002616882,0.0
+Ensuring Security in Medical Data Services,Request,Returns and Exchanges,low,0.8905725,0.8998189,0.903662919998169,0.903662919998169,0.0
+Datensicherheitszugriffsproblem,Incident,Sales and Pre-Sales,medium,0.65299046,0.5524316,0.7115693688392639,0.7792924642562866,0.0677230954170227
+,Incident,Product Support,medium,0.99307394,0.9870534,0.991777777671814,0.991777777671814,0.0
+Addressing Drop in Client Engagement Amid Digital Strategy Adjustments,Problem,Sales and Pre-Sales,high,0.88888395,0.8748531,0.9480059146881104,0.9480059146881104,0.0
+Digital Strategy for Brand Expansion,Request,Customer Service,low,0.86917603,0.8671081,0.9090937972068787,0.9090937972068787,0.0
+,Incident,Technical Support,high,0.96356684,0.9593398,0.9982736110687256,0.9982736110687256,0.0
+Support Request for Cassandra Integration,Request,IT Support,high,0.80070937,0.73622185,0.7396937608718872,0.7396937608718872,0.0
+Assistance Needed for Critical Software Malfunction,Incident,Technical Support,high,0.98868066,0.98522615,0.9869737029075623,0.9869737029075623,0.0
+Support for Security and Health IT Systems,Problem,Product Support,high,0.6655921,0.72474,0.8755627274513245,0.8755627274513245,0.0
+Request for Data Breach Handling by Customer Service,Problem,Technical Support,high,0.6942105,0.6462302,0.7295631170272827,0.8292353749275208,0.09967225790023804
+Customer Service Message,Request,Customer Service,medium,0.6503943,0.6073464,0.8469661474227905,0.8469661474227905,0.0
+Fehlerhafte Marketingkampagne für Gaming-PCs,Incident,Product Support,medium,0.9433881,0.9299121,0.9572210311889648,0.9572210311889648,0.0
+Security Concern Due to Data Breach,Problem,Product Support,medium,0.77678853,0.6911632,0.7014423608779907,0.6735875010490417,-0.027854859828948975
+Problem mit Abrechnungsdifferenzen,Problem,Billing and Payments,medium,0.7412878,0.74779093,0.7365821599960327,0.694551944732666,-0.0420302152633667
+,Problem,Technical Support,high,0.7769526,0.6560397,0.8612157106399536,0.8612157106399536,0.0
+Reported Login Issues During Peak Hours,Incident,Customer Service,high,0.92613083,0.9206853,0.9984994530677795,0.9984994530677795,0.0
+,Request,Product Support,medium,0.97009444,0.95604515,0.9991803765296936,0.9991803765296936,0.0
+Issue with Data Usage Settings,Problem,Customer Service,medium,0.9524346,0.9448481,0.9066887497901917,0.9066887497901917,0.0
+Integration von SaaS-Projektmanagement-Software mit Zapier und Kubernetes,Request,Product Support,low,0.94957876,0.941081,0.9744961261749268,0.9744961261749268,0.0
+,Problem,Product Support,low,0.9657626,0.96396327,0.9808297753334045,0.9808297753334045,0.0
+,Request,Product Support,medium,0.9151126,0.88616973,0.9995014071464539,0.9995014071464539,0.0
+Boost Security Measures for Medical Data Protection,Change,General Inquiry,low,0.87828493,0.85096264,0.992089569568634,0.992089569568634,0.0
+,Request,Product Support,high,0.90666854,0.8802433,0.9660805463790894,0.9660805463790894,0.0
+Encountering Unanticipated System Crashes in SaaS Application Resulting in Downtime for Users,Incident,IT Support,high,0.7503783,0.70812744,0.9871960282325745,0.9871960282325745,0.0
+,Incident,Technical Support,high,0.8147464,0.8179059,0.9183526039123535,0.9183526039123535,0.0
+Medical Data Security Concerns,Problem,Product Support,medium,0.7908831,0.7647342,0.8360190391540527,0.8360189199447632,-1.1920928955078125e-07
+Assistance with Digital Marketing Services for Technical Products,Request,Customer Service,medium,0.659921,0.63419646,0.8371579051017761,0.8371579051017761,0.0
+,Request,Technical Support,medium,0.98597014,0.9804907,0.9950132966041565,0.9950132966041565,0.0
+Question about Data Analytics Solutions,Request,Product Support,medium,0.857413,0.82330906,0.930329442024231,0.9339128732681274,0.0035834312438964844
+Sicherheitsrisiken im System,Incident,Product Support,high,0.72566974,0.67004246,0.8408263325691223,0.797258734703064,-0.04356759786605835
+Support for Monday.com Integration with Xcode,Request,Customer Service,medium,0.9845611,0.9693701,0.9818258285522461,0.9818258285522461,0.0
+Recurring Sync Issues Across Various Products,Problem,Customer Service,medium,0.9812112,0.9764457,0.9507408142089844,0.9507408142089844,0.0
+Troubleshooting System Failure in Data Analysis,Incident,Technical Support,high,0.9065221,0.91852176,0.9987436532974243,0.9987436532974243,0.0
+Security Incident in Healthcare Provider Systems,Incident,Technical Support,medium,0.97172344,0.9546865,0.9818204641342163,0.9818204641342163,0.0
+Optimierung der digitale Marketing-Tools und Wachstumsstrategien,Change,IT Support,medium,0.83598095,0.78666353,0.9339909553527832,0.9339909553527832,0.0
+Optimierung der digitalen Marketing-Workflows,Request,Technical Support,medium,0.95391536,0.92343175,0.9933468699455261,0.9933468699455261,0.0
+Unanticipated System Crashes in SaaS Application Resulting in Downtime,Incident,IT Support,high,0.7681865,0.7469753,0.9922413229942322,0.9922413229942322,0.0
+Support Request for Security Concern,Incident,Technical Support,high,0.9134252,0.9238107,0.9873015880584717,0.9873015880584717,0.0
+Sicherheitskonzepte für medizinische Daten in Mailchimp,Request,Technical Support,high,0.8903755,0.83907413,0.9415619969367981,0.9415619969367981,0.0
+Probleme mit der Verbindung zur Postgres-Datenbank,Problem,Technical Support,medium,0.8733296,0.84938955,0.8207762241363525,0.8207762241363525,0.0
+Human Resources Issue,Incident,Human Resources,high,0.8965517,0.89711344,0.9704172611236572,0.9704172611236572,0.0
+Guide in Integrating QuickBooks Project Management,Request,Billing and Payments,medium,0.9256779,0.91057587,0.937896728515625,0.937896728515625,0.0
+Problems with Syncing Project Data Across Multiple Devices,Problem,Technical Support,medium,0.9589485,0.947011,0.987181544303894,0.987181544303894,0.0
+Service Disruption Report,Incident,Service Outages and Maintenance,high,0.925097,0.9163155,0.9663936495780945,0.9663936495780945,0.0
+,Incident,Sales and Pre-Sales,low,0.89327943,0.8974838,0.9772007465362549,0.9772007465362549,0.0
+Troubleshooting Connectivity Problems with Kodak ScanMate i940,Incident,Technical Support,medium,0.8566102,0.83209103,0.8780885338783264,0.8780885338783264,0.0
+Efforts in Digital Marketing Not Yielding Results,Incident,IT Support,high,0.7890438,0.7598827,0.9737287163734436,0.9737287163734436,0.0
+,Request,Product Support,medium,0.7432706,0.66167086,0.9163074493408203,0.9254990220069885,0.009191572666168213
+Enhancing Digital Marketing Techniques,Request,IT Support,high,0.9069405,0.87956077,0.9883260726928711,0.9883260726928711,0.0
+,Request,IT Support,high,0.98390263,0.97185814,0.9995712041854858,0.9995712041854858,0.0
+,Incident,Customer Service,low,0.9687016,0.9555084,0.9881896376609802,0.9881896376609802,0.0
+Critical Problem,Change,Service Outages and Maintenance,high,0.78778374,0.7859957,0.9234008193016052,0.9234008193016052,0.0
+Fehlermeldung: Investment-Datenanalyse-Tool,Incident,Customer Service,medium,0.667614,0.59741914,0.8316473960876465,0.8316473960876465,0.0
+Query for Assistance with Inaccurate Investment Predictions,Problem,Product Support,medium,0.9635732,0.9598572,0.9936306476593018,0.9936306476593018,0.0
+Urgent Support Needed: Data Breach Occurred Today,Problem,Billing and Payments,medium,0.7921368,0.7694117,0.9776186943054199,0.9776186943054199,0.0
+Problems with SaaS-Tools Integration,Incident,Service Outages and Maintenance,high,0.87769794,0.8708331,0.9316853284835815,0.9316853284835815,0.0
+,Incident,Technical Support,high,0.96824205,0.956154,0.9919638633728027,0.9919638633728027,0.0
+Technische Schwierigkeit bei Investment-Optimierungs-Tool,Incident,Technical Support,high,0.85304326,0.82190347,0.8138195872306824,0.8138195872306824,0.0
+,Change,Technical Support,high,0.906034,0.9048666,0.9899446964263916,0.9899446964263916,0.0
+,Request,IT Support,high,0.8817444,0.82753336,0.9130781888961792,0.9655166864395142,0.05243849754333496
+Assistance Required for RapidMiner Investment Strategies in Financial Data Analytics,Request,Customer Service,high,0.9477537,0.9230439,0.9917635917663574,0.9917635917663574,0.0
+Anfrage zu Sicherheit von medizinischen Daten auf dem RAID-Controller QNAP TS-453D NAS,Request,Customer Service,medium,0.95300853,0.93305576,0.9299263954162598,0.9299263954162598,0.0
+Nachricht über unberechtigten Zugang,Incident,IT Support,high,0.73599064,0.69617796,0.8468614816665649,0.8468615412712097,5.960464477539063e-08
+Langsame Ladezeiten,Incident,IT Support,medium,0.8025457,0.71042776,0.8593568801879883,0.848290741443634,-0.011066138744354248
+Strategy for Brand Growth,Change,IT Support,high,0.93711364,0.9365643,0.9395744204521179,0.9395744204521179,0.0
+Revise Marketing Agency Tools,Change,IT Support,medium,0.8464398,0.8359014,0.9602717757225037,0.9602717757225037,0.0
+,Request,Service Outages and Maintenance,medium,0.9812267,0.977803,0.9922376871109009,0.9922376871109009,0.0
+Sofortige Implementierung neuer Online-Datenanalysefunktionen erforderlich,Change,Product Support,high,0.91105264,0.9123775,0.966092586517334,0.966092586517334,0.0
+,Problem,Customer Service,medium,0.98263407,0.9736768,0.9862431287765503,0.9862431287765503,0.0
+Inquiry on Specifications and Integration Options for Scalable SaaS Project Management Platform,Request,IT Support,low,0.95974004,0.94604546,0.9620349407196045,0.9620349407196045,0.0
+Problem with PyCharm Professional 2021.1 on Ubuntu,Problem,Customer Service,low,0.9627426,0.9453918,0.9010007381439209,0.9010007381439209,0.0
+Concerns Regarding Project Management Integration,Incident,Returns and Exchanges,medium,0.97696966,0.97135615,0.9878873825073242,0.9878873825073242,0.0
+System Crash During Critical Period,Incident,Technical Support,high,0.67808616,0.60963917,0.7780658602714539,0.7780658006668091,-5.960464477539063e-08
+Anfrage zur Unterstützung von Google Keep,Request,Billing and Payments,high,0.7683643,0.7107898,0.8615357875823975,0.8503504991531372,-0.011185288429260254
+Assistance with Sluggish Data Analytics Tools,Incident,Technical Support,low,0.79488,0.67335683,0.7399365305900574,0.8290795683860779,0.08914303779602051
+Marketing Campaign Fails to Meet Expectations,Incident,Product Support,high,0.87469614,0.88149637,0.9794735312461853,0.9794735312461853,0.0
+Notwendigkeit der Abrechnungsunterstützung,Problem,Billing and Payments,medium,0.9548146,0.9446078,0.968590497970581,0.968590497970581,0.0
+Entschuldigung für die Dienstunterbrechung,Incident,Service Outages and Maintenance,high,0.64446896,0.5936047,0.9066567420959473,0.8255231380462646,-0.08113360404968262
+Hilfe für Social Media Kampagne,Incident,Customer Service,low,0.7733327,0.73048836,0.9090684056282043,0.9090684056282043,0.0
+Anfrage zur Verbesserung der Integrationsfunktion,Change,IT Support,high,0.78757435,0.80491775,0.8289934396743774,0.8289934396743774,0.0
+,Request,Returns and Exchanges,low,0.9906703,0.9850123,0.9960896968841553,0.9960896968841553,0.0
+Financial Data Discrepancy,Problem,Customer Service,medium,0.78594804,0.7225256,0.8125110864639282,0.8125110864639282,0.0
+System Compatibility Inquiry,Request,Customer Service,low,0.8619051,0.8827494,0.9286359548568726,0.9286359548568726,0.0
+Compatibility Issue Between ActiveCampaign and Sage Accounting,Problem,Technical Support,medium,0.98184735,0.9772093,0.9776853919029236,0.9776853919029236,0.0
+,Problem,IT Support,medium,0.93840945,0.9414525,0.9960592985153198,0.9960592985153198,0.0
+,Problem,Technical Support,medium,0.8137037,0.7688811,0.9164655208587646,0.9164655208587646,0.0
+Details on Securing Medical Data 3D Printers in Kubernetes,Request,Technical Support,medium,0.9776194,0.9745406,0.9785308837890625,0.9785308837890625,0.0
+Concerns About Project Management Tool,Problem,IT Support,high,0.9538501,0.94796586,0.9934526681900024,0.9934526681900024,0.0
+Disruptions in Software and Hardware Tools,Incident,Product Support,medium,0.9707493,0.9748558,0.9968292713165283,0.9968292713165283,0.0
+Unstabile Ergebnisse bei Optimierungsalgorithmen,Problem,Technical Support,low,0.86705136,0.84584475,0.960547685623169,0.960547685623169,0.0
+Issue with Billing After Today's Software Update,Incident,Billing and Payments,low,0.96044356,0.9380121,0.9970823526382446,0.9970823526382446,0.0
+Support Inquiry for Avast Antivirus 2021,Request,Technical Support,high,0.98053837,0.97466624,0.9897394180297852,0.9897394180297852,0.0
+Problem with Financial Firm's Data Analytics Software,Incident,Technical Support,low,0.7756475,0.70336926,0.78257155418396,0.78257155418396,0.0
+Issues with Marketing Efforts,Problem,Product Support,medium,0.94871813,0.94713163,0.970210075378418,0.970210075378418,0.0
+Benachrichtigung über Systemleistungsabfall,Problem,Product Support,high,0.7467158,0.74607587,0.8689792156219482,0.8689792156219482,0.0
+Verbesserung der Benutzeroberfläche für Projektmanagement-Features,Change,Customer Service,medium,0.8501848,0.8143496,0.8459568023681641,0.8711503744125366,0.02519357204437256
+Support for New Tools,Change,Customer Service,low,0.88604593,0.8763915,0.8482043743133545,0.8482043743133545,0.0
+,Change,Product Support,medium,0.8929179,0.8707902,0.9748491048812866,0.9748491048812866,0.0
+Probleme mit mehreren Diensten in Bezug auf die Verbindung,Incident,Service Outages and Maintenance,high,0.8222078,0.77819705,0.8283467292785645,0.8371843099594116,0.008837580680847168
+Sicherheitsmaßnahmen für Krankenhaus-IT-Umgebungen,Request,Customer Service,low,0.78934157,0.71811235,0.8366605639457703,0.8366605639457703,0.0
+Strategically Enhance Brand Growth Online,Request,Product Support,medium,0.7920971,0.75446284,0.8150196075439453,0.8816735744476318,0.06665396690368652
+Problem with Integration Between ActiveCampaign and Sage Accounting,Problem,Technical Support,medium,0.90547633,0.88593996,0.9564789533615112,0.9564789533615112,0.0
+Potential Unauthorized Access to Sensitive Medical Data Reported,Incident,Customer Service,medium,0.857239,0.842944,0.9678406715393066,0.9678406715393066,0.0
+Problem with Investment Predictions,Incident,Product Support,medium,0.95265126,0.95215046,0.9982461929321289,0.9982461929321289,0.0
+Verbindung zwischen Magento und PyCharm Analyse-Workflows,Request,Billing and Payments,medium,0.9839899,0.9731182,0.9954071044921875,0.9954071044921875,0.0
+Guide for Integrating Zapier SaaS Project Management,Request,Technical Support,medium,0.92203206,0.8896544,0.9790695309638977,0.9790695309638977,0.0
+,Incident,IT Support,high,0.74223685,0.7698766,0.976274847984314,0.976274847984314,0.0
+Security Protocols for Medical Data in Hospitals,Request,Customer Service,high,0.97997695,0.9713929,0.9986715316772461,0.9986715316772461,0.0
+Concern Regarding Safety of Medical Information,Incident,Returns and Exchanges,high,0.86452097,0.85836166,0.9125515222549438,0.9125515222549438,0.0
+Financial Institution Encounters Delays in Investment Data Processing Challenges,Problem,Product Support,low,0.9474588,0.94313633,0.9922474026679993,0.9922472834587097,-1.1920928955078125e-07
+Issues with System Security,Incident,Technical Support,medium,0.75073856,0.73979497,0.9143469333648682,0.9143469333648682,0.0
+Integrationsprobleme bei Marketingagentur auf verschiedenen Plattformen,Incident,Technical Support,high,0.91220516,0.89937747,0.9197559356689453,0.9197559356689453,0.0
+,Change,Product Support,high,0.81251466,0.7210472,0.901398777961731,0.901398777961731,0.0
+Advice on Securing Medical Data with Microsoft Dynamics 365,Request,Product Support,high,0.90577257,0.85454154,0.9055544137954712,0.9055544137954712,0.0
+Issue with Investment Data Analytics Platform,Incident,Returns and Exchanges,high,0.7555988,0.7234448,0.8794538974761963,0.8794538974761963,0.0
+Issue with Server Outage,Incident,Technical Support,low,0.88989216,0.8753671,0.9834927320480347,0.9834927320480347,0.0
+Können Verbesserungen in SAP ERP Central Component 6.0 die Digitalisierung unseres Marketing beeinflussen?,Request,IT Support,low,0.8461753,0.8017521,0.9611161351203918,0.961341917514801,0.0002257823944091797
+Concerns Regarding Digital Strategy Tools,Incident,Technical Support,high,0.97028786,0.9657677,0.992395281791687,0.992395281791687,0.0
+Unapproved Access to Patient Information,Problem,Technical Support,high,0.9301783,0.92373705,0.9913969039916992,0.9913969039916992,0.0
+Details on Integrating Elasticsearch for Project Management,Request,Billing and Payments,low,0.86678195,0.8387385,0.8449815511703491,0.8449815511703491,0.0
+Concern Regarding Protection of Medical Information,Incident,Product Support,medium,0.8451137,0.84920686,0.9737669229507446,0.9737669229507446,0.0
+Investment Portfolio Analysis,Incident,Customer Service,low,0.96136564,0.9514229,0.9662127494812012,0.9662127494812012,0.0
+Login Issues Recently Reported,Problem,Technical Support,medium,0.8933668,0.868797,0.8884878158569336,0.8884878158569336,0.0
+Issue with Server Time,Incident,Service Outages and Maintenance,medium,0.7507566,0.7089766,0.7872829437255859,0.7872829437255859,0.0
+Problems After Recent Software Updates,Problem,IT Support,high,0.7333104,0.72724545,0.8686931729316711,0.8686931729316711,0.0
+Problematik des Investment-Optimierungstools,Incident,Technical Support,high,0.6765243,0.67947733,0.8050312399864197,0.8050312399864197,0.0
+Integrationskapazitäten für WeChat und WhatsApp Desktop-Benutzerkonto-Unterstützung,Request,Customer Service,medium,0.9561318,0.9294971,0.9783583879470825,0.9783583879470825,0.0
+Exploring Digital Strategies with H2O.ai and Zoho Books,Request,Product Support,low,0.9604724,0.94902986,0.9737894535064697,0.9737894535064697,0.0
+Issue Encountered,Problem,Technical Support,high,0.7361931,0.74289054,0.523823618888855,0.37257513403892517,-0.1512484848499298
+Inquiry Regarding Digital Strategy Services Today,Request,Sales and Pre-Sales,low,0.9217634,0.9063398,0.9487863779067993,0.9487863779067993,0.0
+Concern about Website Speed During Peak Times,Incident,IT Support,high,0.9473027,0.93984187,0.9194369316101074,0.9194368720054626,-5.960464477539063e-08
+Technical Assistance During Infrastructure Updates,Incident,Technical Support,high,0.7539648,0.7683698,0.7340848445892334,0.7340848445892334,0.0
+Expansion of Digital Strategies,Request,Returns and Exchanges,medium,0.9161345,0.9140959,0.9383226633071899,0.9383226633071899,0.0
+Support for Project Management SaaS Solutions,Request,Customer Service,low,0.94040155,0.910832,0.925119161605835,0.925119161605835,0.0
+Request for Support with Data Analysis,Request,IT Support,high,0.83553654,0.8191512,0.9187272191047668,0.9187272191047668,0.0
+Anfrage Unterstützung Finanzberatung,Problem,Sales and Pre-Sales,medium,0.6920408,0.6760515,0.8742144107818604,0.8742144107818604,0.0
+Support Required for Critical System Failure,Incident,Technical Support,high,0.64190423,0.62205416,0.681050181388855,0.6619201302528381,-0.019130051136016846
+"Forderung: Verbesserung bestehender digitaler Strategien, Erhöhung der Marktpendelung und Anreicherung der Kundenbasis",Change,Technical Support,medium,0.6715483,0.57676995,0.8431507349014282,0.8892043828964233,0.04605364799499512
+Fortbestehende Verbindungsprobleme mit dem Gerät,Problem,Product Support,medium,0.6822504,0.71605814,0.8383519649505615,0.838351845741272,-1.1920928955078125e-07
+Recent Platform Update Causes Multiple Product Integration Failures,Incident,Human Resources,low,0.98222065,0.9817852,0.9921425580978394,0.9921425580978394,0.0
+Dateninkonsistenz,Incident,Technical Support,medium,0.65999705,0.5499201,0.7635993957519531,0.7981255054473877,0.03452610969543457
+Support for Hospital Systems Encountering Unplanned Service Downtime,Incident,Service Outages and Maintenance,high,0.8680626,0.87366056,0.9792270064353943,0.9792270064353943,0.0
+,Incident,Technical Support,high,0.9686822,0.95809937,0.8908777236938477,0.8908777236938477,0.0
+Verzögerungen im Optimierungsprozess der Investitionsstrategien,Problem,Customer Service,medium,0.95796686,0.9417978,0.9592291116714478,0.9592291116714478,0.0
+Report of Data Security Concern,Problem,Product Support,low,0.91996807,0.9238678,0.9839828610420227,0.9839828610420227,0.0
+Details zu SaaS-Projektmanagement-Funktionen,Request,Customer Service,low,0.85217893,0.7706623,0.9044015407562256,0.9044015407562256,0.0
+Request for Enhancement of Data Analysis Tools Support,Change,IT Support,high,0.73885137,0.7008505,0.7796299457550049,0.865383505821228,0.08575356006622314
+Secure Medical Data SQL,Request,Product Support,medium,0.9785257,0.9670763,0.9893498420715332,0.9893498420715332,0.0
+Assistance Required for Integration Optimization,Change,Technical Support,high,0.6855537,0.5993135,0.7593851089477539,0.6945323944091797,-0.06485271453857422
+Details zu verwendeten Data Analytics Werkzeugen,Request,Human Resources,low,0.82449985,0.70971954,0.9077131748199463,0.9077132344245911,5.960464477539063e-08
+Data Incident,Incident,Billing and Payments,medium,0.5903331,0.5392957,0.72667396068573,0.72667396068573,0.0
+Urgent Support Required,Incident,Technical Support,high,0.95765096,0.9538404,0.9466352462768555,0.9466352462768555,0.0
+Optimierung der digitalen Marketingstrategien,Change,IT Support,high,0.8242362,0.7509184,0.8876987099647522,0.9015113115310669,0.013812601566314697
+Assistance Required for Email Marketing Integration,Request,Customer Service,medium,0.8102071,0.79843676,0.9014135599136353,0.9014135599136353,0.0
+,Problem,Technical Support,high,0.9581152,0.95052814,0.995632529258728,0.995632529258728,0.0
+Issue with Wireless Mouse Connection,Incident,IT Support,medium,0.94332457,0.9381614,0.9080056548118591,0.9080056548118591,0.0
+Meldung eines Problems bei der Datenverarbeitung unserer Finanzinvestitionen,Problem,Product Support,high,0.784679,0.757233,0.8917416334152222,0.8917416334152222,0.0
+,Incident,IT Support,medium,0.9794893,0.97129965,0.9905185699462891,0.9905185699462891,0.0
+Reported Problems with Marketing Agency Integration,Incident,Product Support,medium,0.94466615,0.92771727,0.9937179088592529,0.9937179088592529,0.0
+Needed: Detailed Guidance on Configuring Scalability Features,Request,Technical Support,medium,0.9572083,0.9503511,0.9380004405975342,0.9380004405975342,0.0
+,Incident,IT Support,high,0.93904287,0.90805215,0.9808046221733093,0.9808046221733093,0.0
+Revise Software Integration Updates,Change,IT Support,high,0.8027116,0.6717443,0.8362594842910767,0.8362594842910767,0.0
+Assistance with Secure Integration of QuickBooks Online,Request,IT Support,high,0.8122758,0.71153176,0.7633345127105713,0.8438191413879395,0.08048462867736816
+Problems with Financial Reporting Access,Incident,Billing and Payments,medium,0.9214694,0.9010066,0.8905404806137085,0.8905404806137085,0.0
+System Outage Impacting Key Applications,Incident,Service Outages and Maintenance,high,0.90058476,0.9086065,0.9840098023414612,0.9840098023414612,0.0
+Änderungen der Rückgaberegelungen,Change,Returns and Exchanges,medium,0.6553599,0.6429224,0.5019125938415527,0.7238956689834595,0.22198307514190674
+Customer Support Team,Request,Customer Service,medium,0.85435736,0.8393533,0.8215357065200806,0.8215357065200806,0.0
+Elasticsearch Support,Request,Billing and Payments,medium,0.9027562,0.8733734,0.9014801383018494,0.9014801383018494,0.0
+Elasticsearch Security Safeguards,Request,Customer Service,low,0.8871683,0.8688606,0.9597852826118469,0.9597852826118469,0.0
+Medizinische Datensicherheitsverletzung,Incident,Product Support,medium,0.73004675,0.680936,0.8419528603553772,0.8419528603553772,0.0
+Question About Recent Payment Fees on Invoice,Request,Billing and Payments,medium,0.9394209,0.9283622,0.9714694023132324,0.9714694023132324,0.0
+Inquiry Regarding Digital Marketing Service Brand Expansion,Request,Billing and Payments,low,0.79535985,0.7445473,0.8280653953552246,0.8280653953552246,0.0
+Strengthened Security Protocols for Medical Data Management,Change,IT Support,high,0.8894425,0.854997,0.9298933744430542,0.9298933744430542,0.0
+Issues Observed with Data Analysis Results,Problem,Product Support,high,0.7979673,0.79140586,0.8799092173576355,0.8799092173576355,0.0
+Support Request for Microsoft Dynamics Integration,Request,Service Outages and Maintenance,high,0.97325844,0.95961845,0.9940111041069031,0.9940111041069031,0.0
+Anfrage zur Architektur-Dokumentation der SaaS-Plattform,Request,Technical Support,high,0.9407425,0.92773557,0.9751554727554321,0.9751554727554321,0.0
+Modify Billing Configuration,Change,Billing and Payments,high,0.68075997,0.6051217,0.730040967464447,0.730040967464447,0.0
+Problem with Ubiquiti UniFi Dream Machine SaaS Integration,Problem,Product Support,medium,0.9017838,0.8775953,0.9416141510009766,0.9416141510009766,0.0
+Problem with Integrating Devices,Problem,Customer Service,high,0.9683416,0.9618181,0.9925107359886169,0.9925107359886169,0.0
+,Problem,Product Support,high,0.91333294,0.90478444,0.9984930753707886,0.9984930753707886,0.0
+Problem with Erroneous Billing Fees,Incident,Billing and Payments,medium,0.9191114,0.9028201,0.9943117499351501,0.9943117499351501,0.0
+Support Request for Canvas Integration,Request,Product Support,medium,0.97669256,0.96360874,0.9840031266212463,0.9840031266212463,0.0
+Problem mit der Skype-Verbindung melden,Incident,General Inquiry,medium,0.9489267,0.9146857,0.9569755792617798,0.9569755792617798,0.0
+Anfrage zur Unterstützung des Markenwachstums,Request,Human Resources,high,0.7270875,0.67605233,0.8995654582977295,0.8995654582977295,0.0
+Support Request for Eclipse IDE Crashes,Problem,Technical Support,high,0.98938376,0.9902319,0.9811529517173767,0.9811529517173767,0.0
+,Problem,Product Support,high,0.9391469,0.9322629,0.9891921877861023,0.9891921877861023,0.0
+Problem with Smart-Medizinspender Data Synchronization,Problem,IT Support,high,0.90585554,0.90014803,0.8664513826370239,0.8664513826370239,0.0
+,Request,Customer Service,low,0.96834356,0.9624272,0.9856761693954468,0.9856761693954468,0.0
+Reported Inaccuracy in Investment Forecasting,Problem,Product Support,low,0.93655,0.92117715,0.9880828857421875,0.9880828857421875,0.0
+Integrating the Smartsheet Cloud-Based SaaS Platform,Request,Technical Support,low,0.8581139,0.833003,0.9592670202255249,0.9592670202255249,0.0
+Frage zur Unterstützung in der Datenanalyse,Request,Customer Service,low,0.8694641,0.8356904,0.8658028841018677,0.8658028841018677,0.0
+Assistance Requested for Digital Marketing Service Inquiry,Request,Billing and Payments,high,0.97278273,0.9578501,0.9801179766654968,0.9801179766654968,0.0
+,Incident,Technical Support,high,0.9516102,0.9548476,0.9009109735488892,0.9009109735488892,0.0
+Support-Anfrage zu mehreren Produkten,Incident,Product Support,high,0.6487215,0.6476593,0.9212058782577515,0.9212058782577515,0.0
+Support Required for Data Breach Issues,Incident,Technical Support,medium,0.9011349,0.8922584,0.9298477172851562,0.9298477172851562,0.0
+Support for Technical Connectivity Problems,Problem,Technical Support,high,0.9616934,0.95759004,0.9870092868804932,0.9870092868804932,0.0
+Verzögerungen bei Daten im Cassandra-System,Incident,Returns and Exchanges,medium,0.909729,0.871065,0.8831038475036621,0.8831038475036621,0.0
+Verbessern Datenanalyse Investitionsoptimierung,Change,Product Support,medium,0.9369818,0.92094946,0.9417985677719116,0.9417985677719116,0.0
+Crash in Investment Optimization,Incident,Technical Support,high,0.9554639,0.9486018,0.9513455033302307,0.9513455033302307,0.0
+Support Application Problems,Incident,Technical Support,high,0.9422264,0.92718196,0.9343669414520264,0.9343669414520264,0.0
+Growth Through Digital Marketing,Request,Customer Service,medium,0.8217319,0.7245754,0.8482564091682434,0.8482564091682434,0.0
+Probleme mit der Abonnementbestätigung,Problem,Billing and Payments,low,0.48431838,0.47043097,0.770058274269104,0.770058274269104,0.0
+Unauthorised Access to Medical Data,Problem,Sales and Pre-Sales,low,0.7760221,0.72097605,0.9102081656455994,0.9102081656455994,0.0
+Airtable and Zoom Integration Inquiry,Request,Sales and Pre-Sales,medium,0.90650517,0.8785895,0.7305271625518799,0.7305271625518799,0.0
+Support for JIRA Schoology Integration,Request,Billing and Payments,medium,0.99253106,0.9908062,0.9910617470741272,0.9910617470741272,0.0
+Decelerated Investment Data Analysis Processing,Problem,Technical Support,low,0.8227329,0.8105638,0.8497952222824097,0.8497952222824097,0.0
+Anfrage zur Unautorisierten Zugriffsanstrengung an IT-Systemen des Krankenhauses,Incident,Product Support,high,0.8473657,0.76237965,0.823153018951416,0.816119909286499,-0.007033109664916992
+Support Request for SaaS Product Features,Request,Customer Service,high,0.90897924,0.8784806,0.9535857439041138,0.9535857439041138,0.0
+Marketing Growth Challenges Increase,Problem,Product Support,medium,0.95128703,0.95069337,0.9679906368255615,0.9679906368255615,0.0
+Addressing Decrease in Brand Engagement Metrics,Incident,Returns and Exchanges,medium,0.93402827,0.9029588,0.9588441252708435,0.9588441252708435,0.0
+Verbesserung der Investitionsdatenanalyse-Dienstleistungen,Request,Customer Service,medium,0.8219451,0.7653076,0.8623998761177063,0.9128841161727905,0.05048424005508423
+,Incident,IT Support,high,0.99933213,0.99914193,0.9700384140014648,0.9700384140014648,0.0
+Aktualisierung der Branding-Regelblätter für eine Verbesserung des Kundenengagements,Change,General Inquiry,medium,0.61846375,0.581681,0.6944899559020996,0.7392178773880005,0.04472792148590088
+Update der Projektsoftware,Change,Product Support,medium,0.6192354,0.5741059,0.7522064447402954,0.7522064447402954,0.0
+Informationen zu Tarifoptionen,Request,Billing and Payments,low,0.6646683,0.6383368,0.6058043837547302,0.7730867862701416,0.16728240251541138
+Data Security of Medical Data,Request,IT Support,medium,0.90193594,0.88108504,0.8696624040603638,0.8696624040603638,0.0
+Urgent Support Required for Data Breach,Incident,IT Support,high,0.9285714,0.92863387,0.9553699493408203,0.9553699493408203,0.0
+Problem mit dem Systemausfall heute,Incident,Technical Support,high,0.76885223,0.7384268,0.8196108937263489,0.8196108937263489,0.0
+System outage,Incident,Technical Support,high,0.6954952,0.6910564,0.6436128616333008,0.7902349233627319,0.14662206172943115
+Enhance Integration Performance Improvements,Change,Technical Support,high,0.9040024,0.8695903,0.8842694163322449,0.8842694163322449,0.0
+Guidelines for Securing Medical Data,Request,Returns and Exchanges,medium,0.7942772,0.7209166,0.7533514499664307,0.7800599932670593,0.026708543300628662
+Support for Critical System Failure,Incident,Service Outages and Maintenance,high,0.7653072,0.78085726,0.7589166164398193,0.758916437625885,-1.7881393432617188e-07
+Issue Affecting Cloud Software Service,Incident,Sales and Pre-Sales,medium,0.6595937,0.5800692,0.8275250792503357,0.8275250792503357,0.0
+Support for Critical Issue,Incident,Technical Support,high,0.7391194,0.7087542,0.9420109987258911,0.9420109987258911,0.0
+Informationen zu SaaS-Tools für Projektmanagement,Request,Returns and Exchanges,low,0.8777251,0.81851196,0.8947525024414062,0.8947525024414062,0.0
+,Incident,Billing and Payments,high,0.97836834,0.9787233,0.99561607837677,0.99561607837677,0.0
+Netgear Nighthawk Mesh Wi-Fi 6 System Details,Request,Customer Service,high,0.8362778,0.81269145,0.9135981798171997,0.9135981798171997,0.0
+Sicherheitsfunktionen für medizinische Daten,Request,Customer Service,medium,0.7475456,0.6533047,0.9133741855621338,0.9133741855621338,0.0
+Technical Problem with Marketing Site,Incident,Technical Support,medium,0.96686095,0.96142465,0.997165858745575,0.997165858745575,0.0
+,Problem,IT Support,high,0.65039074,0.6114154,0.8579165935516357,0.8579165935516357,0.0
+Issue with Digital Health Tools,Incident,Service Outages and Maintenance,high,0.8993682,0.89915115,0.9706337451934814,0.9706337451934814,0.0
+Dringender Bericht über Datenverlust im Hospital-IT-System,Incident,Returns and Exchanges,high,0.8315207,0.8160318,0.8045510053634644,0.8045510053634644,0.0
+,Incident,Customer Service,medium,0.83858263,0.84437716,0.9568312764167786,0.9568312764167786,0.0
+Support for Adobe Effects,Request,Product Support,medium,0.98181653,0.97834367,0.9946252703666687,0.9946252703666687,0.0
+,Request,Billing and Payments,high,0.66926295,0.57423544,0.5622759461402893,0.6823862195014954,0.12011027336120605
+,Change,IT Support,high,0.7774772,0.7886985,0.7986265420913696,0.9318103194236755,0.1331837773323059
+Functionality of Data Analytics Application,Incident,Product Support,low,0.885368,0.85341257,0.9626657962799072,0.9626657962799072,0.0
+Ausfall des Finanzausfallsystems,Incident,Customer Service,high,0.8248007,0.72824895,0.6390422582626343,0.6390421986579895,-5.960464477539063e-08
+Issue Encountered While Integrating Smartsheet with Microsoft Azure,Incident,Product Support,medium,0.9805729,0.9774916,0.9368339776992798,0.9368339776992798,0.0
+Hospital Security,Request,Customer Service,medium,0.7826071,0.7917628,0.8766547441482544,0.8766547441482544,0.0
+Discrepancies in Billing Identified,Problem,Billing and Payments,low,0.9684422,0.9630561,0.9924646019935608,0.9924646019935608,0.0
+Hilfe zur Unterstützung der CCleaner-Integration erforderlich,Request,Technical Support,high,0.78556114,0.7437828,0.8138744831085205,0.8138744831085205,0.0
+Hilfe bei möglichen Datenverlusten in den IT-Systemen des Krankenhauses erforderlich,Incident,Technical Support,high,0.9089579,0.8985491,0.9263212084770203,0.9263212084770203,0.0
+Digital Strategy for Growth,Request,IT Support,high,0.78121054,0.7568836,0.9446267485618591,0.9446267485618591,0.0
+Konflikte mit Marketing-Agentur-Software,Problem,Product Support,high,0.9043929,0.89141464,0.98244708776474,0.98244708776474,0.0
+Improved Security Measures for Medical Systems,Change,Billing and Payments,medium,0.93286496,0.92537993,0.9945333003997803,0.9945333003997803,0.0
+,Incident,Billing and Payments,high,0.9913169,0.98650646,0.9928327798843384,0.9928327798843384,0.0
+sluggish performance on SaaS platform,Problem,Product Support,medium,0.9393261,0.92896575,0.9888556003570557,0.9888556003570557,0.0
+Issue with Data Analysis,Incident,IT Support,low,0.7281675,0.7137548,0.9143147468566895,0.9143147468566895,0.0
+Guidance on Using OBS Studio for Investment Data Presentations,Request,Human Resources,high,0.9617032,0.94213307,0.9825945496559143,0.9825945496559143,0.0
+Request for Support,Request,IT Support,high,0.7497611,0.63060594,0.8693076372146606,0.8693076372146606,0.0
+Problem with File Upload Size in Project Creation,Problem,Product Support,low,0.9679748,0.95063716,0.9461988806724548,0.9461988806724548,0.0
+Security Alert Notice,Incident,IT Support,medium,0.7067223,0.63173485,0.8384228944778442,0.8384228944778442,0.0
+Bericht über Fehler in finanziellen Analyse-Desktop,Incident,Technical Support,high,0.7116871,0.6662962,0.9268898367881775,0.9268897175788879,-1.1920928955078125e-07
+Anfrage zur Optimierung der Digitalstrategie für Logitech G502 und Adobe Premiere Pro,Request,Technical Support,medium,0.8530608,0.82253146,0.9569119215011597,0.9569119215011597,0.0
+Support for Advanced Marketing Analytics with Shopify KNIME,Request,IT Support,medium,0.91738164,0.8820486,0.9364609718322754,0.9364609718322754,0.0
+Anfrage nach detaillierter Integrationsdokumentation für den Airtable-Integrationshub für Projektmanagement,Request,Technical Support,medium,0.83518565,0.78949887,0.8917930126190186,0.8917930126190186,0.0
+Dienstleistungen für Avid Pro Tools,Request,Customer Service,high,0.6907338,0.6711832,0.8949396014213562,0.8949396014213562,0.0
+Medical Systems Security Breach,Incident,Technical Support,high,0.8672,0.84180754,0.9919124841690063,0.9919124841690063,0.0
+Häufige Verbindungsoptimierungen bei der SaaS-Plattform auf verschiedenen Geräten,Problem,Product Support,high,0.77791566,0.7746451,0.9036298990249634,0.915147066116333,0.011517167091369629
+Anfrage zur API-Benutzung und Integration,Request,Technical Support,low,0.861128,0.822973,0.9241743683815002,0.9241743683815002,0.0
+Sicherheitsrichtlinien für MongoDB,Request,Technical Support,medium,0.93263495,0.9022685,0.9779782295227051,0.9779782295227051,0.0
+Unapproved Access Tries on Medical Data Systems Noted Lately,Incident,Technical Support,high,0.828091,0.8159871,0.9567192196846008,0.9567192196846008,0.0
+Sicherung medizinischer Daten in KNIME-Integration,Request,Sales and Pre-Sales,medium,0.9548007,0.94478476,0.9872685074806213,0.9872685074806213,0.0
+Urgent Requirement for Strengthened Security Measures,Change,Product Support,medium,0.9048262,0.91157037,0.9900943040847778,0.9900943040847778,0.0
+Problems with Smart Garage Door Opener Integration,Incident,Technical Support,medium,0.8831024,0.8891498,0.8918566703796387,0.8918566703796387,0.0
+Unerlaubte Zugriffsanfrage auf medizinisches Datenystem melden,Problem,Technical Support,high,0.7923019,0.72210526,0.8373578786849976,0.882142186164856,0.0447843074798584
+,Request,Product Support,medium,0.939248,0.9308726,0.993335485458374,0.993335485458374,0.0
+Concerns with Campaign Engagement,Problem,Customer Service,medium,0.9726517,0.96879184,0.9852849245071411,0.9852849245071411,0.0
+Recent Reports of Sporadic Slow Response Times,Incident,IT Support,medium,0.99206674,0.98493755,0.9886982440948486,0.9886982440948486,0.0
+Problem with Zoho Integration,Problem,Returns and Exchanges,low,0.9843784,0.97808444,0.9806091785430908,0.9806091785430908,0.0
+,Incident,Technical Support,high,0.9861954,0.9793559,0.9697319269180298,0.9697319269180298,0.0
+Data Breach Issue,Problem,Technical Support,high,0.6696596,0.61166644,0.8307826519012451,0.8057939410209656,-0.02498871088027954
+Problem with Billing Discrepancy Charges,Incident,Billing and Payments,medium,0.97603154,0.9710412,0.9884729385375977,0.9884729385375977,0.0
+Problems with Connectivity and Multiple Services,Incident,Service Outages and Maintenance,high,0.96080184,0.95754206,0.976366400718689,0.976366400718689,0.0
+Problem with the System,Incident,IT Support,high,0.7548204,0.6786876,0.6223088502883911,0.6286770105361938,0.006368160247802734
+Verbesserung von Digitalstrategietools,Change,Product Support,high,0.79549146,0.7514657,0.8867366313934326,0.8867366909980774,5.960464477539063e-08
+,Incident,Human Resources,medium,0.5794271,0.5788036,0.8965573906898499,0.8965573906898499,0.0
+Problems with Subscription Services,Problem,Billing and Payments,medium,0.89695835,0.8490949,0.8829326629638672,0.8829326629638672,0.0
+Assistance with Periodic System Outages,Incident,Technical Support,high,0.68091905,0.59624326,0.783003568649292,0.783003568649292,0.0
+Improve Security Protocols for Medical Data Systems,Change,Customer Service,high,0.93353283,0.92712176,0.9648102521896362,0.9648102521896362,0.0
+Combine Monday.com with Jenkins,Change,IT Support,high,0.9599761,0.94006336,0.9870421886444092,0.9870421886444092,0.0
+,Change,Customer Service,low,0.84303933,0.83449227,0.9414857625961304,0.9414857625961304,0.0
+Update on Digital Marketing Strategy,Change,Sales and Pre-Sales,low,0.8201071,0.7932104,0.8729534149169922,0.8729534149169922,0.0
+Änderung der Rückgabeverordnungen,Change,Returns and Exchanges,medium,0.8030956,0.8025006,0.7705627083778381,0.7705627083778381,0.0
+,Problem,Technical Support,high,0.968944,0.9595201,0.9821732044219971,0.9821732044219971,0.0
+Unvorhergesehene Wartungszeiten der IT-Systeme,Problem,Technical Support,low,0.6672214,0.60513455,0.777797281742096,0.7347925901412964,-0.04300469160079956
+IBM SPSS Statistics Hilfe,Request,Customer Service,low,0.8496675,0.79541665,0.8949979543685913,0.8949978351593018,-1.1920928955078125e-07
+,Change,IT Support,medium,0.7272046,0.7174202,0.88518226146698,0.88518226146698,0.0
+Probleme mit der IFTTT-Integration,Incident,Technical Support,low,0.8677758,0.83073294,0.9088718891143799,0.9088718891143799,0.0
+ClickUp Integration Issue with Smart-Thermometer,Problem,Technical Support,high,0.9585656,0.95310086,0.9927835464477539,0.9927835464477539,0.0
+Seek Guidance on Securing Kubernetes for Medical Data Compliance in Hospital Environments,Request,Technical Support,high,0.88736296,0.87678385,0.994537353515625,0.994537353515625,0.0
+Trouble with Project Management Application,Incident,Product Support,high,0.81183714,0.7525216,0.8801902532577515,0.8801901936531067,-5.960464477539063e-08
+Support for Project Management Onboarding,Request,Human Resources,low,0.94604963,0.9329562,0.9971795082092285,0.9971795082092285,0.0
+Sichere Medizinische Daten-Dienste,Request,Billing and Payments,high,0.80195755,0.74573237,0.81983482837677,0.896721601486206,0.07688677310943604
+Integration of SaaS Visual Studio Code with Figma,Request,Product Support,medium,0.93475187,0.89126974,0.8680620789527893,0.8680620789527893,0.0
+Request for Information on Digital Strategy Services and Their Impact on Brand Growth,Request,Technical Support,low,0.9524571,0.9478011,0.9954766631126404,0.9954766631126404,0.0
+Improve Digital Strategy Tools Across Multiple Platforms,Change,Product Support,medium,0.9487783,0.9414288,0.9947419166564941,0.9947419166564941,0.0
+Plötzlicher Ausfall der Projektmanagement-Funktion,Problem,Customer Service,high,0.9543671,0.9376345,0.9726426005363464,0.9726426005363464,0.0
+Support for Enhancing Evernote Integrations in SaaS Platform,Request,Service Outages and Maintenance,high,0.94302815,0.927117,0.9741613864898682,0.9741613864898682,0.0
+Healthcare Provider Data Security Breach,Incident,Technical Support,high,0.9490853,0.9526961,0.994267463684082,0.994267463684082,0.0
+Dienstleistungen zur Datenanalytischen Investition,Request,Customer Service,low,0.82489955,0.730209,0.9245665073394775,0.9469655752182007,0.022399067878723145
+Detected Variability in Brand Interaction,Problem,Product Support,medium,0.9359796,0.919699,0.9560328125953674,0.9560328125953674,0.0
+Digitale Werkzeuge der Marketingagentur funktionieren nicht mehr vollständig,Incident,Technical Support,high,0.94681567,0.9268898,0.9843406677246094,0.9843406677246094,0.0
+Assistance Request,Request,Human Resources,low,0.8759066,0.83919626,0.9323768019676208,0.9323768019676208,0.0
+Request for Support on Digital Strategy Obstacle,Problem,Customer Service,medium,0.9595244,0.9695836,0.9742764234542847,0.9742764234542847,0.0
+Urgent Matter Regarding Medical Data Security,Problem,Technical Support,medium,0.6552397,0.56787646,0.6842702031135559,0.6842702031135559,0.0
+Inquiry on API Integration Support for SaaS Project Management Tool,Request,Technical Support,high,0.97023386,0.96223104,0.9969433546066284,0.9969433546066284,0.0
+Enhancing Investment Tactics Through Data Analysis in QuickBooks Online,Request,Technical Support,medium,0.9486834,0.9282807,0.987991452217102,0.987991452217102,0.0
+Support Needed for SaaS Tools Issues,Incident,Technical Support,high,0.7338537,0.7479528,0.8802592754364014,0.8802592754364014,0.0
+Encountering Service Interruption in SaaS Platform Today,Incident,Service Outages and Maintenance,high,0.970038,0.96455306,0.9846747517585754,0.9846747517585754,0.0
+Support Needed for Protecting Medical Data in Hospital Systems,Request,Product Support,medium,0.83699584,0.79763997,0.9038775563240051,0.9259577989578247,0.02208024263381958
+Concerns with Digital Campaign,Incident,Product Support,high,0.97312015,0.970164,0.9725277423858643,0.9725277423858643,0.0
+Urgent Support Request for Unauthorized Access,Incident,Technical Support,high,0.91460884,0.9073949,0.9188360571861267,0.9188360571861267,0.0
+,Problem,Product Support,high,0.8100643,0.7424103,0.9440256357192993,0.9440256357192993,0.0
+Technical Assistance for CorelDRAW Graphics Suite 2021,Problem,Technical Support,high,0.97623473,0.970919,0.9265071153640747,0.9265071153640747,0.0
+Leistungseinbußen bei dem Investmentoptimierungs-System gemeldet,Incident,Customer Service,low,0.899187,0.89190865,0.9327601194381714,0.9327601194381714,0.0
+Verbesserung des Online-Wachstums und der Markenbekanntheit durch digitale Unterstützung,Request,Technical Support,medium,0.89278686,0.8883142,0.9816930890083313,0.9816930890083313,0.0
+Problem with Zoho Books Invoicing,Problem,Billing and Payments,high,0.8747883,0.8618675,0.7831214070320129,0.7831214070320129,0.0
+Concern About Data Analytics Tool,Problem,Technical Support,high,0.9445869,0.93056387,0.9579327702522278,0.9579327702522278,0.0
+Recurring Performance Degradations and Outages Problem,Incident,Customer Service,medium,0.7811587,0.71385527,0.4727265536785126,0.4727265536785126,0.0
+Microsoft Support Inquiry,Request,Product Support,medium,0.92520237,0.9186013,0.9459484815597534,0.9459484815597534,0.0
+,Incident,Customer Service,medium,0.8807583,0.87449855,0.9989240169525146,0.9989240169525146,0.0
+"Anforderung von Rechnungsdetails, bitte",Request,Billing and Payments,low,0.87748563,0.8620932,0.9471663236618042,0.9471663236618042,0.0
+Support bei Alteryx-Zoho-Integration,Request,Technical Support,medium,0.9185791,0.89970237,0.8875603079795837,0.8875603079795837,0.0
+Unexpected Service Interruption Impacting Digital Marketing Tools,Incident,Technical Support,low,0.87718797,0.8987637,0.9927694201469421,0.9927694201469421,0.0
+Secure Patient Information,Request,IT Support,medium,0.7797137,0.74810743,0.854137122631073,0.854137122631073,0.0
+,Request,General Inquiry,medium,0.97567326,0.975229,0.9887059926986694,0.9895892143249512,0.0008832216262817383
+Optimierung von Investitionsentscheidungen durch Data Analytics,Request,Customer Service,low,0.7890303,0.68138725,0.8767064213752747,0.8767064809799194,5.960464477539063e-08
+Widespread System Failures Disrupting EMR Telehealth Services,Incident,Product Support,medium,0.9081794,0.9176496,0.9072631597518921,0.9072631597518921,0.0
+Discrepancies Identified in Investment Performance Indicators,Problem,IT Support,low,0.77976954,0.75672317,0.9533193111419678,0.9533193111419678,0.0
+Notify About Delay in Loading Data,Incident,Customer Service,low,0.9448594,0.9402398,0.967605471611023,0.967605471611023,0.0
+Technical Challenges with Integration,Incident,Technical Support,medium,0.9291527,0.92069536,0.9827188849449158,0.9827188849449158,0.0
+Discussion on Marketing Campaign,Incident,Customer Service,low,0.95530754,0.9470628,0.9927334785461426,0.9927334785461426,0.0
+Support for Digital Marketing Initiatives,Request,Billing and Payments,medium,0.8193981,0.7474427,0.8538922071456909,0.8538922071456909,0.0
+Hilfe bei unerwarteten Datenunterschieden in Investitionsanalyseberichten,Incident,Returns and Exchanges,medium,0.67163223,0.6067382,0.9323525428771973,0.9323525428771973,0.0
+Request for IBM Cloud Support,Request,Customer Service,high,0.9831872,0.9771383,0.9947077631950378,0.9947077631950378,0.0
+Inquiry About Security Capabilities of Healthcare Solutions,Request,Billing and Payments,high,0.98475176,0.9812425,0.9966917037963867,0.9966917037963867,0.0
+Assistance with Deferred Load Speeds,Problem,Product Support,medium,0.7178563,0.6998463,0.8115359544754028,0.6074881553649902,-0.2040477991104126
+Optimierung von PostgreSQL für Analytische Zwecke notwendig,Request,Technical Support,high,0.963328,0.91833586,0.9686365723609924,0.9686365723609924,0.0
+Info on Integrating SendGrid SaaS,Request,Technical Support,low,0.9400767,0.8680029,0.8595638871192932,0.8595638871192932,0.0
+Issues with Software Tools,Incident,Product Support,medium,0.9202426,0.93176,0.9847306609153748,0.9847306609153748,0.0
+,Request,Sales and Pre-Sales,medium,0.9909161,0.98373145,0.9985114932060242,0.9985114932060242,0.0
+Urgent: Data Breach in Hospital Systems Security Protocols,Problem,Billing and Payments,high,0.91631967,0.9135916,0.9536175727844238,0.9536175727844238,0.0
+Unterstützung bei der Implementierung von digitalen Marketingstrategien,Change,Sales and Pre-Sales,medium,0.77814126,0.68486965,0.888778030872345,0.8596117496490479,-0.02916628122329712
+Häufige App-Abstürze und langsame Reaktionszeiten,Incident,Product Support,medium,0.822544,0.7979405,0.8806700706481934,0.8806700706481934,0.0
+System Crash During Data Analytics Script Execution in Visual Studio Code,Incident,Product Support,medium,0.8066357,0.8140483,0.7274752855300903,0.7274752855300903,0.0
+Support for Integration Issues,Problem,Human Resources,medium,0.7968066,0.705286,0.7809885740280151,0.7809885740280151,0.0
+Bericht zu Problemen bei der Marketingkampagne,Incident,Product Support,medium,0.9276876,0.9004295,0.9751501679420471,0.9751501679420471,0.0
+Performance Fluctuations in SaaS Platform,Problem,IT Support,high,0.79730546,0.7556637,0.8824530839920044,0.8645563125610352,-0.01789677143096924
+,Incident,Product Support,medium,0.9716373,0.96678764,0.9941038489341736,0.9941038489341736,0.0
+Problem with ActiveCampaign and Sage Accounting Integration,Problem,Technical Support,medium,0.9451053,0.932495,0.969322681427002,0.969322681427002,0.0
+Request for Support Regarding Digital Campaign Performance,Incident,Customer Service,high,0.8765223,0.88734937,0.9883250594139099,0.9883250594139099,0.0
+Request for Update and Optimization of Data Analysis Software for Investment Strategies,Change,IT Support,medium,0.6696319,0.6709981,0.8483083248138428,0.8483083248138428,0.0
+Probleme bei Kampagne,Incident,Technical Support,high,0.81630266,0.77175045,0.6137936115264893,0.6682295799255371,0.05443596839904785
+Inquiry on Digital Strategies for Brand Growth Services,Request,Billing and Payments,low,0.8613708,0.79591036,0.9022945761680603,0.9733636379241943,0.07106906175613403
+Message Regarding Data Loss Incident,Incident,Sales and Pre-Sales,medium,0.63231623,0.6510508,0.8205413818359375,0.8205413818359375,0.0
+Problem with Printer,Problem,IT Support,medium,0.96588993,0.96855426,0.9949043393135071,0.9949043393135071,0.0
+Users Encountering Connectivity Problems in Various Software Applications,Incident,Technical Support,high,0.9759948,0.96187776,0.9564259052276611,0.9564259052276611,0.0
+Reported Problems After Financial Firm System Upgrade,Incident,Service Outages and Maintenance,high,0.9482641,0.957165,0.9811844229698181,0.9811844229698181,0.0
+Features for Scaling in Project Management Software,Request,Returns and Exchanges,medium,0.9144962,0.9195763,0.9736839532852173,0.9736839532852173,0.0
+Zoho CRM Documentation Request,Request,Technical Support,high,0.964526,0.94881797,0.9805504083633423,0.9805504083633423,0.0
+Verstoß gegen Datenverfügbarkeit,Incident,Product Support,medium,0.8932881,0.86857903,0.962133526802063,0.962133526802063,0.0
+Digitale Marketingansätze für Markenentwicklung,Request,Customer Service,low,0.80165493,0.7339658,0.8113744258880615,0.894644558429718,0.0832701325416565
+Issue with Financial Institution,Incident,Technical Support,medium,0.8775811,0.85116684,0.933427095413208,0.933427095413208,0.0
+,Problem,IT Support,low,0.97629356,0.96813273,0.9871492981910706,0.9871492981910706,0.0
+Concerns Regarding Performance of Data Analytics Tools,Incident,IT Support,high,0.95347834,0.9522365,0.9933606386184692,0.9933606386184692,0.0
+,Incident,Human Resources,high,0.954642,0.94183874,0.9764785766601562,0.9764785766601562,0.0
+Recent Slowdown in Marketing Activities,Problem,Product Support,medium,0.9764862,0.9616772,0.9777042865753174,0.9777042865753174,0.0
+Investment-Reporting-Issue Diagnose,Problem,Customer Service,low,0.8364148,0.77482283,0.8980690836906433,0.8980690836906433,0.0
+Problems with the Data Analytics System,Incident,Product Support,medium,0.9553257,0.92975223,0.9939685463905334,0.9939685463905334,0.0
+Norton-Integrationsherausforderung,Request,Customer Service,low,0.9761338,0.9564295,0.9766859412193298,0.9766859412193298,0.0
+Concerns About Marketing Campaign Engagement,Incident,Customer Service,high,0.92117316,0.9265313,0.9833123683929443,0.9833123683929443,0.0
+,Problem,Technical Support,high,0.6390468,0.7135071,0.7639554738998413,0.7639554738998413,0.0
+Probleme bei Projektverwaltungstools,Incident,Technical Support,high,0.8768376,0.8519846,0.8718836307525635,0.871883749961853,1.1920928955078125e-07
+Anfrage zur Unterstützungsinformationen für die MySQL-Integration,Request,Technical Support,high,0.8837621,0.8444004,0.9251558184623718,0.9251558184623718,0.0
+Problem with Data Analytics Precision,Incident,Product Support,medium,0.9446677,0.9403918,0.9667835235595703,0.9667835235595703,0.0
+Unerwarteter Dienstausfall: Krankenhaus-Systeme betroffen,Incident,Service Outages and Maintenance,high,0.8424378,0.83213377,0.9670597314834595,0.9670597314834595,0.0
+Problem with Digital Strategy Tools,Incident,Technical Support,high,0.9556287,0.9489976,0.9680935144424438,0.9680935144424438,0.0
+Issue with Project Management Dashboard Access,Incident,Product Support,medium,0.9333378,0.9158531,0.8920580744743347,0.8920580744743347,0.0
+Festgestellte Diskrepanzen in den Investment-Analytics-Berichten,Incident,Product Support,medium,0.7292731,0.6787157,0.762554407119751,0.7625543475151062,-5.960464477539063e-08
+Digitale Tool-Integration today again completely failed,Problem,IT Support,medium,0.9272329,0.9273713,0.9680619835853577,0.9680619835853577,0.0
+Enhancement of Cisco Webex Meetings Integration,Change,Technical Support,low,0.98684907,0.9799381,0.9914791584014893,0.9914791584014893,0.0
+Strategies for Brand Expansion in Digital Realm,Request,Customer Service,medium,0.8010659,0.7568277,0.9723979234695435,0.9723979830741882,5.960464477539063e-08
+Verbesserung der Optimierung von Integrierungstools für Bildschirmaufnahmen,Request,Product Support,medium,0.697181,0.6721102,0.8001808524131775,0.8001808524131775,0.0
+Facing Delays and Crashes in Project Management Tool,Incident,Product Support,high,0.9132596,0.8962262,0.9616540670394897,0.9616540670394897,0.0
+Inquiry Regarding Enhancements to Technical Infrastructure for Marketing,Change,Technical Support,high,0.8024414,0.77317476,0.8983621597290039,0.8983621597290039,0.0
+Implementing Smartsheet Cloud-Based SaaS Solution,Request,Technical Support,low,0.86785203,0.84058344,0.9622877836227417,0.9622877836227417,0.0
+Enhancing Security in Medical Data Systems for Hospitals,Change,IT Support,medium,0.73443925,0.6780461,0.830837070941925,0.830837070941925,0.0
+,Incident,Technical Support,medium,0.99338156,0.9880126,0.997585654258728,0.997585654258728,0.0
+,Request,Billing and Payments,medium,0.988445,0.98261917,0.9930384755134583,0.9930384755134583,0.0
+Urgent: Severe System Malfunction Noted,Incident,IT Support,high,0.7519351,0.72828895,0.8029006719589233,0.8076160550117493,0.004715383052825928
+Boosting Brand Growth Online,Change,IT Support,medium,0.7354593,0.66499496,0.8339035511016846,0.849421501159668,0.015517950057983398
+,Incident,Human Resources,low,0.74797916,0.7429377,0.8465375900268555,0.8465375900268555,0.0
+SendGrid Integration Guidelines,Request,Customer Service,medium,0.96976274,0.9554482,0.9856511354446411,0.9856511354446411,0.0
+"Dringender Sicherheitszwischenfall, Schnittstellen im Gesundheitswesen betroffen",Incident,Technical Support,high,0.6287031,0.6822825,0.815790057182312,0.815790057182312,0.0
+Request for System Enhancement and Upgrade Integration,Change,IT Support,medium,0.96643513,0.9605358,0.9550648927688599,0.9550648927688599,0.0
+Support for Integrating Wave with Microsoft Office 365,Request,Customer Service,low,0.9688518,0.9698452,0.9976038932800293,0.9976038932800293,0.0
+Hilfe zur Integration von osCommerce erforderlich,Request,Product Support,medium,0.6870144,0.62915516,0.6172016859054565,0.6172016859054565,0.0
+Fehler während des Dateiuploads in der SaaS-Plattform,Incident,Technical Support,low,0.8542509,0.843769,0.9284161329269409,0.9284158945083618,-2.384185791015625e-07
+,Problem,Technical Support,high,0.97198427,0.9668989,0.9938437342643738,0.9938437342643738,0.0
+Concerns Over Engagement Metrics,Incident,Product Support,medium,0.9441951,0.9273802,0.9822106957435608,0.9822106957435608,0.0
+Auskunft zur Aktualisierung der ClickUp-Integrationseinstellungen,Change,IT Support,medium,0.9178426,0.89747405,0.9608470797538757,0.9608470797538757,0.0
+,Problem,Customer Service,low,0.63845074,0.6215993,0.9185405969619751,0.9185405969619751,0.0
+Update Billing Data,Change,Billing and Payments,high,0.90862817,0.8978498,0.9441651701927185,0.9441651701927185,0.0
+,Incident,Product Support,medium,0.95465493,0.9564785,0.9913685917854309,0.9913685917854309,0.0
+,Incident,Billing and Payments,medium,0.96837056,0.95368075,0.9973437190055847,0.9973437190055847,0.0
+Problems with Security in the Hospital IT Systems,Incident,Returns and Exchanges,low,0.66973275,0.6585789,0.8666344881057739,0.8666344881057739,0.0
+Issue with Investment Analysis Delivery,Incident,Sales and Pre-Sales,medium,0.94168264,0.92420316,0.9686421155929565,0.9686421155929565,0.0
+Improve Brand Expansion and Address Service Challenges,Change,Service Outages and Maintenance,high,0.89849776,0.920079,0.9928163290023804,0.9928163290023804,0.0
+Boost Digital Marketing Efforts,Change,General Inquiry,medium,0.8332754,0.75897187,0.8562036752700806,0.9072797894477844,0.05107611417770386
+,Request,Product Support,medium,0.9242147,0.90003705,0.9170758724212646,0.9170758724212646,0.0
+Performance Problems with SaaS Application,Incident,Technical Support,medium,0.9409886,0.9415125,0.9803127646446228,0.9803127646446228,0.0
+Assistance with Cloud Support,Problem,Technical Support,high,0.978142,0.97529995,0.9945273399353027,0.9945273399353027,0.0
+,Request,Customer Service,low,0.96526057,0.95473915,0.9937138557434082,0.9937138557434082,0.0
+,Incident,IT Support,high,0.8383507,0.7971033,0.8471017479896545,0.8471017479896545,0.0
+Forderung für technische Unterstützung,Incident,Customer Service,low,0.7403337,0.6702863,0.7560733556747437,0.7560733556747437,0.0
+Enhancing Support for Investment Analytics with MATLAB,Request,Technical Support,medium,0.9571938,0.92135143,0.9770821332931519,0.9770821332931519,0.0
+Aufgabe zur Optimierung von Investitionen,Incident,Product Support,low,0.8752502,0.8496146,0.8668277263641357,0.8668277263641357,0.0
+Medical Information Security Breach,Problem,Returns and Exchanges,high,0.6725364,0.62740695,0.810482382774353,0.810482382774353,0.0
+Improved Security Protocols for Healthcare Data Handling,Change,IT Support,high,0.8875311,0.87687445,0.9918160438537598,0.9918160438537598,0.0
+Incident of Medical Data Breach,Incident,Technical Support,low,0.8878899,0.8752846,0.8962934017181396,0.8962934017181396,0.0
+Issue with Medical Records Access,Incident,Product Support,low,0.94271606,0.93156207,0.9440624713897705,0.9440624713897705,0.0
+Software-Crash bei KNIME,Incident,Technical Support,high,0.89112616,0.89820427,0.8663495182991028,0.8663495182991028,0.0
+Investigation into Variance of Projected Investment Returns,Problem,Returns and Exchanges,high,0.9226715,0.9303273,0.9810976982116699,0.9810976982116699,0.0
+Benötigte Unterstützung bei Ausfall der Analytics-Plattform,Incident,Technical Support,high,0.60180014,0.6426708,0.906524658203125,0.906524658203125,0.0
+Versicherung medizinischen Daten,Request,IT Support,high,0.74374706,0.68558973,0.8474628329277039,0.8474628329277039,0.0
+Investment Tool Malfunction,Incident,Customer Service,high,0.7854886,0.73501515,0.8644899129867554,0.9123827219009399,0.04789280891418457
+Multiple Systems Compromised Detected in Security Breach,Incident,Technical Support,medium,0.91258967,0.9032479,0.9678080677986145,0.9678080677986145,0.0
+ClickUp-App Unterbricht Spitzenzeiten,Incident,Product Support,medium,0.87607104,0.8561379,0.8838204145431519,0.8838204145431519,0.0
+Unterbrechung der Dienstleistungen,Incident,Technical Support,high,0.92090404,0.90403575,0.9171174764633179,0.9171174764633179,0.0
+Notwendige Unterstützung für die Verbesserung der Datensicherheit in medizinischen Systemen,Problem,IT Support,high,0.8579136,0.8544566,0.9432798624038696,0.9432798624038696,0.0
+Concern Regarding the Data Analytics Platform,Incident,Product Support,high,0.9611115,0.9466718,0.8395742177963257,0.863906741142273,0.024332523345947266
+Identified Security Incident Impacting Several Products,Incident,Customer Service,low,0.8450353,0.83427155,0.9988701343536377,0.9988701343536377,0.0
+Schwerwiegende Datennetzwerkverbindung bei PostgreSQL-Server,Problem,Technical Support,medium,0.91668534,0.87831026,0.9382909536361694,0.9382909536361694,0.0
+,Request,Returns and Exchanges,low,0.9846803,0.9796097,0.9831834435462952,0.9831834435462952,0.0
+Serverkapazität erweitern lassen,Change,IT Support,high,0.86322606,0.83165,0.9242998361587524,0.9242998361587524,0.0
+Unzulässiger Zugriff auf medizinische Datensysteme infolge veralteter Protokolle,Problem,Product Support,high,0.89381355,0.8847099,0.9218934178352356,0.9218934178352356,0.0
+Unauthorized Access Attempt on Database,Incident,Technical Support,low,0.8303437,0.86351293,0.9443644285202026,0.9443644285202026,0.0
+Enhancing Security for Medical Data in PostgreSQL 13,Request,Technical Support,high,0.88662684,0.814494,0.8714838027954102,0.8714838027954102,0.0
+,Request,Billing and Payments,medium,0.92708766,0.9028337,0.8876021504402161,0.8876021504402161,0.0
+Periodische Anmeldeprobleme in Spitzenzeiten gemeldet,Incident,Product Support,high,0.86606824,0.8488997,0.8445707559585571,0.8445707559585571,0.0
+Verbesserung der Markensichtbarkeit im Online-Bereich,Change,Product Support,high,0.77096516,0.7700108,0.9384250044822693,0.9384250044822693,0.0
+Assistance with Mathematica and GitLab Integration,Request,Technical Support,high,0.9756162,0.9682108,0.9919349551200867,0.9919349551200867,0.0
+Häufige Ausfälle und langsame Performance gemeldet,Incident,Technical Support,medium,0.95581794,0.9368856,0.974358081817627,0.974358081817627,0.0
+,Request,Billing and Payments,low,0.95497847,0.9354087,0.9397045373916626,0.9888802170753479,0.0491756796836853
+Strategy for Digital Brand Expansion,Request,IT Support,high,0.7313526,0.6235312,0.8390814661979675,0.8304702043533325,-0.00861126184463501
+,Problem,Product Support,medium,0.88366735,0.87239146,0.9510994553565979,0.9510994553565979,0.0
+Enquiry on Data Security Measures for Hospital Products,Request,Customer Service,medium,0.78069705,0.73651636,0.2529119849205017,0.2529119849205017,0.0
+Update on Investment Analysis Results,Incident,Sales and Pre-Sales,medium,0.89277875,0.8767618,0.9877757430076599,0.9877757430076599,0.0
+Problem with WhatsApp Desktop,Incident,Technical Support,medium,0.99044293,0.9851789,0.9419599771499634,0.9419599771499634,0.0
+,Incident,Technical Support,medium,0.99540293,0.99571496,0.9870408177375793,0.9870408177375793,0.0
+Anleitung zur Sicherung medizinischer Daten mit Smart-Thermometern und Oracle Database 19c,Request,Customer Service,medium,0.8896606,0.8677462,0.9755734801292419,0.9755734801292419,0.0
+,Request,Service Outages and Maintenance,high,0.84849024,0.83110833,0.8354603052139282,0.8354603052139282,0.0
+Security Breach in Medical Data Systems,Incident,Product Support,low,0.7586241,0.7518015,0.8533385992050171,0.8533385992050171,0.0
+Request for Update on Digital Marketing Strategy,Change,Customer Service,medium,0.87896997,0.87235105,0.9833892583847046,0.9833892583847046,0.0
+Printing Ink Malfunction,Incident,Technical Support,medium,0.6584522,0.5959893,0.7381414175033569,0.7381414175033569,0.0
+Facing Occasional Connection Problems in Our SaaS Solution Lately,Incident,Customer Service,low,0.8302084,0.8135206,0.9803114533424377,0.9803114533424377,0.0
+,Incident,Technical Support,low,0.99778914,0.9959502,0.9821842908859253,0.9821842908859253,0.0
+CorelDRAW Crashes During Update Process,Problem,IT Support,medium,0.9260878,0.8968768,0.9611296653747559,0.9611296653747559,0.0
+Required Technical Assistance,Incident,Technical Support,medium,0.7613839,0.7233231,0.6465445756912231,0.6957428455352783,0.049198269844055176
+,Problem,IT Support,medium,0.9922378,0.9813647,0.9916720390319824,0.9916720390319824,0.0
+Fehler bei der Abrechnungssoftware,Problem,Billing and Payments,medium,0.8861393,0.8871329,0.9657700657844543,0.9657700657844543,0.0
+,Problem,Technical Support,high,0.8393188,0.8606563,0.8859380483627319,0.8859380483627319,0.0
+Trouble with osCommerce Integration API,Problem,Technical Support,medium,0.9912114,0.986767,0.9247934222221375,0.9247934222221375,0.0
+Notwendigkeit der Bewertung der Performance der digitalen Kampagne,Problem,Returns and Exchanges,medium,0.67058307,0.6435939,0.8066775798797607,0.8056443929672241,-0.001033186912536621
+Update Data Analytics Tools,Change,Sales and Pre-Sales,medium,0.91208065,0.8976406,0.9537018537521362,0.9537018537521362,0.0
+,Incident,Technical Support,high,0.8542234,0.8542985,0.9479668140411377,0.9479668140411377,0.0
+Support Issue for Products including Zapier PostgreSQL,Incident,Product Support,low,0.90357006,0.87518114,0.8886278867721558,0.8886278867721558,0.0
+Sicherheitsmaßnahmen für Medizinische Daten,Request,Customer Service,high,0.8170397,0.7435674,0.8650693893432617,0.8650692701339722,-1.1920928955078125e-07
+Erforderliche Untersuchung für Abnahme der Betroffenheitsmesskennzahlen bei der Marketing-Kampagne,Incident,Technical Support,high,0.85640585,0.8316692,0.9390199780464172,0.9390199780464172,0.0
+,Problem,Product Support,high,0.8688997,0.8700166,0.9732950925827026,0.9732950925827026,0.0
+Concern About Data Breach in Hospital Systems,Problem,Human Resources,low,0.9430491,0.9278759,0.9878221750259399,0.9878221750259399,0.0

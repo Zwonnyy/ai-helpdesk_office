@@ -1,0 +1,128 @@
+
+FINAL HOLDOUT EVALUATION
+======================================================================
+
+Samples:
+1429
+
+
+V2
+----------------------------------------------------------------------
+
+Type@1:
+0.9356
+
+Queue@1:
+0.8195
+
+Priority@1:
+0.8509
+
+Type@3:
+0.9790
+
+Queue@3:
+0.9027
+
+Priority@3:
+0.9419
+
+Mean Top1 Retrieval Similarity:
+0.8582
+
+Answer Top1 Mean:
+0.8770
+
+Answer Best@3 Mean:
+0.9046
+
+Answer Mean@3:
+0.8130
+
+
+V3
+----------------------------------------------------------------------
+
+Type@1:
+0.9475
+
+Queue@1:
+0.8544
+
+Priority@1:
+0.8831
+
+Type@3:
+0.9832
+
+Queue@3:
+0.9160
+
+Priority@3:
+0.9510
+
+Mean Top1 Retrieval Similarity:
+0.8340
+
+Answer Top1 Mean:
+0.8837
+
+Answer Best@3 Mean:
+0.9084
+
+Answer Mean@3:
+0.8186
+
+
+V3 - V2
+----------------------------------------------------------------------
+
+Type@1 Delta:
++0.0119
+
+Queue@1 Delta:
++0.0350
+
+Priority@1 Delta:
++0.0322
+
+Type@3 Delta:
++0.0042
+
+Queue@3 Delta:
++0.0133
+
+Priority@3 Delta:
++0.0091
+
+Answer Top1 Delta:
++0.006715
+
+Answer Best@3 Delta:
++0.003854
+
+Answer Mean@3 Delta:
++0.005615
+
+
+ANSWER BEST@3 COMPARISON
+----------------------------------------------------------------------
+
+V3 Wins:
+119
+
+V2 Wins:
+53
+
+Ties:
+1257
+
+V3 Non-Tie Win Rate:
+0.6919
+
+
+RETRIEVAL CHANGE
+----------------------------------------------------------------------
+
+Same Top1 Ticket Rate:
+0.8523

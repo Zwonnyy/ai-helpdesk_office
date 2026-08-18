@@ -1,6 +1,4 @@
-from contextlib import (
-    asynccontextmanager,
-)
+from contextlib import asynccontextmanager
 
 from fastapi import (
     Depends,
@@ -12,14 +10,12 @@ from fastapi import (
 from sqlalchemy.orm import Session
 
 
+# ============================================================
+# SERVICES
+# ============================================================
+
 from app.answer_retriever import (
     AnswerRetriever,
-)
-
-from app.database import (
-    DATABASE_PATH,
-    get_db,
-    init_db,
 )
 
 from app.llm_service import (
@@ -30,17 +26,48 @@ from app.model_service import (
     ModelService,
 )
 
+
+# ============================================================
+# DATABASE
+# ============================================================
+
+from app.database import (
+    DATABASE_PATH,
+    get_db,
+    init_db,
+)
+
+
+# ============================================================
+# AUDIT
+# ============================================================
+
+from app.audit_service import (
+    list_ticket_events,
+)
+
+
+# ============================================================
+# SCHEMAS
+# ============================================================
+
 from app.schemas import (
     TicketApproveRequest,
     TicketAssistResponse,
     TicketCreateRequest,
     TicketDraftResponse,
+    TicketEventResponse,
     TicketPredictionResponse,
     TicketRejectRequest,
     TicketRequest,
     TicketResponse,
     TicketSubmitRequest,
 )
+
+
+# ============================================================
+# TICKET SERVICE
+# ============================================================
 
 from app.ticket_service import (
     InvalidTicketStateError,
@@ -56,20 +83,14 @@ from app.ticket_service import (
 
 
 # ============================================================
-# SERVICES
+# SERVICE INSTANCES
 # ============================================================
 
-model_service = (
-    ModelService()
-)
+model_service = ModelService()
 
-answer_retriever = (
-    AnswerRetriever()
-)
+answer_retriever = AnswerRetriever()
 
-llm_service = (
-    LLMService()
-)
+llm_service = LLMService()
 
 
 # ============================================================
@@ -87,66 +108,100 @@ async def lifespan(
     print("=" * 70)
 
     # --------------------------------------------------------
-    # Database
+    # DATABASE
     # --------------------------------------------------------
+
+    print()
+    print("[1/3] DATABASE INITIALIZE")
 
     init_db()
 
     # --------------------------------------------------------
-    # Classification Models
+    # CLASSIFICATION MODELS
+    #
+    # TYPE
+    # QUEUE
+    # PRIORITY
     # --------------------------------------------------------
+
+    print()
+    print("[2/3] CLASSIFICATION MODELS LOAD")
 
     model_service.load_models()
 
     # --------------------------------------------------------
-    # Fine-tuned V2 Retriever
+    # FINE-TUNED SEMANTIC RETRIEVER V2
     # --------------------------------------------------------
 
+    print()
+    print("[3/3] SEMANTIC RETRIEVER LOAD")
+
     answer_retriever.load()
+
+    # --------------------------------------------------------
+    # READY
+    # --------------------------------------------------------
 
     print()
     print("=" * 70)
     print("AI HELPDESK READY")
     print("=" * 70)
 
-    yield
+    print(
+        f"Database: {DATABASE_PATH}"
+    )
+
+    print(
+        f"Device: {model_service.device}"
+    )
 
     print()
-    print(
-        "AI Helpdesk API 종료"
-    )
+
+    yield
+
+    # --------------------------------------------------------
+    # SHUTDOWN
+    # --------------------------------------------------------
+
+    print()
+    print("=" * 70)
+    print("AI HELPDESK SHUTDOWN")
+    print("=" * 70)
 
 
 # ============================================================
-# APP
+# FASTAPI APP
 # ============================================================
 
 app = FastAPI(
 
-    title=(
-        "AI Helpdesk API"
-    ),
+    title="AI Helpdesk API",
 
     description=(
-        "Ticket Classification + "
+        "IT Support Ticket Classification + "
         "Fine-tuned Semantic Retrieval + "
         "Database Workflow + "
-        "Human Approval"
+        "Human Approval + "
+        "Audit Trail"
     ),
 
-    version="0.4.0",
+    version="0.5.0",
 
     lifespan=lifespan,
 )
 
 
 # ============================================================
-# ERROR HELPER
+# ERROR HANDLER HELPER
 # ============================================================
 
 def raise_service_error(
     error: Exception,
 ):
+
+    # --------------------------------------------------------
+    # TICKET NOT FOUND
+    # --------------------------------------------------------
 
     if isinstance(
         error,
@@ -160,6 +215,10 @@ def raise_service_error(
             ),
         )
 
+    # --------------------------------------------------------
+    # INVALID WORKFLOW STATE
+    # --------------------------------------------------------
+
     if isinstance(
         error,
         InvalidTicketStateError,
@@ -172,6 +231,10 @@ def raise_service_error(
             ),
         )
 
+    # --------------------------------------------------------
+    # UNKNOWN ERROR
+    # --------------------------------------------------------
+
     raise error
 
 
@@ -183,17 +246,25 @@ def raise_service_error(
 def root():
 
     return {
+
         "service": (
             "AI Helpdesk"
         ),
 
         "version": (
-            "0.4.0"
+            "0.5.0"
         ),
 
         "status": (
             "running"
         ),
+
+        "features": [
+            "ticket-classification",
+            "semantic-retrieval",
+            "human-approval",
+            "audit-trail",
+        ],
     }
 
 
@@ -225,12 +296,27 @@ def health():
         "database": str(
             DATABASE_PATH
         ),
+
+        "llm_model": (
+            llm_service.model_name
+        ),
     }
 
 
 # ============================================================
-# OLD API
-# PREDICTION
+# ============================================================
+#
+# LEGACY / AI DIRECT API
+#
+# ============================================================
+# ============================================================
+
+
+# ============================================================
+# PREDICT
+#
+# Ticket을 DB에 저장하지 않고
+# TYPE / QUEUE / PRIORITY만 즉시 분석
 # ============================================================
 
 @app.post(
@@ -243,17 +329,24 @@ def predict(
     request: TicketRequest,
 ):
 
-    return model_service.predict(
+    predictions = (
+        model_service.predict(
 
-        subject=request.subject,
+            subject=request.subject,
 
-        body=request.body,
+            body=request.body,
+        )
     )
+
+    return predictions
 
 
 # ============================================================
-# OLD API
 # ASSIST
+#
+# Classification
+# +
+# Fine-tuned Semantic Retrieval
 # ============================================================
 
 @app.post(
@@ -273,20 +366,37 @@ def assist(
     ),
 ):
 
+    # --------------------------------------------------------
+    # CLASSIFICATION
+    # --------------------------------------------------------
+
     predictions = (
         model_service.predict(
+
             subject=request.subject,
+
             body=request.body,
         )
     )
 
+    # --------------------------------------------------------
+    # RETRIEVAL
+    # --------------------------------------------------------
+
     similar_tickets = (
         answer_retriever.search(
+
             subject=request.subject,
+
             body=request.body,
+
             top_k=top_k,
         )
     )
+
+    # --------------------------------------------------------
+    # RESPONSE
+    # --------------------------------------------------------
 
     return {
 
@@ -315,11 +425,16 @@ def assist(
 
 
 # ============================================================
-# OLD API
 # DRAFT
 #
-# Ollama가 현재 CUDA 문제라
-# 실패하면 503으로만 처리
+# Classification
+# +
+# Retrieval
+# +
+# Local LLM
+#
+# 현재 Ollama CUDA 문제가 있을 경우
+# API 전체를 죽이지 않고 503 반환
 # ============================================================
 
 @app.post(
@@ -339,26 +454,42 @@ def draft(
     ),
 ):
 
+    # --------------------------------------------------------
+    # CLASSIFICATION
+    # --------------------------------------------------------
+
     predictions = (
         model_service.predict(
+
             subject=request.subject,
+
             body=request.body,
         )
     )
 
+    # --------------------------------------------------------
+    # RETRIEVAL
+    # --------------------------------------------------------
+
     similar_tickets = (
         answer_retriever.search(
+
             subject=request.subject,
+
             body=request.body,
+
             top_k=top_k,
         )
     )
 
+    # --------------------------------------------------------
+    # LLM
+    # --------------------------------------------------------
+
     try:
 
         draft_answer = (
-            llm_service
-            .generate_answer(
+            llm_service.generate_answer(
 
                 subject=request.subject,
 
@@ -375,15 +506,20 @@ def draft(
     except Exception as error:
 
         raise HTTPException(
+
             status_code=503,
+
             detail=(
-                "Local LLM is currently "
-                "unavailable. "
-                "Classification and retrieval "
-                "are working normally. "
+                "Local LLM is currently unavailable. "
+                "Classification and retrieval are "
+                "working normally. "
                 f"Error: {error}"
             ),
         )
+
+    # --------------------------------------------------------
+    # RESPONSE
+    # --------------------------------------------------------
 
     return {
 
@@ -416,8 +552,23 @@ def draft(
 
 
 # ============================================================
-# DB API
+# ============================================================
+#
+# TICKET WORKFLOW API
+#
+# ============================================================
+# ============================================================
+
+
+# ============================================================
 # CREATE TICKET
+#
+# NONE
+#  ↓
+# PENDING
+#
+# Audit:
+# TICKET_CREATED
 # ============================================================
 
 @app.post(
@@ -436,18 +587,27 @@ def create_ticket_api(
     ),
 ):
 
-    return create_ticket(
+    try:
 
-        db=db,
+        ticket = create_ticket(
 
-        subject=request.subject,
+            db=db,
 
-        body=request.body,
-    )
+            subject=request.subject,
+
+            body=request.body,
+        )
+
+        return ticket
+
+    except Exception as error:
+
+        raise_service_error(
+            error
+        )
 
 
 # ============================================================
-# DB API
 # LIST TICKETS
 # ============================================================
 
@@ -475,18 +635,27 @@ def list_tickets_api(
     ),
 ):
 
-    return list_tickets(
+    try:
 
-        db=db,
+        tickets = list_tickets(
 
-        offset=offset,
+            db=db,
 
-        limit=limit,
-    )
+            offset=offset,
+
+            limit=limit,
+        )
+
+        return tickets
+
+    except Exception as error:
+
+        raise_service_error(
+            error
+        )
 
 
 # ============================================================
-# DB API
 # GET TICKET
 # ============================================================
 
@@ -507,10 +676,14 @@ def get_ticket_api(
 
     try:
 
-        return get_ticket(
+        ticket = get_ticket(
+
             db=db,
+
             ticket_id=ticket_id,
         )
+
+        return ticket
 
     except Exception as error:
 
@@ -520,8 +693,18 @@ def get_ticket_api(
 
 
 # ============================================================
-# DB API
-# ANALYZE
+# ANALYZE TICKET
+#
+# PENDING
+#   ↓
+# AI CLASSIFICATION
+#   +
+# V2 SEMANTIC RETRIEVAL
+#   ↓
+# ANALYZED
+#
+# Audit:
+# AI_ANALYZED
 # ============================================================
 
 @app.post(
@@ -547,12 +730,22 @@ def analyze_ticket_api(
 
     try:
 
+        # ----------------------------------------------------
+        # GET TICKET
+        # ----------------------------------------------------
+
         ticket = get_ticket(
+
             db=db,
+
             ticket_id=ticket_id,
         )
 
-        return analyze_ticket(
+        # ----------------------------------------------------
+        # ANALYZE
+        # ----------------------------------------------------
+
+        ticket = analyze_ticket(
 
             db=db,
 
@@ -569,6 +762,8 @@ def analyze_ticket_api(
             top_k=top_k,
         )
 
+        return ticket
+
     except Exception as error:
 
         raise_service_error(
@@ -577,8 +772,20 @@ def analyze_ticket_api(
 
 
 # ============================================================
-# DB API
 # SUBMIT FOR APPROVAL
+#
+# ANALYZED
+#    ↓
+# WAITING_APPROVAL
+#
+# 또는
+#
+# REJECTED
+#    ↓
+# WAITING_APPROVAL
+#
+# Audit:
+# SUBMITTED_FOR_APPROVAL
 # ============================================================
 
 @app.post(
@@ -601,11 +808,13 @@ def submit_ticket_api(
     try:
 
         ticket = get_ticket(
+
             db=db,
+
             ticket_id=ticket_id,
         )
 
-        return submit_for_approval(
+        ticket = submit_for_approval(
 
             db=db,
 
@@ -616,6 +825,8 @@ def submit_ticket_api(
             ),
         )
 
+        return ticket
+
     except Exception as error:
 
         raise_service_error(
@@ -624,8 +835,14 @@ def submit_ticket_api(
 
 
 # ============================================================
-# DB API
 # APPROVE
+#
+# WAITING_APPROVAL
+#        ↓
+#     APPROVED
+#
+# Audit:
+# APPROVED
 # ============================================================
 
 @app.post(
@@ -648,11 +865,13 @@ def approve_ticket_api(
     try:
 
         ticket = get_ticket(
+
             db=db,
+
             ticket_id=ticket_id,
         )
 
-        return approve_ticket(
+        ticket = approve_ticket(
 
             db=db,
 
@@ -663,6 +882,8 @@ def approve_ticket_api(
             ),
         )
 
+        return ticket
+
     except Exception as error:
 
         raise_service_error(
@@ -671,8 +892,14 @@ def approve_ticket_api(
 
 
 # ============================================================
-# DB API
 # REJECT
+#
+# WAITING_APPROVAL
+#        ↓
+#     REJECTED
+#
+# Audit:
+# REJECTED
 # ============================================================
 
 @app.post(
@@ -695,11 +922,13 @@ def reject_ticket_api(
     try:
 
         ticket = get_ticket(
+
             db=db,
+
             ticket_id=ticket_id,
         )
 
-        return reject_ticket(
+        ticket = reject_ticket(
 
             db=db,
 
@@ -709,6 +938,71 @@ def reject_ticket_api(
                 request.reason
             ),
         )
+
+        return ticket
+
+    except Exception as error:
+
+        raise_service_error(
+            error
+        )
+
+
+# ============================================================
+# ============================================================
+#
+# AUDIT TRAIL API
+#
+# ============================================================
+# ============================================================
+
+
+# ============================================================
+# GET TICKET EVENTS
+#
+# Ticket의 전체 상태 변경 이력 조회
+# ============================================================
+
+@app.get(
+    "/tickets/{ticket_id}/events",
+    response_model=list[
+        TicketEventResponse
+    ],
+)
+def get_ticket_events_api(
+
+    ticket_id: int,
+
+    db: Session = Depends(
+        get_db
+    ),
+):
+
+    try:
+
+        # ----------------------------------------------------
+        # Ticket 존재 여부 확인
+        # ----------------------------------------------------
+
+        get_ticket(
+
+            db=db,
+
+            ticket_id=ticket_id,
+        )
+
+        # ----------------------------------------------------
+        # Event List
+        # ----------------------------------------------------
+
+        events = list_ticket_events(
+
+            db=db,
+
+            ticket_id=ticket_id,
+        )
+
+        return events
 
     except Exception as error:
 
