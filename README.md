@@ -18,7 +18,9 @@
 
 ```mermaid
 flowchart TD
-    A[New Ticket] --> B[FastAPI] --> C[(SQLite)]
+    U[Helpdesk Operator] --> UI[React + TypeScript Frontend]
+    UI --> B[FastAPI] --> C[(SQLite)]
+    A[New Ticket] --> UI
     B --> D[Multilingual DistilBERT]
     D --> D1[Type]
     D --> D2[Queue]
@@ -42,6 +44,7 @@ Ticket 분석 시 classification confidence와 Retrieval Top1 similarity를 Risk
 | 영역 | 기술 |
 |---|---|
 | Language / API | Python 3.12+, FastAPI, Uvicorn, Pydantic |
+| Frontend | React, TypeScript, Vite, React Router |
 | ML | PyTorch, Transformers, Sentence Transformers, scikit-learn |
 | Database / Data | SQLite, SQLAlchemy, Pandas, NumPy |
 | Environment | uv, PyCharm, Windows, CUDA, RTX 3060 Laptop GPU 6GB |
@@ -53,6 +56,31 @@ Ticket 분석 시 classification confidence와 Retrieval Top1 similarity를 Risk
 Customer IT Support Ticket Dataset **28,587 rows**를 사용했습니다. 주요 컬럼은 `subject`, `body`, `answer`, `type`, `queue`, `priority`, `language`, `tag_1` ~ `tag_8`이며 입력은 `subject + body`, classification target은 `type`, `queue`, `priority`입니다.
 
 Retrieval KB는 `data/processed/rag_train.csv`의 **22,864 tickets**입니다. KB와 평가 데이터를 분리해 leakage를 방지했습니다. V3 선택은 `v3_dev.csv`에서만 수행했고, **1,429건의 `final_holdout.csv`는 모델 선택 후 최종 평가에 한 번 사용했습니다.**
+
+## Korean Localization Layer
+
+ML training과 evaluation은 기존 multilingual original data를 기준으로 수행합니다. 한국어 localization은 UI presentation을 위한 별도 파생 데이터이며, 모델 학습이나 Final Holdout 성능 측정에 사용하지 않습니다.
+
+```text
+Original rag_train.csv + V3 embeddings
+              ↓
+       V3 retrieval ranking
+              ↓
+          Top K row index
+              ↓
+rag_train_ko.csv의 동일 kb_index 조회
+              ↓
+한국어 우선 표시 / 원문 보기
+```
+
+V3 Retriever는 기존 original corpus embedding을 그대로 사용합니다. 검색이 끝난 뒤에만 row index로 `data/localized/ko/rag_train_ko.csv`를 조회하므로 localization text가 ranking에 영향을 주지 않습니다. 번역 파일이나 특정 row가 없으면 원문으로 fallback합니다.
+
+```bash
+uv run python src/translate_rag_to_korean.py --limit 10
+uv run python src/translate_rag_to_korean.py --resume
+```
+
+중간 결과는 `rag_train_ko.partial.csv`에 atomic checkpoint로 저장됩니다. 전체 파생 CSV는 생성 artifact이므로 Git에서 제외됩니다.
 
 ## Retriever 실험
 
@@ -231,6 +259,11 @@ Swagger UI: <http://127.0.0.1:8000/docs>
 git clone <repository-url>
 cd ai-helpdesk
 uv sync
+```
+
+### Backend
+
+```bash
 uv run uvicorn app.main:app
 ```
 
@@ -248,7 +281,17 @@ data/processed/
 └── rag_train.csv
 ```
 
-`models/`와 SQLite DB는 `.gitignore` 대상이므로 공개 저장소에는 별도 artifact 배포가 필요합니다. CUDA가 없으면 CPU를 선택합니다. 기본 주소는 `http://127.0.0.1:8000`입니다.
+`models/`와 SQLite DB는 `.gitignore` 대상이므로 공개 저장소에는 별도 artifact 배포가 필요합니다. CUDA가 없으면 CPU를 선택합니다. Backend 기본 주소는 `http://127.0.0.1:8000`입니다.
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend 기본 주소는 `http://localhost:5173`입니다. 다른 Backend 주소를 사용하려면 `frontend/.env.example`을 참고해 `VITE_API_BASE_URL`을 설정합니다.
 
 ## Project Structure
 
@@ -282,6 +325,17 @@ ai-helpdesk/
 │   ├── priority_transformer/
 │   ├── helpdesk_embedding_model_v3/
 │   └── rag_embeddings_finetuned_v3.npy
+├── frontend/
+│   ├── src/
+│   │   ├── api/helpdesk.ts             # Typed Backend API client
+│   │   ├── components/                 # Layout, Badge, Table, Timeline
+│   │   ├── pages/                      # Dashboard, New, Detail
+│   │   ├── types/helpdesk.ts           # Pydantic 대응 TypeScript types
+│   │   ├── App.tsx
+│   │   └── index.css
+│   ├── .env.example
+│   ├── package.json
+│   └── vite.config.ts
 ├── reports/
 │   ├── embedding_space_diagnostics.txt
 │   ├── v2_vs_v3_dev_evaluation.txt
@@ -313,7 +367,6 @@ ai-helpdesk/
 - Local Ollama CUDA runtime 이슈
 - Classifier confidence calibration 미완료
 - Production 배포 미완료
-- Frontend 없음
 - Answer relevance는 automatic proxy metric
 - 대용량 model artifacts는 Git에서 제외
 

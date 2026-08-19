@@ -26,6 +26,9 @@ Thumbs.db
 # Generated ML artifacts (many exceed GitHub's 100 MB file limit)
 models/
 
+# Generated localization artifacts
+data/localized/**/*.csv
+
 # Test and tooling caches
 .pytest_cache/
 .mypy_cache/

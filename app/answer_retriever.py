@@ -6,6 +6,10 @@ import torch
 
 from sentence_transformers import SentenceTransformer
 
+from app.localization_service import (
+    KoreanLocalization,
+)
+
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 
@@ -40,6 +44,10 @@ class AnswerRetriever:
         self.corpus = None
 
         self.loaded = False
+
+        self.korean_localization = (
+            KoreanLocalization()
+        )
 
         # 일단 GPU 사용
         self.device = (
@@ -82,6 +90,10 @@ class AnswerRetriever:
 
         self.corpus = pd.read_csv(
             CORPUS_PATH
+        )
+
+        self.korean_localization.load(
+            corpus_size=len(self.corpus)
         )
 
         # ----------------------------------------------------
@@ -233,6 +245,15 @@ class AnswerRetriever:
                 index
             ]
 
+            localized = (
+                self.korean_localization.resolve(
+                    index=int(index),
+                    subject=str(row.get('subject')),
+                    body=str(row.get('body')),
+                    answer=str(row.get('answer')),
+                )
+            )
+
             results.append(
                 {
                     "score": float(
@@ -266,6 +287,7 @@ class AnswerRetriever:
                     "language": str(
                         row["language"]
                     ),
+                    **localized,
                 }
             )
 

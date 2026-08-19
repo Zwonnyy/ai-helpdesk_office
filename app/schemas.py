@@ -76,6 +76,22 @@ class SimilarTicket(
 
     language: str
 
+    subject_ko: (
+        str | None
+    ) = None
+
+    body_ko: (
+        str | None
+    ) = None
+
+    answer_ko: (
+        str | None
+    ) = None
+
+    translation_status: (
+        str | None
+    ) = None
+
 
 class TicketAssistResponse(
     BaseModel
