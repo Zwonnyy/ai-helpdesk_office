@@ -5,6 +5,7 @@ import type {
   SubmitTicketInput,
   Ticket,
   TicketEvent,
+  SimilarTicketTranslation,
 } from '../types/helpdesk'
 
 const API_BASE_URL =
@@ -93,3 +94,9 @@ export const rejectTicket = (
 
 export const getTicketEvents = (id: number) =>
   request<TicketEvent[]>(`/tickets/${id}/events`)
+
+export const translateSimilarTickets = (id: number) =>
+  request<SimilarTicketTranslation[]>(
+    `/tickets/${id}/translate-similar-tickets?target_language=ko`,
+    { method: 'POST' },
+  )

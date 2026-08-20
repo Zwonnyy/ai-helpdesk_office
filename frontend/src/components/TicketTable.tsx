@@ -21,8 +21,8 @@ export default function TicketTable({ tickets }: { tickets: Ticket[] }) {
     return (
       <div className='empty-state'>
         <span className='empty-icon'>◎</span>
-        <h3>등록된 Ticket이 없습니다</h3>
-        <p>새 Ticket을 등록하면 분석 workflow를 시작할 수 있습니다.</p>
+        <h3>등록된 티켓이 없습니다.</h3>
+        <p>새 티켓을 등록하면 분석 workflow를 시작할 수 있습니다.</p>
       </div>
     )
   }

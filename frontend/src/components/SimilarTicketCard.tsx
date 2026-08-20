@@ -1,5 +1,8 @@
 import { useState } from 'react'
-import type { SimilarTicket } from '../types/helpdesk'
+import type {
+  SimilarTicket,
+  SimilarTicketTranslation,
+} from '../types/helpdesk'
 import {
   priorityLabel,
   queueLabel,
@@ -9,28 +12,19 @@ import {
 export default function SimilarTicketCard({
   ticket,
   rank,
+  translation,
+  showTranslation,
 }: {
   ticket: SimilarTicket
   rank: number
+  translation?: SimilarTicketTranslation
+  showTranslation: boolean
 }) {
   const [expanded, setExpanded] = useState(false)
-  const [showOriginal, setShowOriginal] = useState(false)
-  const localized = ticket.translation_status === 'completed'
-  const subject = (
-    localized && !showOriginal
-      ? ticket.subject_ko
-      : ticket.subject
-  ) || ticket.subject
-  const body = (
-    localized && !showOriginal
-      ? ticket.body_ko
-      : ticket.body
-  ) || ticket.body
-  const answer = (
-    localized && !showOriginal
-      ? ticket.answer_ko
-      : ticket.answer
-  ) || ticket.answer
+  const localized = showTranslation && translation?.translated
+  const subject = localized ? translation.subject : ticket.subject
+  const body = localized ? translation.body : ticket.body
+  const answer = localized ? translation.answer : ticket.answer
 
   return (
     <article className='similar-card'>
@@ -49,6 +43,7 @@ export default function SimilarTicketCard({
         <span>{typeLabel(ticket.type)}</span>
         <span>{queueLabel(ticket.queue)}</span>
         <span>{priorityLabel(ticket.priority)}</span>
+        {localized && <span>{translation.cached ? '한국어 번역 · 캐시됨' : '한국어 번역'}</span>}
       </div>
       <div className='historical-answer'>
         <p className='field-label'>문의 내용</p>
@@ -64,14 +59,8 @@ export default function SimilarTicketCard({
             {expanded ? '접기' : '전체 내용 보기'}
           </button>
         )}
-        {localized && (
-          <button
-            className='text-button original-toggle'
-            type='button'
-            onClick={() => setShowOriginal((value) => !value)}
-          >
-            {showOriginal ? '한국어 번역 보기' : '원문 보기'}
-          </button>
+        {showTranslation && translation && !translation.translated && (
+          <p className='translation-fallback'>번역에 실패했습니다. 원문을 표시합니다.</p>
         )}
       </div>
     </article>

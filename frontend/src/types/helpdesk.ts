@@ -13,6 +13,7 @@ export interface PredictionResult {
 }
 
 export interface SimilarTicket {
+  kb_index?: number | null
   score: number
   subject: string
   body: string
@@ -25,6 +26,17 @@ export interface SimilarTicket {
   body_ko?: string | null
   answer_ko?: string | null
   translation_status?: string | null
+}
+
+export interface SimilarTicketTranslation {
+  kb_index: number | null
+  target_language: string
+  subject: string
+  body: string
+  answer: string
+  cached: boolean
+  translated: boolean
+  error: string | null
 }
 
 export interface Ticket {

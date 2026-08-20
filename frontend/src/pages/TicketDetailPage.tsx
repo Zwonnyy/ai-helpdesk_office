@@ -7,15 +7,17 @@ import {
   getTicketEvents,
   rejectTicket,
   submitForApproval,
+  translateSimilarTickets,
 } from '../api/helpdesk'
 import AuditTimeline from '../components/AuditTimeline'
 import RiskBadge from '../components/RiskBadge'
 import SimilarTicketCard from '../components/SimilarTicketCard'
 import StatusBadge from '../components/StatusBadge'
-import type { Ticket, TicketEvent } from '../types/helpdesk'
+import type { SimilarTicketTranslation, Ticket, TicketEvent } from '../types/helpdesk'
 import {
   priorityLabel,
   queueLabel,
+  riskReasonLabel,
   typeLabel,
 } from '../utils/labels'
 
@@ -40,6 +42,10 @@ export default function TicketDetailPage() {
   const [loading, setLoading] = useState(true)
   const [action, setAction] = useState('')
   const [error, setError] = useState('')
+  const [translations, setTranslations] = useState<SimilarTicketTranslation[]>([])
+  const [showTranslations, setShowTranslations] = useState(false)
+  const [translationLoading, setTranslationLoading] = useState(false)
+  const [translationError, setTranslationError] = useState('')
 
   const load = useCallback(async () => {
     if (!Number.isInteger(ticketId)) {
@@ -76,13 +82,50 @@ export default function TicketDetailPage() {
     setError('')
     try {
       await operation()
+      if (name === 'analyze') {
+        setTranslations([])
+        setShowTranslations(false)
+        setTranslationError('')
+      }
       await load()
       setShowReject(false)
       setRejectReason('')
     } catch (reason) {
-      setError(reason instanceof Error ? reason.message : '요청 처리 중 오류가 발생했습니다.')
+      const actionLabel = {
+        analyze: '티켓 분석',
+        submit: '승인 요청',
+        approve: '승인',
+        reject: '반려',
+      }[name] ?? '요청 처리'
+      const detail = reason instanceof Error ? reason.message : '오류가 발생했습니다.'
+      setError(`${actionLabel} 실패: ${detail}`)
     } finally {
       setAction('')
+    }
+  }
+
+  const toggleTranslations = async () => {
+    if (showTranslations) {
+      setShowTranslations(false)
+      return
+    }
+    if (translations.length > 0) {
+      setShowTranslations(true)
+      return
+    }
+    setTranslationLoading(true)
+    setTranslationError('')
+    try {
+      const values = await translateSimilarTickets(ticketId)
+      setTranslations(values)
+      setShowTranslations(true)
+      if (values.some((value) => !value.translated)) {
+        setTranslationError('일부 유사 사례 번역에 실패해 원문을 표시합니다.')
+      }
+    } catch {
+      setTranslationError('번역에 실패했습니다. 원문을 표시합니다.')
+    } finally {
+      setTranslationLoading(false)
     }
   }
 
@@ -158,16 +201,20 @@ export default function TicketDetailPage() {
                 <div><span>우선순위</span><strong>{priorityLabel(ticket.predicted_priority)}</strong><em>{percent(ticket.priority_confidence)}</em></div>
               </div>
               <div className='risk-summary'>
-                <div><span>검색 Top1 유사도</span><strong>{ticket.retrieval_top1_similarity?.toFixed(4) ?? '—'}</strong></div>
+                <div><span>검색 Top1 유사도</span><strong>{percent(ticket.retrieval_top1_similarity)}</strong></div>
                 <div><span>위험도</span><RiskBadge risk={ticket.risk_level} /></div>
                 <div><span>담당자 검토</span><strong>{ticket.review_required ? '강화 검토 필요' : '일반 승인'}</strong></div>
               </div>
-              <div className='risk-reasons'>
-                <span>위험 사유</span>
-                {ticket.risk_reasons?.length ? (
-                  ticket.risk_reasons.map((reason) => <code key={reason}>{reason}</code>)
-                  ) : <strong>위험 사유 없음</strong>}
-              </div>
+              {ticket.risk_reasons?.length ? (
+                <div className='risk-reasons'>
+                  <span>위험 사유</span>
+                  <ul>
+                    {ticket.risk_reasons.map((reason) => (
+                      <li key={reason}>{riskReasonLabel(reason)}</li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </>
           ) : (
             <div className='empty-inline'><span>◇</span><p>아직 AI 분석을 실행하지 않았습니다.</p></div>
@@ -179,12 +226,43 @@ export default function TicketDetailPage() {
         <section className='section-block'>
           <div className='section-heading'>
             <div><p className='eyebrow'>지식 검색</p><h2>유사 과거 티켓</h2></div>
-            <span className='count-label'>Top {ticket.similar_tickets.length}</span>
+            <div className='translation-actions'>
+              <span className='count-label'>Top {ticket.similar_tickets.length}</span>
+              <button
+                className='button secondary compact'
+                type='button'
+                disabled={translationLoading}
+                onClick={() => void toggleTranslations()}
+              >
+                {translationLoading
+                  ? '유사 사례를 한국어로 번역하고 있습니다...'
+                  : showTranslations ? '원문 보기' : '한국어로 보기'}
+              </button>
+            </div>
           </div>
+          {translationError && <div className='alert warning'>{translationError}</div>}
           <div className='similar-list'>
             {ticket.similar_tickets.slice(0, 3).map((item, index) => (
-              <SimilarTicketCard key={`${item.subject}-${index}`} ticket={item} rank={index + 1} />
+              <SimilarTicketCard
+                key={`${item.kb_index ?? item.subject}-${index}`}
+                ticket={item}
+                rank={index + 1}
+                translation={translations[index]}
+                showTranslation={showTranslations}
+              />
             ))}
+          </div>
+        </section>
+      )}
+
+      {ticket.predicted_type && (!ticket.similar_tickets || ticket.similar_tickets.length === 0) && (
+        <section className='section-block'>
+          <div className='section-heading'>
+            <div><p className='eyebrow'>지식 검색</p><h2>유사 사례</h2></div>
+          </div>
+          <div className='empty-state compact-empty'>
+            <span className='empty-icon'>◇</span>
+            <h3>검색된 유사 사례가 없습니다.</h3>
           </div>
         </section>
       )}

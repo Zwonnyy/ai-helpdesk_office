@@ -74,8 +74,8 @@ class ModelService:
 
         if not model_path.exists():
             raise FileNotFoundError(
-                f"{target} 모델이 없습니다.\n"
-                f"{model_path}"
+                'Required classification model artifact not found: '
+                f'{model_path}. Mount the project models directory at /app/models.'
             )
 
         print(

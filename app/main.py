@@ -1,3 +1,4 @@
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import (
@@ -28,6 +29,10 @@ from app.llm_service import (
 
 from app.model_service import (
     ModelService,
+)
+
+from app.translation_service import (
+    TranslationService,
 )
 
 
@@ -65,6 +70,7 @@ from app.schemas import (
     TicketRejectRequest,
     TicketRequest,
     TicketResponse,
+    SimilarTicketTranslationResponse,
     TicketSubmitRequest,
 )
 
@@ -95,6 +101,8 @@ model_service = ModelService()
 answer_retriever = AnswerRetriever()
 
 llm_service = LLMService()
+
+translation_service = TranslationService()
 
 
 # ============================================================
@@ -194,12 +202,18 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+cors_origins = [
+    origin.strip()
+    for origin in os.getenv(
+        'HELPDESK_CORS_ORIGINS',
+        'http://localhost:5173,http://127.0.0.1:5173',
+    ).split(',')
+    if origin.strip()
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        'http://localhost:5173',
-        'http://127.0.0.1:5173',
-    ],
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=['*'],
     allow_headers=['*'],
@@ -705,6 +719,35 @@ def get_ticket_api(
         raise_service_error(
             error
         )
+
+
+# ============================================================
+# TRANSLATE RETRIEVED HISTORICAL TICKETS (ON DEMAND)
+# ============================================================
+
+@app.post(
+    '/tickets/{ticket_id}/translate-similar-tickets',
+    response_model=list[SimilarTicketTranslationResponse],
+)
+def translate_similar_tickets_api(
+    ticket_id: int,
+    target_language: str = Query(default='ko', min_length=2, max_length=16),
+    db: Session = Depends(get_db),
+):
+    try:
+        ticket = get_ticket(db=db, ticket_id=ticket_id)
+    except Exception as error:
+        raise_service_error(error)
+
+    similar_tickets = ticket.similar_tickets or []
+    return [
+        translation_service.get_or_translate(
+            db=db,
+            similar_ticket=item,
+            target_language=target_language.lower(),
+        )
+        for item in similar_tickets[:3]
+    ]
 
 
 # ============================================================

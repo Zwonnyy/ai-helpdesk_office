@@ -1,0 +1,50 @@
+name: ai-helpdesk
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      HELPDESK_DATABASE_PATH: ${HELPDESK_DATABASE_PATH:-/app/runtime/helpdesk.db}
+      HELPDESK_CORS_ORIGINS: ${HELPDESK_CORS_ORIGINS:-http://localhost:8080,http://127.0.0.1:8080}
+      HF_HOME: ${HF_HOME:-/app/.cache/huggingface}
+    volumes:
+      - ./models:/app/models:ro
+      - ./data/processed/rag_train.csv:/app/data/processed/rag_train.csv:ro
+      - helpdesk_runtime:/app/runtime
+      - hf_cache:/app/.cache/huggingface
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=4)
+      interval: 30s
+      timeout: 5s
+      start_period: 180s
+      retries: 5
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-/api}
+    ports:
+      - ${HELPDESK_FRONTEND_PORT:-8080}:80
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, wget, -q, -O, -, http://127.0.0.1/healthz]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  helpdesk_runtime:
+  hf_cache:

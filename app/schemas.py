@@ -60,6 +60,8 @@ class SimilarTicket(
     BaseModel
 ):
 
+    kb_index: int | None = None
+
     score: float
 
     subject: str
@@ -91,6 +93,18 @@ class SimilarTicket(
     translation_status: (
         str | None
     ) = None
+
+
+class SimilarTicketTranslationResponse(BaseModel):
+
+    kb_index: int | None
+    target_language: str
+    subject: str
+    body: str
+    answer: str
+    cached: bool
+    translated: bool = True
+    error: str | None = None
 
 
 class TicketAssistResponse(

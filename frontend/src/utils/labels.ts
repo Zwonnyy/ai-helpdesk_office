@@ -38,6 +38,13 @@ const riskLabels: Record<string, string> = {
   HIGH: '높음',
 }
 
+const riskReasonLabels: Record<string, string> = {
+  LOW_QUEUE_CONFIDENCE: 'Queue 신뢰도가 기준보다 낮습니다.',
+  LOW_PRIORITY_CONFIDENCE: 'Priority 신뢰도가 기준보다 낮습니다.',
+  LOW_TYPE_CONFIDENCE: 'Type 신뢰도가 기준보다 낮습니다.',
+  LOW_RETRIEVAL_SIMILARITY: '유사 사례 검색 신뢰도가 기준보다 낮습니다.',
+}
+
 export const typeLabel = (value: string | null) =>
   value ? (typeLabels[value] ?? value) : '—'
 
@@ -52,3 +59,6 @@ export const statusLabel = (value: string | null) =>
 
 export const riskLabel = (value: string | null) =>
   value ? (riskLabels[value] ?? value) : '미평가'
+
+export const riskReasonLabel = (value: string) =>
+  riskReasonLabels[value] ?? value

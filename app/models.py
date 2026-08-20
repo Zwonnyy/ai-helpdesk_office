@@ -13,8 +13,10 @@ from sqlalchemy import (
     Float,
     ForeignKey,
     JSON,
+    Integer,
     String,
     Text,
+    UniqueConstraint,
 )
 
 from sqlalchemy.orm import (
@@ -378,4 +380,30 @@ class TicketEvent(
         "Ticket"
     ] = relationship(
         back_populates="events"
+    )
+
+
+class HistoricalTicketTranslation(Base):
+
+    __tablename__ = 'historical_ticket_translations'
+    __table_args__ = (
+        UniqueConstraint(
+            'kb_index',
+            'target_language',
+            name='uq_historical_translation_kb_language',
+        ),
+    )
+
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    kb_index: Mapped[int] = mapped_column(Integer, nullable=False, index=True)
+    target_language: Mapped[str] = mapped_column(String(16), nullable=False)
+    subject_translated: Mapped[str] = mapped_column(Text, nullable=False)
+    body_translated: Mapped[str] = mapped_column(Text, nullable=False)
+    answer_translated: Mapped[str] = mapped_column(Text, nullable=False)
+    source_language: Mapped[str | None] = mapped_column(String(32), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utc_now, nullable=False,
+    )
+    updated_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=utc_now, onupdate=utc_now, nullable=False,
     )

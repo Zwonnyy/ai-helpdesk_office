@@ -3,6 +3,7 @@ import {
   priorityLabel,
   queueLabel,
   riskLabel,
+  riskReasonLabel,
   statusLabel,
   typeLabel,
 } from '../utils/labels'
@@ -65,12 +66,18 @@ function EventDetails({
         <div>
           <dt>유사도</dt>
           <dd>
-            {data.threshold_inputs?.retrieval_similarity?.toFixed(4) ?? '—'}
+            {data.threshold_inputs?.retrieval_similarity === undefined
+              ? '—'
+              : `${(data.threshold_inputs.retrieval_similarity * 100).toFixed(1)}%`}
           </dd>
         </div>
         <div className='wide'>
           <dt>사유</dt>
-          <dd>{data.reasons?.join(', ') || '위험 사유 없음'}</dd>
+          <dd>
+            {data.reasons?.length
+              ? data.reasons.map(riskReasonLabel).join(' ')
+              : '위험 사유 없음'}
+          </dd>
         </div>
       </dl>
     )
@@ -89,7 +96,7 @@ export default function AuditTimeline({
   events: TicketEvent[]
 }) {
   if (!events.length) {
-    return <p className='muted'>기록된 처리 이력이 없습니다.</p>
+    return <p className='audit-empty'>처리 이력이 없습니다.</p>
   }
 
   return (

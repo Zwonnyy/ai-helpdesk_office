@@ -6,11 +6,6 @@ import torch
 
 from sentence_transformers import SentenceTransformer
 
-from app.localization_service import (
-    KoreanLocalization,
-)
-
-
 BASE_DIR = Path(__file__).resolve().parents[1]
 
 CORPUS_PATH = (
@@ -45,10 +40,6 @@ class AnswerRetriever:
 
         self.loaded = False
 
-        self.korean_localization = (
-            KoreanLocalization()
-        )
-
         # 일단 GPU 사용
         self.device = (
             "cuda"
@@ -62,27 +53,22 @@ class AnswerRetriever:
 
     def load(self):
 
+        required_artifacts = (
+            ('retrieval corpus', CORPUS_PATH, '/app/data/processed'),
+            ('V3 retriever model', MODEL_PATH, '/app/models'),
+            ('V3 corpus embeddings', EMBEDDING_PATH, '/app/models'),
+        )
+        for label, path, mount_path in required_artifacts:
+            if not path.exists():
+                raise FileNotFoundError(
+                    f'Required {label} artifact not found: {path}. '
+                    f'Mount the host artifacts at {mount_path}.'
+                )
+
         print()
         print("=" * 70)
         print("SEMANTIC ANSWER RETRIEVER LOADING")
         print("=" * 70)
-
-        if not CORPUS_PATH.exists():
-
-            raise FileNotFoundError(
-                f"RAG corpus가 없습니다.\n"
-                f"{CORPUS_PATH}"
-            )
-
-        if not EMBEDDING_PATH.exists():
-
-            raise FileNotFoundError(
-                f"Embedding 파일이 없습니다.\n"
-                f"{EMBEDDING_PATH}\n\n"
-                "먼저 실행하세요:\n"
-                "uv run python "
-                "src/build_embedding_retriever.py"
-            )
 
         # ----------------------------------------------------
         # Corpus
@@ -90,10 +76,6 @@ class AnswerRetriever:
 
         self.corpus = pd.read_csv(
             CORPUS_PATH
-        )
-
-        self.korean_localization.load(
-            corpus_size=len(self.corpus)
         )
 
         # ----------------------------------------------------
@@ -245,17 +227,9 @@ class AnswerRetriever:
                 index
             ]
 
-            localized = (
-                self.korean_localization.resolve(
-                    index=int(index),
-                    subject=str(row.get('subject')),
-                    body=str(row.get('body')),
-                    answer=str(row.get('answer')),
-                )
-            )
-
             results.append(
                 {
+                    'kb_index': int(index),
                     "score": float(
                         similarities[index]
                     ),
@@ -287,7 +261,6 @@ class AnswerRetriever:
                     "language": str(
                         row["language"]
                     ),
-                    **localized,
                 }
             )
 

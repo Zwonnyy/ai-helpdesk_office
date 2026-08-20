@@ -19,6 +19,7 @@ export default function DashboardPage() {
   const counts = useMemo(() => {
     const status = {
       PENDING: 0,
+      ANALYZED: 0,
       WAITING_APPROVAL: 0,
       APPROVED: 0,
       REJECTED: 0,
@@ -60,6 +61,11 @@ export default function DashboardPage() {
           <span>대기</span>
           <strong>{counts.status.PENDING}</strong>
           <small>분석 대기</small>
+        </article>
+        <article className='summary-card analyzed'>
+          <span>분석 완료</span>
+          <strong>{counts.status.ANALYZED}</strong>
+          <small>답변 작성 가능</small>
         </article>
         <article className='summary-card attention'>
           <span>승인 대기</span>

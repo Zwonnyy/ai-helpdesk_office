@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from typing import Generator
 
@@ -15,17 +16,13 @@ from sqlalchemy.orm import (
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 
-DATA_DIR = BASE_DIR / "data"
+DEFAULT_DATABASE_PATH = BASE_DIR / 'data' / 'helpdesk.db'
 
-DATA_DIR.mkdir(
-    parents=True,
-    exist_ok=True,
-)
+DATABASE_PATH = Path(
+    os.getenv('HELPDESK_DATABASE_PATH', str(DEFAULT_DATABASE_PATH))
+).expanduser().resolve()
 
-DATABASE_PATH = (
-    DATA_DIR
-    / "helpdesk.db"
-)
+DATABASE_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 
 # Windows에서도 사용할 수 있도록

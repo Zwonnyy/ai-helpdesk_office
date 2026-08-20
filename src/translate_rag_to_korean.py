@@ -1,3 +1,9 @@
+'''Deprecated bulk translator; retained only for project history.
+
+The application now uses app.translation_service for on-demand translation.
+Do not run this script as part of the service workflow.
+'''
+
 import argparse
 import re
 from collections import defaultdict

@@ -15,6 +15,7 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+!.env.docker.example
 *.pem
 *.key
 
@@ -27,7 +28,14 @@ Thumbs.db
 models/
 
 # Generated localization artifacts
-data/localized/**/*.csv
+data/localized/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Generated embedding matrices outside the ignored models directory
+**/*embeddings*.npy
 
 # Test and tooling caches
 .pytest_cache/

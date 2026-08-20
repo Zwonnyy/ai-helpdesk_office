@@ -14,27 +14,31 @@
 - Validation data로 calibration한 retrieval risk policy
 - Local Ollama 답변 초안(Experimental)
 
-## Architecture
+## Final Architecture
 
 ```mermaid
 flowchart TD
-    U[Helpdesk Operator] --> UI[React + TypeScript Frontend]
-    UI --> B[FastAPI] --> C[(SQLite)]
-    A[New Ticket] --> UI
-    B --> D[Multilingual DistilBERT]
-    D --> D1[Type]
-    D --> D2[Queue]
-    D --> D3[Priority]
-    B --> E[Semantic Retriever V3] --> F[Historical KB<br/>Top 3 Tickets and Answers]
-    D1 --> G[Risk Gate Policy]
-    D2 --> G
-    D3 --> G
-    F --> G
-    G --> H[LOW / MEDIUM / HIGH]
-    F --> I[Human Review]
-    I --> J[APPROVED]
-    I --> K[REJECTED]
-    B --> L[Audit Trail]
+    U[Helpdesk Operator] --> UI[React + TypeScript + Vite]
+    UI --> API[FastAPI]
+    API <--> DB[(Ticket DB / SQLite)]
+    API --> CLS[Transformer Classification]
+    CLS --> TYPE[Type]
+    CLS --> QUEUE[Queue]
+    CLS --> PRIORITY[Priority]
+    API --> RET[V3 Semantic Retriever]
+    RET --> KB[Historical Ticket KB<br/>Original Multilingual Corpus]
+    KB --> TOP3[Similar Ticket TOP 3]
+    TOP3 --> TRANS[On-demand Translation<br/>Presentation Layer]
+    TRANS <--> CACHE[(Persistent Translation Cache)]
+    TRANS --> UI
+    TYPE --> RISK[Risk Gate]
+    QUEUE --> RISK
+    PRIORITY --> RISK
+    TOP3 --> RISK
+    RISK --> REVIEW[Human Review]
+    REVIEW --> APPROVED[APPROVED]
+    REVIEW --> REJECTED[REJECTED]
+    API --> AUDIT[Audit Trail]
 ```
 
 Ticket 분석 시 classification confidence와 Retrieval Top1 similarity를 Risk Gate에 전달해 risk를 저장합니다.
@@ -57,30 +61,31 @@ Customer IT Support Ticket Dataset **28,587 rows**를 사용했습니다. 주요
 
 Retrieval KB는 `data/processed/rag_train.csv`의 **22,864 tickets**입니다. KB와 평가 데이터를 분리해 leakage를 방지했습니다. V3 선택은 `v3_dev.csv`에서만 수행했고, **1,429건의 `final_holdout.csv`는 모델 선택 후 최종 평가에 한 번 사용했습니다.**
 
-## Korean Localization Layer
+## On-demand Korean Translation
 
-ML training과 evaluation은 기존 multilingual original data를 기준으로 수행합니다. 한국어 localization은 UI presentation을 위한 별도 파생 데이터이며, 모델 학습이나 Final Holdout 성능 측정에 사용하지 않습니다.
+한국어 번역은 Retrieval 결과를 보여주기 위한 **Presentation Layer**입니다. 원본 multilingual corpus는 변경하지 않으며 Translation text는 ML 학습, embedding 생성, Retrieval ranking, Risk Gate 또는 Final Holdout 평가에 사용하지 않습니다.
 
 ```text
-Original rag_train.csv + V3 embeddings
+Original rag_train.csv + existing V3 embeddings
               ↓
-       V3 retrieval ranking
+       V3 Semantic Retriever
               ↓
-          Top K row index
+   Similar Ticket TOP 3 + kb_index
               ↓
-rag_train_ko.csv의 동일 kb_index 조회
+    On-demand NLLB Translation
+              ↕
+ SQLite Persistent Translation Cache
               ↓
-한국어 우선 표시 / 원문 보기
+     한국어 표시 / 원문 보기
 ```
 
-V3 Retriever는 기존 original corpus embedding을 그대로 사용합니다. 검색이 끝난 뒤에만 row index로 `data/localized/ko/rag_train_ko.csv`를 조회하므로 localization text가 ranking에 영향을 주지 않습니다. 번역 파일이나 특정 row가 없으면 원문으로 fallback합니다.
-
-```bash
-uv run python src/translate_rag_to_korean.py --limit 10
-uv run python src/translate_rag_to_korean.py --resume
-```
-
-중간 결과는 `rag_train_ko.partial.csv`에 atomic checkpoint로 저장됩니다. 전체 파생 CSV는 생성 artifact이므로 Git에서 제외됩니다.
+- V3 Retriever는 검증이 완료된 기존 corpus와 embedding을 그대로 사용합니다.
+- `POST /tickets/{ticket_id}/translate-similar-tickets`는 실제 검색된 Historical Ticket만 필요할 때 번역합니다.
+- 번역 결과는 `historical_ticket_translations`에 `(kb_index, target_language)` unique key로 저장해 재사용합니다.
+- 모델은 첫 cache miss에서만 lazy load하며 긴 text는 truncate하지 않고 chunk 단위로 번역합니다.
+- 지원하지 않는 언어, 기존 Ticket의 누락된 `kb_index`, 모델·GPU 오류는 원문으로 fallback합니다.
+- Translation failure는 Ticket 생성, Classification, V3 Retrieval, Risk Gate, Human Approval과 Audit Trail에 영향을 주지 않습니다.
+- `src/translate_rag_to_korean.py`와 `app/localization_service.py`는 deprecated된 과거 일괄 번역 도구이며 실행 서비스에서는 사용하지 않습니다.
 
 ## Retriever 실험
 
@@ -293,6 +298,101 @@ npm run dev
 
 Frontend 기본 주소는 `http://localhost:5173`입니다. 다른 Backend 주소를 사용하려면 `frontend/.env.example`을 참고해 `VITE_API_BASE_URL`을 설정합니다.
 
+React, TypeScript, Vite로 구현된 주요 화면과 기능은 다음과 같습니다.
+
+- Dashboard: 상태·위험도 요약과 Ticket 목록
+- New Ticket: 새 문의 등록
+- Ticket Detail: 원문, 상태, AI 분석 결과 확인
+- AI Analysis: Type, Queue, Priority confidence와 Retrieval similarity
+- Similar Ticket: Historical Ticket TOP 3
+- Translation Toggle: 한국어 번역과 원문 전환
+- Human Approval: 답변 초안 제출, 승인, 반려
+- Audit Timeline: Ticket 상태 변경과 Risk 평가 이력
+
+## Docker Production-like 실행
+
+Docker Compose는 React production build를 Nginx로 제공하고 `/api/*` 요청을 내부 FastAPI container의 `/*` route로 전달합니다. Backend port는 host에 직접 공개하지 않으며 기본 접속 주소는 `http://localhost:8080`입니다.
+
+```text
+Browser :8080
+    → Nginx + React
+    → /api reverse proxy
+    → FastAPI backend:8000
+    → mounted ML artifacts + corpus
+    → SQLite / Translation Cache persistent volume
+```
+
+선택적으로 example 환경 파일을 복사한 뒤 값을 조정할 수 있습니다. 실제 `.env`는 Git에 포함하지 않습니다.
+
+```bash
+cp .env.docker.example .env
+docker compose up --build
+```
+
+확인 URL:
+
+- Frontend: `http://localhost:8080/`
+- Backend health via proxy: `http://localhost:8080/api/health`
+- Ticket API via proxy: `http://localhost:8080/api/tickets`
+
+React Router 경로는 Nginx의 `try_files` fallback을 사용하므로 `/tickets/{id}`를 직접 요청하거나 새로고침해도 `index.html`로 연결됩니다.
+
+```bash
+docker compose ps
+docker compose down
+```
+
+`docker compose down`은 named volume을 유지하므로 Ticket, Audit Trail, Translation Cache와 다운로드된 Translation model cache가 보존됩니다. 다음 명령은 두 cache를 포함한 runtime 데이터를 삭제하므로 의도적으로 초기화할 때만 사용합니다.
+
+```bash
+docker compose down -v
+```
+
+### 필수 Runtime Artifact
+
+Backend image에는 모델, corpus, embedding을 포함하지 않습니다. 실행 전 host에 다음 artifact가 있어야 하며 Compose가 read-only로 mount합니다.
+
+```text
+models/
+├── type_transformer/
+├── queue_transformer/
+├── priority_transformer/
+├── helpdesk_embedding_model_v3/
+└── rag_embeddings_finetuned_v3.npy
+
+data/processed/
+└── rag_train.csv
+```
+
+`models/`는 Git 제외 대상이므로 repository clone만으로 생성되지 않습니다. 기존 검증 완료 artifact를 별도로 준비해야 하며 Docker startup이 모델 학습이나 embedding 생성을 자동 실행하지 않습니다.
+
+### Persistent Data와 Translation
+
+- `helpdesk_runtime:/app/runtime`에 SQLite `helpdesk.db`를 저장합니다.
+- Ticket, Audit Trail, Translation Persistent Cache는 같은 SQLite DB에 유지됩니다.
+- `hf_cache:/app/.cache/huggingface`는 lazy-loaded NLLB model을 container 재생성 후에도 재사용합니다.
+- Translation model은 Backend startup에 로드되지 않습니다.
+- CPU에서는 첫 Translation latency가 클 수 있으며 Translation 실패는 핵심 Ticket Workflow와 격리됩니다.
+- 기본 Compose는 GPU를 요구하지 않습니다. NVIDIA Container Toolkit 기반 GPU 실행은 현재 검증하지 않았습니다.
+
+### Configuration
+
+| 환경변수 | Docker 기본값 | 설명 |
+|---|---|---|
+| `HELPDESK_DATABASE_PATH` | `/app/runtime/helpdesk.db` | SQLite와 Translation Cache 경로 |
+| `HELPDESK_CORS_ORIGINS` | `http://localhost:8080,http://127.0.0.1:8080` | 허용 origin 목록 |
+| `HF_HOME` | `/app/.cache/huggingface` | Hugging Face persistent cache |
+| `VITE_API_BASE_URL` | `/api` | Frontend production build API prefix |
+| `HELPDESK_FRONTEND_PORT` | `8080` | Host Frontend port |
+
+환경변수가 없을 때 기존 local Backend는 `data/helpdesk.db`, local Frontend는 `http://127.0.0.1:8000`을 계속 사용합니다.
+
+## Production Deployment Notes
+
+현재 image 구조는 AWS, GCP, Azure, GPU VM 또는 Docker-compatible hosting으로 이전할 수 있지만 v1.0은 SQLite, local model artifact와 local persistent volume을 사용하므로 수평 확장이나 다중 Backend replica에 적합하지 않습니다.
+
+실제 Production v2에는 PostgreSQL, Object Storage 또는 Model Registry, Alembic migration, Authentication/RBAC, HTTPS, Secret Management, Monitoring이 필요합니다. 현재 인증이 없으므로 public Internet에 그대로 노출하면 안 됩니다. Uvicorn reload와 debug mode는 Docker 실행에 사용하지 않으며 Nginx directory listing도 비활성화되어 있습니다.
+
 ## Project Structure
 
 실제 존재하는 파일을 기준으로 주요 항목만 표시했습니다.
@@ -303,6 +403,7 @@ ai-helpdesk/
 │   ├── main.py                         # FastAPI endpoints
 │   ├── model_service.py                # Transformer classification
 │   ├── answer_retriever.py             # V3 semantic retrieval
+│   ├── translation_service.py           # On-demand translation + DB cache
 │   ├── review_policy.py                # Risk Gate policy
 │   ├── ticket_service.py               # 상태 전이와 DB workflow
 │   ├── audit_service.py                # Event 기록·조회
@@ -366,7 +467,7 @@ ai-helpdesk/
 - Authentication / RBAC 미구현
 - Local Ollama CUDA runtime 이슈
 - Classifier confidence calibration 미완료
-- Production 배포 미완료
+- 실제 Cloud Production 배포 미검증
 - Answer relevance는 automatic proxy metric
 - 대용량 model artifacts는 Git에서 제외
 
@@ -374,12 +475,10 @@ ai-helpdesk/
 
 - PostgreSQL
 - Alembic
-- Docker
 - Authentication / RBAC
 - Classifier Calibration
 - 안정적인 LLM Draft Generation
 - Structured Logging / Monitoring
-- Frontend Dashboard
 
 ## 결과 요약
 
